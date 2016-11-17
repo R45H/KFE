@@ -1,0 +1,13 @@
+{
+  "name": "r45h-gulp",
+  "description": "",
+  "main": "script.js",
+  "authors": [
+    "R45H <gmr45h@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "2.*"
+  }
+}
