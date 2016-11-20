@@ -15,7 +15,7 @@ var gulp         = require('gulp'),                         // GULP
     sprite       = require('gulp.spritesmith'),             // Создание спрайтов
     plumber      = require('gulp-plumber'),                 // Перехват ошибок
     gutil        = require('gulp-util'),                    // Различные вспомогательные утилиты
-    cssImport    = require('gulp-cssimport'),               // Работа @import для CSS файлов
+    cssImport    = require('gulp-cssimport'),               // Работа @import
 	 path         = require('path')                          // Для работы с путями
 ;
 /* ================================ */
@@ -69,6 +69,7 @@ gulp.task('html', function () {
 gulp.task('sass', function() {
 	return gulp.src(app + 'src/style.scss') // Берём источник
 		.pipe(plumber(err)) // Отслеживаем ошибки
+		.pipe(cssImport()) // Запускаем @import
 		.pipe(sass({outputStyle: 'expanded'})) // Преобразуем SCSS в CSS
 		.pipe(queries()) // Объединяем медиа запросы
 		.pipe(autoprefixer(['last 15 versions', '>1%', 'ie 8', 'ie 7'], {cascade: true})) // Создаём префиксы
@@ -81,7 +82,7 @@ gulp.task('sass', function() {
 gulp.task('css-libs', function() {
 	return gulp.src(app + 'src/libs.scss') // Берём источник
 		.pipe(plumber(err)) // Отслеживаем ошибки
-		.pipe(cssImport()) // Загружаем в файл все CSS
+		.pipe(cssImport()) // Запускаем @import
 		.pipe(sass({outputStyle: 'compressed'})) // Преобразуем SCSS в CSS
 		.pipe(rename({suffix: '.min'})) // Добавляем суффикс ".min"
 		.pipe(gulp.dest(dist + 'css')) // Выгружаем
