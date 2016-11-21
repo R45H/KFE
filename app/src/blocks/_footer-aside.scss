@@ -1,0 +1,58 @@
+.footer-aside {
+
+	&__list {
+		list-style-type: none;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 40px 0 0;
+
+		@media (min-width: $screen-sm) {
+			display: inline-block;
+			margin: -5px 0 0;
+		}
+	}
+
+	&__item {
+		display: inline-block;
+		margin: 0 10px 10px;
+
+		@media (min-width: $screen-sm) {
+			display: list-item;
+			margin: 0;
+		}
+	}
+
+	&__link {
+		display: block;
+		font-size: 1.4rem;
+		color: $color-gray;
+		letter-spacing: 1.4px;
+		line-height: 1.2em;
+		text-decoration: none;
+		padding: 5px 0;
+	}
+
+	&__social {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-around;
+
+		@media (min-width: $screen-sm) {
+			float: right;
+			display: block;
+			margin-top: -3px;
+		}
+	}
+
+	&__soc-item {
+		display: inline-block;
+		width: 28px;
+		margin-bottom: 10px;
+
+		@media (min-width: $screen-sm) {
+			display: block;
+		}
+	}
+}

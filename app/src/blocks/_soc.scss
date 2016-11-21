@@ -1,0 +1,31 @@
+.soc {
+	display: inline-block;
+	background-image: url('../img/soc.png');
+	width: 28px;
+	height: 28px;
+
+	&__link {
+		display: block;
+		height: 100%;
+	}
+
+	&_fb {
+		background-position: 0 0;
+	}
+
+	&_in {
+		background-position: -28px 0;
+	}
+
+	&_inst {
+		background-position: 0 -28px;
+	}
+
+	&_tw {
+		background-position: -28px -28px;
+	}
+
+	&_you {
+		background-position: -56px 0px;
+	}
+}

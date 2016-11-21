@@ -1,0 +1,127 @@
+.footer {
+	height: 875px;
+	margin-top: -875px;
+	background-color: $color-darkestgray;
+	padding: 40px 0;
+	text-transform: uppercase;
+
+	@media (min-width: $screen-xs) {
+		height: 780px;
+		margin-top: -780px;
+	}
+
+	@media (min-width: $screen-sm) {
+		height: 405px;
+		margin-top: -405px;
+	}
+
+	&__cont {
+		padding: 0;
+	}
+
+	&__row {
+		margin-bottom: 40px;
+	}
+
+	&__logo {
+
+		@media (min-width: $screen-xs) {
+			float: left;
+			margin-right: 30px;
+		}
+	}
+
+	&__logo-item {
+		color: $color-gray;
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+		position: relative;
+		margin-top: 20px;
+
+		@media (min-width: $screen-xs) {
+			display: inline-block;
+			float: left;
+			width: 250px;
+			margin-top: 0;
+		}
+
+		&::before {
+			content: '';
+			display: none;
+			background-image: url('../img/line-footer-dark.png');
+			width: 17px;
+			height: 48px;
+			position: absolute;
+			left: -25px;
+			top: -7px;
+
+			@media (min-width: $screen-xs) {
+				display: inline-block;
+			}
+		}
+	}
+
+	&__main-item {
+		display: block;
+		text-decoration: none;
+		font-size: 1.4rem;
+		line-height: 1.2em;
+		color: $color-lightgray;
+		letter-spacing: 1.4px;
+		width: 210px;
+		position: relative;
+		margin: 0 auto;
+		padding: 10px 0;
+
+		@media (min-width: $screen-sm) {
+			display: inline-block;
+			padding-right: 30px;
+			width: 140px;
+		}
+
+		@media (min-width: $screen-lg) {
+			width: initial;
+			line-height: 2.3em;
+		}
+
+		&::before {
+			content: '';
+			display: none;
+			position: absolute;
+			background-image: url('../img/line-footer-bright.png');
+			width: 17px;
+			height: 47px;
+			right: 0;
+
+			@media (min-width: $screen-sm) {
+				display: inline-block;
+			}
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			height: 3px;
+			width: 20px;
+			background-color: $color-red;
+			margin-top: 12px;
+			transition: width $duration ease-in-out;
+		}
+
+		&:hover {
+
+			&::after {
+				width: 100%;
+			}
+		}
+	}
+
+	&__input {
+		height: 100px;
+		background-color: #373737;
+	}
+
+	&__arrow {
+		font-size: 1rem;
+	}
+}

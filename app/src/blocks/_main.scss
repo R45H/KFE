@@ -1,0 +1,12 @@
+.main {
+	min-height: 100%;
+	padding-bottom: 875px;
+
+	@media (min-width: $screen-xs) {
+		padding-bottom: 780px;
+	}
+
+	@media (min-width: $screen-sm) {
+		padding-bottom: 405px;
+	}
+}

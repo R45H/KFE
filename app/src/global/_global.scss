@@ -1,4 +1,20 @@
 html {
+	height: 100%;
 	font-size: 10px;
+}
+
+body {
 	font-family: $font-main;
+	height: 100%;
+}
+
+a {
+	color: $color-black;
+	text-decoration: underline;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: $color-red;
+	}
 }
