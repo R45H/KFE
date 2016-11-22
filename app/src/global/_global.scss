@@ -15,6 +15,7 @@ body {
 a {
 	color: $color-black;
 	text-decoration: underline;
+	transition: $duration / 2 ease;
 
 	&:hover,
 	&:focus {

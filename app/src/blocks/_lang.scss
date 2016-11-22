@@ -1,0 +1,32 @@
+.lang {
+	position: relative;
+	display: inline-block;
+
+	&__item {
+
+		&:first-child {
+			margin-right: 1em;
+		}
+
+		&_active {
+			color: $color-red;
+		}
+	}
+
+	&__line {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: inline-block;
+		background-image: url('../img/line-lang.png');
+		width: 10px;
+		height: 25px;
+
+		@media (min-width: $screen-lg) {
+			background-image: url('../img/line-lang-lg.png');
+			width: 15px;
+			height: 41px;
+		}
+	}
+}

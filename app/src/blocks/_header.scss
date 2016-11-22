@@ -1,0 +1,41 @@
+.header {
+	width: 100%;
+	height: 85px;
+	position: fixed;
+	background-color: $color-white;
+	z-index: 10;
+	overflow: hidden;
+
+	@media (min-width: $screen-lg) {
+		height: 120px;
+	}
+
+	&__cont {
+		text-transform: uppercase;
+		color: $color-gray;
+		font-size: 1.1rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		flex-wrap: wrap;
+	}
+
+	&__city {
+	}
+
+	&__cont-i {
+	}
+
+	&__address {
+		display: inline-block;
+		margin-right: 15px;
+	}
+
+	&__phone {
+		display: inline-block;
+		color: $color-darkgray;
+		text-decoration: none;
+		font-size: 1.9rem;
+		font-family: $font-third;
+	}
+}

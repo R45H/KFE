@@ -1,6 +1,7 @@
 .main {
 	min-height: 100%;
 	padding-bottom: 900px;
+	padding-top: 85px;
 
 	@media (min-width: $screen-xs) {
 		padding-bottom: 790px;
@@ -12,5 +13,6 @@
 
 	@media (min-width: $screen-lg) {
 		padding-bottom: 550px;
+		padding-top: 120px;
 	}
 }
