@@ -1,18 +1,23 @@
 .footer {
-	height: 875px;
-	margin-top: -875px;
+	height: 900px;
+	margin-top: -900px;
 	background-color: $color-darkestgray;
 	padding: 40px 0;
 	text-transform: uppercase;
 
 	@media (min-width: $screen-xs) {
-		height: 780px;
-		margin-top: -780px;
+		height: 790px;
+		margin-top: -790px;
 	}
 
 	@media (min-width: $screen-sm) {
-		height: 405px;
-		margin-top: -405px;
+		height: 430px;
+		margin-top: -430px;
+	}
+
+	@media (min-width: $screen-lg) {
+		height: 550px;
+		margin-top: -550px;
 	}
 
 	&__cont {
@@ -29,6 +34,10 @@
 			float: left;
 			margin-right: 30px;
 		}
+
+		@media (min-width: $screen-lg) {
+			margin-right: 50px;
+		}
 	}
 
 	&__logo-item {
@@ -41,7 +50,6 @@
 		@media (min-width: $screen-xs) {
 			display: inline-block;
 			float: left;
-			width: 250px;
 			margin-top: 0;
 		}
 
@@ -57,6 +65,13 @@
 
 			@media (min-width: $screen-xs) {
 				display: inline-block;
+			}
+
+			@media (min-width: $screen-lg) {
+				background-image: url('../img/line-footer-dark-lg.png');
+				width: 26px;
+				height: 76px;
+				left: -40px;
 			}
 		}
 	}
@@ -80,8 +95,7 @@
 		}
 
 		@media (min-width: $screen-lg) {
-			width: initial;
-			line-height: 2.3em;
+			width: 200px;
 		}
 
 		&::before {
@@ -96,6 +110,14 @@
 			@media (min-width: $screen-sm) {
 				display: inline-block;
 			}
+
+			@media (min-width: $screen-lg) {
+				background-image: url('../img/line-footer-bright-lg.png');
+				width: 26px;
+				height: 76px;
+				right: -15px;
+				top: 3px;
+			}
 		}
 
 		&::after {
@@ -106,6 +128,10 @@
 			background-color: $color-red;
 			margin-top: 12px;
 			transition: width $duration ease-in-out;
+
+			@media (min-width: $screen-lg) {
+				height: 4px;
+			}
 		}
 
 		&:hover {
@@ -117,8 +143,12 @@
 	}
 
 	&__input {
-		height: 100px;
+		height: 85px;
 		background-color: #373737;
+
+		@media (min-width: $screen-lg) {
+			height: 140px;
+		}
 	}
 
 	&__arrow {

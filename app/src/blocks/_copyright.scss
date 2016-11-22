@@ -8,6 +8,11 @@
 		text-align: right;
 	}
 
+	@media (min-width: $screen-lg) {
+		text-align: right;
+		margin-top: 5px;
+	}
+
 	&__link {
 		color: $color-red;
 		text-decoration: none;

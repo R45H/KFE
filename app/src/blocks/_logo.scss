@@ -4,5 +4,10 @@
 	&__img {
 		width: 82px;
 		height: 31px;
+
+		@media (min-width: $screen-lg) {
+			width : 130px;
+			height : 49px;
+		}
 	}
 }

@@ -10,7 +10,7 @@
 
 		@media (min-width: $screen-sm) {
 			display: inline-block;
-			margin: -5px 0 0;
+			margin: 4px 0 0;
 		}
 	}
 
@@ -31,7 +31,7 @@
 		letter-spacing: 1.4px;
 		line-height: 1.2em;
 		text-decoration: none;
-		padding: 5px 0;
+		padding: 6px 0;
 	}
 
 	&__social {
@@ -42,17 +42,19 @@
 		@media (min-width: $screen-sm) {
 			float: right;
 			display: block;
-			margin-top: -3px;
 		}
 	}
 
 	&__soc-item {
 		display: inline-block;
-		width: 28px;
 		margin-bottom: 10px;
 
 		@media (min-width: $screen-sm) {
 			display: block;
+		}
+
+		@media (min-width: $screen-lg) {
+			margin-bottom: 8px;
 		}
 	}
 }
