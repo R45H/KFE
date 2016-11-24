@@ -1,0 +1,161 @@
+.section {
+	min-height: 100%;
+	height: 100%;
+	padding-top: $height-header;
+
+	@media (min-width: $screen-lg) {
+		padding-top: $height-header-lg;
+	}
+
+	&__slide {
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		background: url('../img/img-1.jpg') 50% 80% no-repeat;
+		margin-top: -($height-header);
+		padding-bottom: $height-header;
+		box-sizing: content-box;
+
+		@media (min-width: $screen-lg) {
+			margin-top: -($height-header-lg);
+			padding-bottom: $height-header-lg;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0, 0, 0, .5);
+		}
+	}
+
+	&__wrap {
+		height: 100%;
+		position: relative;
+		margin-top: $height-header;
+
+		@media (min-width: $screen-lg) {
+			margin-top: $height-header-lg;
+		}
+	}
+
+	&__menu-i {
+		margin: 0 -15px;
+
+		@media (min-width: $screen-sm) {
+			margin: 0;
+		}
+	}
+
+	&__center {
+		text-transform: uppercase;
+		color: $color-white;
+		position: absolute;
+		top: 23%;
+		width: 100%;
+	}
+
+	&__bottom {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
+	&__title {
+		font-size: 3.5rem;
+		font-family: $font-third;
+		position: relative;
+		display: inline-block;
+
+		@media (min-width: $screen-xs) {
+			font-size: 5rem;
+		}
+
+		@media (min-width: $screen-sm) {
+			font-size: 7.2rem;
+		}
+
+		@media (min-width: $screen-lg) {
+			font-size: 6rem;
+		}
+
+		&::before {
+			content: '';
+			display: none;
+			background-image: url('../img/line-slide-title.png');
+			width: 53px;
+			height: 157px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: -10px;
+
+			@media (min-width: $screen-sm) {
+				display: inline-block;
+				max-width: 50%;
+			}
+
+			@media (min-width: $screen-lg) {
+				background-image: url('../img/line-slide-title-lg.png');
+				width: 84px;
+				height: 251px;
+			}
+		}
+
+		&_line {
+
+			&::after {
+				@extend %line;
+				content: '';
+				margin-top: 15px;
+			}
+		}
+	}
+
+	&__descr {
+		display: inline-block;
+		font-size: 1.8rem;
+		position: relative;
+		margin-bottom: 5%;
+
+		@media (min-width: $screen-sm) {
+			max-width: 50%;
+		}
+
+		&::after {
+			content: '';
+			display: none;
+			background-image: url('../img/line-slide-descr.png');
+			width: 21px;
+			height: 59px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: -10px;
+
+			@media (min-width: $screen-sm) {
+				display: inline-block;
+				max-width: 50%;
+			}
+
+			@media (min-width: $screen-lg) {
+				background-image: url('../img/line-slide-descr-lg.png');
+				width: 33px;
+				height: 95px;
+			}
+		}
+	}
+
+	&__button {
+		display: block;
+		margin: 0 auto;
+	}
+
+	&__line {
+		@extend %line;
+		margin: 5px auto 0;
+	}
+}

@@ -1,0 +1,27 @@
+.button {
+	color: $color-white;
+	text-transform: uppercase;
+	width: 266px;
+	height: 45px;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	background-color: initial;
+	background-image: url('../img/btn-bright.png');
+	font-size: 1.3rem;
+
+	@media (min-width: $screen-lg) {
+		width: 426px;
+		height: 71px;
+		background-image: url('../img/btn-bright-lg.png');
+	}
+
+	&_dark {
+		color: $color-darkgray;
+		background-image: url('../img/btn-dark.png');
+
+		@media (min-width: $screen-lg) {
+			background-image: url('../img/btn-dark-lg.png');
+		}
+	}
+}

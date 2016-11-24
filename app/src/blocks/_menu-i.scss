@@ -1,0 +1,53 @@
+.menu-i {
+	background-color: $color-darkestgray;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+
+	@media (min-width: $screen-xs) {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__item {
+
+		@media (min-width: $screen-xs) {
+			display: inline-block;
+		}
+
+		&_line {
+			display: none;
+
+			@media (min-width: $screen-sm) {
+				display: inline-block;
+				background-image: url('../img/line-lang.png');
+				width: 10px;
+				height: 25px;
+			}
+
+			@media (min-width: $screen-lg) {
+				background-image: url('../img/line-lang-lg.png');
+				width: 15px;
+				height: 41px;
+			}
+		}
+	}
+
+	&__link {
+		color: $color-white;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		padding: .5em;
+		letter-spacing: 2.2px;
+
+		@media (min-width: $screen-sm) {
+			padding: .5em 0;
+			display: inline-block;
+		}
+	}
+}

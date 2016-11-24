@@ -7,10 +7,13 @@
 @import url('blocks/_arrow-link.scss');   // Ссылка со стрелочкой
 @import url('blocks/_copyright.scss');    // Права
 @import url('blocks/_menu.scss');         // Главное меню
+@import url('blocks/_menu-i.scss');       // Внутреннее меню
 @import url('blocks/_footer-cont.scss');  // Контакты в футере
 @import url('blocks/_footer-aside.scss'); // Боковое меню в футере
 @import url('blocks/_lang.scss');         // Переключатель языка
+@import url('blocks/_slide.scss');        // Контейнер с картинкой
+@import url('blocks/_button.scss');       // Кнопка
 
 @import url('blocks/_header.scss');       // Шапка
-@import url('blocks/_main.scss');         // Общий контейнер
+@import url('blocks/_section.scss');      // Секция контента
 @import url('blocks/_footer.scss');       // Подвал

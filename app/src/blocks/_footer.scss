@@ -1,24 +1,7 @@
 .footer {
-	height: 900px;
-	margin-top: -900px;
 	background-color: $color-darkestgray;
 	padding: 40px 0;
 	text-transform: uppercase;
-
-	@media (min-width: $screen-xs) {
-		height: 790px;
-		margin-top: -790px;
-	}
-
-	@media (min-width: $screen-sm) {
-		height: 430px;
-		margin-top: -430px;
-	}
-
-	@media (min-width: $screen-lg) {
-		height: 550px;
-		margin-top: -550px;
-	}
 
 	&__cont {
 		padding: 0;
@@ -121,17 +104,9 @@
 		}
 
 		&::after {
+			@extend %line;
 			content: '';
-			display: block;
-			height: 3px;
-			width: 20px;
-			background-color: $color-red;
 			margin-top: 12px;
-			transition: width $duration ease-in-out;
-
-			@media (min-width: $screen-lg) {
-				height: 4px;
-			}
 		}
 
 		&:hover {
