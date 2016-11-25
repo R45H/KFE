@@ -1,0 +1,34 @@
+.num {
+	display: none;
+	position: absolute;
+	font-family: $font-second;
+	font-size: 3.5rem;
+	padding: 1.5rem 1rem 1rem 2rem;
+	top: $height-header;
+	z-index: 2;
+	color: $color-white;
+
+	@media (min-width: $screen-sm) {
+		display: block;
+	}
+
+	@media (min-width: $screen-lg) {
+		top: $height-header-lg;
+	}
+
+	&_dark {
+		color: $color-black;
+	}
+
+	&_red {
+		color: $color-red;
+	}
+
+	&_gray {
+		color: $color-gray;
+	}
+
+	&_lightgray {
+		color: $color-lightgray;
+	}
+}
