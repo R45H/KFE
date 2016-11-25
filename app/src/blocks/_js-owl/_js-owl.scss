@@ -1,0 +1,91 @@
+.js-owl {
+
+	.owl-stage-outer,
+	.owl-stage,
+	.owl-item {
+		height: 100%;
+	}
+
+	// Пагинация
+	&__dots {
+		position: absolute;
+		bottom: 10%;
+		left: 0;
+		right: 0;
+
+		@media (min-width: $screen-xs) {
+			bottom: 12%;
+		}
+
+		.owl-dots {
+			text-align: left;
+			display: inline-block;
+
+			.owl-dot {
+
+				span {
+					@extend %line;
+					background-color: $color-gray;
+					border-radius: 0;
+				}
+
+				&.active span {
+					background-color: $color-red;
+				}
+			}
+		}
+	}
+	// =========
+
+	// Кнопки "Вперёд" "Назад"
+	.owl-nav {
+		display: none;
+
+		@media (min-width: $screen-sm) {
+			display: block;
+		}
+
+		.owl-prev,
+		.owl-next,
+		.owl-prev:hover,
+		.owl-next:hover {
+			border-radius: 0;
+			background: url('../img/owl-arrows.png') no-repeat;
+			position: absolute;
+			top: $height-header;
+			bottom: 0;
+			width: 9px;
+			margin: 0;
+			padding: 44px;
+			box-sizing: content-box;
+			background-clip: content-box;
+
+			@media (min-width: $screen-lg) {
+				top: $height-header-lg;
+				width: 13px;
+				padding: 42px;
+			}
+		}
+
+		.owl-prev,
+		.owl-prev:hover {
+			left: 0;
+			background-position: 18px 50%;
+
+			@media (min-width: $screen-lg) {
+				background-position: 42px 50%;
+			}
+		}
+
+		.owl-next,
+		.owl-next:hover {
+			right: 0;
+			background-position: 9px 50%;
+
+			@media (min-width: $screen-lg) {
+				background-position: 29px 50%;
+			}
+		}
+	}
+	// ======================
+}

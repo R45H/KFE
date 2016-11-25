@@ -1,19 +1,22 @@
-@import url('global/_variables.scss');    // Переменные
-@import url('global/_fonts.scss');        // Шрифты
-@import url('global/_global.scss');       // Глобальные стили
+@import url('global/_variables.scss');      // Переменные
+@import url('global/_fonts.scss');          // Шрифты
+@import url('global/_global.scss');         // Глобальные стили
 
-@import url('blocks/_logo.scss');         // Лого
-@import url('blocks/_soc.scss');          // Социальные иконки
-@import url('blocks/_arrow-link.scss');   // Ссылка со стрелочкой
-@import url('blocks/_copyright.scss');    // Права
-@import url('blocks/_menu.scss');         // Главное меню
-@import url('blocks/_menu-i.scss');       // Внутреннее меню
-@import url('blocks/_footer-cont.scss');  // Контакты в футере
-@import url('blocks/_footer-aside.scss'); // Боковое меню в футере
-@import url('blocks/_lang.scss');         // Переключатель языка
-@import url('blocks/_slide.scss');        // Контейнер с картинкой
-@import url('blocks/_button.scss');       // Кнопка
+@import url('blocks/_logo.scss');           // Лого
+@import url('blocks/_soc.scss');            // Социальные иконки
+@import url('blocks/_arrow-link.scss');     // Ссылка со стрелочкой
+@import url('blocks/_copyright.scss');      // Права
+@import url('blocks/_menu.scss');           // Главное меню
+@import url('blocks/_menu-i.scss');         // Внутреннее меню
+@import url('blocks/_l-menu-i.scss');       // Обёртка внутреннего меню
+@import url('blocks/_footer-cont.scss');    // Контакты в футере
+@import url('blocks/_footer-aside.scss');   // Боковое меню в футере
+@import url('blocks/_lang.scss');           // Переключатель языка
+@import url('blocks/_slide.scss');          // Контейнер с картинкой
+@import url('blocks/_button.scss');         // Кнопка
 
-@import url('blocks/_header.scss');       // Шапка
-@import url('blocks/_section.scss');      // Секция контента
-@import url('blocks/_footer.scss');       // Подвал
+@import url('blocks/_header.scss');         // Шапка
+@import url('blocks/_section.scss');        // Секция контента
+@import url('blocks/_footer.scss');         // Подвал
+
+@import url('blocks/_js-owl/_js-owl.scss'); // Стили для главного слайдера

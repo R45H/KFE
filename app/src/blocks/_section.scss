@@ -2,6 +2,7 @@
 	min-height: 100%;
 	height: 100%;
 	padding-top: $height-header;
+	position: relative;
 
 	@media (min-width: $screen-lg) {
 		padding-top: $height-header-lg;
@@ -11,7 +12,8 @@
 		height: 100%;
 		position: relative;
 		overflow: hidden;
-		background: url('../img/img-1.jpg') 50% 80% no-repeat;
+		background-repeat: no-repeat;
+		background-size: cover;
 		margin-top: -($height-header);
 		padding-bottom: $height-header;
 		box-sizing: content-box;
@@ -30,6 +32,26 @@
 			right: 0;
 			background-color: rgba(0, 0, 0, .5);
 		}
+
+		&_img-1 {
+			background-image: url('../img/img-1.jpg');
+			background-position: 50% 80%;
+		}
+
+		&_img-2 {
+			background-image: url('../img/img-2.jpg');
+			background-position: 50% 0;
+		}
+
+		&_img-3 {
+			background-image: url('../img/img-3.jpg');
+			background-position: 50% 40%;
+		}
+
+		&_img-4 {
+			background-image: url('../img/img-4.jpg');
+			background-position: 50% 50%;
+		}
 	}
 
 	&__wrap {
@@ -42,26 +64,19 @@
 		}
 	}
 
-	&__menu-i {
-		margin: 0 -15px;
-
-		@media (min-width: $screen-sm) {
-			margin: 0;
-		}
-	}
-
 	&__center {
 		text-transform: uppercase;
 		color: $color-white;
 		position: absolute;
 		top: 23%;
-		width: 100%;
+		width: 95%;
 	}
 
 	&__bottom {
 		position: absolute;
 		bottom: 0;
-		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	&__title {
@@ -91,7 +106,7 @@
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			right: -10px;
+			right: -90px;
 
 			@media (min-width: $screen-sm) {
 				display: inline-block;
@@ -119,10 +134,10 @@
 		display: inline-block;
 		font-size: 1.8rem;
 		position: relative;
-		margin-bottom: 5%;
 
-		@media (min-width: $screen-sm) {
-			max-width: 50%;
+		&::before {
+			content: '';
+			display: block;
 		}
 
 		&::after {
@@ -134,7 +149,7 @@
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			right: -10px;
+			right: -40px;
 
 			@media (min-width: $screen-sm) {
 				display: inline-block;
@@ -146,6 +161,14 @@
 				width: 33px;
 				height: 95px;
 			}
+		}
+	}
+
+	&__separ {
+		display: inline;
+
+		@media (min-width: $screen-sm) {
+			display: block;
 		}
 	}
 
