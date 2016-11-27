@@ -62,6 +62,7 @@
 			padding: 44px;
 			box-sizing: content-box;
 			background-clip: content-box;
+			z-index: 1;
 
 			@media (min-width: $screen-lg) {
 				top: $height-header-lg;

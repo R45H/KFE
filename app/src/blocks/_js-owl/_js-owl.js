@@ -7,5 +7,5 @@ $(document).ready(function(){
 		navText: ''
 	});
 
-	$(".owl-dots").wrap("<div class='container js-owl__dots'></div>");
+	$('.js-owl .owl-dots').wrap('<div class="container js-owl__dots"></div>')
 });
