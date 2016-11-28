@@ -1,12 +1,7 @@
 .section {
 	min-height: 100%;
 	height: 100%;
-	padding-top: $height-header;
 	position: relative;
-
-	@media (min-width: $screen-lg) {
-		padding-top: $height-header-lg;
-	}
 
 	&__slide {
 		height: 100%;
@@ -14,13 +9,10 @@
 		overflow: hidden;
 		background-repeat: no-repeat;
 		background-size: cover;
-		margin-top: -($height-header);
-		padding-bottom: $height-header;
-		box-sizing: content-box;
+		padding-top: $height-header;
 
 		@media (min-width: $screen-lg) {
-			margin-top: -($height-header-lg);
-			padding-bottom: $height-header-lg;
+			padding-top: $height-header-lg;
 		}
 
 		&::before {
@@ -121,11 +113,6 @@
 	&__wrap {
 		height: 100%;
 		position: relative;
-		margin-top: $height-header;
-
-		@media (min-width: $screen-lg) {
-			margin-top: $height-header-lg;
-		}
 	}
 
 	&__center {
