@@ -3,16 +3,16 @@
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	position: absolute;
-	top: $height-header;
 	z-index: 5;
-	left: 0;
-	right: 0;
 
 	@media (min-width: $screen-xs) {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		position: absolute;
+		top: $height-header;
+		left: 0;
+		right: 0;
 	}
 
 	@media (min-width: $screen-lg) {

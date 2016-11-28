@@ -1,15 +1,21 @@
 .section {
-	min-height: 100%;
-	height: 100%;
 	position: relative;
 
-	&__slide {
+	@media (min-width: $screen-xs) {
+		min-height: 100%;
 		height: 100%;
+	}
+
+	&__slide {
 		position: relative;
 		overflow: hidden;
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding-top: $height-header;
+
+		@media (min-width: $screen-xs) {
+			height: 100%;
+			padding-top: $height-header;
+		}
 
 		@media (min-width: $screen-lg) {
 			padding-top: $height-header-lg;
@@ -111,24 +117,34 @@
 	}
 
 	&__wrap {
-		height: 100%;
 		position: relative;
+
+		@media (min-width: $screen-xs) {
+			height: 100%;
+		}
 	}
 
 	&__center {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 95%;
 		text-transform: uppercase;
 		color: $color-white;
+
+		@media (min-width: $screen-xs) {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 95%;
+		}
 	}
 
 	&__bottom {
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
+		text-align: center;
+
+		@media (min-width: $screen-xs) {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 
 	&__title {
@@ -198,10 +214,11 @@
 	}
 
 	&__subtitle {
-		margin-top: 90px;
+		text-align: right;
+		margin: 40px 0 50px;
 
-		@media (min-width: $screen-xs) {
-			text-align: right;
+		@media (min-width: $screen-sm) {
+			margin: 50px 0 0;
 		}
 	}
 
@@ -214,8 +231,12 @@
 
 		@media (min-width: $screen-xs) {
 			display: inline-block;
-			margin-right: 70px;
+			margin-right: 50px;
 			top: -8px;
+		}
+
+		@media (min-width: $screen-sm) {
+			margin-right: 70px;
 		}
 
 		&::after {
@@ -336,6 +357,11 @@
 	}
 
 	&__count-arrow {
+		margin-bottom: 15px;
+
+		@media (min-width: $screen-xs) {
+			margin: 0;
+		}
 
 		@media (min-width: $screen-sm) {
 			position: absolute;
@@ -349,7 +375,20 @@
 		}
 	}
 
+	&__news-wrap {
+
+		@media (min-width: $screen-xs) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+
 	&__news {
-		margin: 30px 0 0;
+		margin: 15px -15px;
+
+		@media (min-width: $screen-xs) {
+			margin: 30px 0 0;
+		}
 	}
 }

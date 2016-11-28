@@ -3,12 +3,12 @@
 	text-decoration: none;
 	background-color: $color-lightergray;
 	padding: 15px 50px 15px 30px;
-	height: 170px;
 	position: relative;
 	overflow: hidden;
 
-	@media (min-width: $screen-lg) {
-		height: 300px;
+	@media (min-width: $screen-xs) {
+		display: inline-block;
+		width: 23%;
 	}
 
 	&::before {

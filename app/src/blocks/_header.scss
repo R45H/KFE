@@ -2,10 +2,13 @@
 	top: 0;
 	width: 100%;
 	height: $height-header;
-	position: fixed;
 	background-color: $color-white;
 	z-index: 10;
 	overflow: hidden;
+
+	@media (min-width: $screen-xs) {
+		position: fixed;
+	}
 
 	@media (min-width: $screen-lg) {
 		height: $height-header-lg;

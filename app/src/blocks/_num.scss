@@ -4,10 +4,11 @@
 	font-family: $font-second;
 	font-size: 3.5rem;
 	font-weight: 700;
-	padding: 1.5rem 1rem 1rem 2rem;
+	padding: 0 1rem 1rem 2rem;
 	top: $height-header;
 	z-index: 2;
 	color: $color-white;
+	line-height: .8em;
 
 	@media (min-width: $screen-sm) {
 		display: block;

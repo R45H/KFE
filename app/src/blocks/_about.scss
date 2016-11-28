@@ -8,6 +8,11 @@
 		font-weight: 100;
 		text-transform: none;
 		position: relative;
+		padding-top: 15px;
+
+		@media (min-width: $screen-xs) {
+			padding-top: 0;
+		}
 
 		@media (min-width: $screen-sm) {
 			font-size: 2.8rem;
@@ -109,6 +114,11 @@
 	}
 
 	&__link {
+		margin-bottom: 15px;
+
+		@media (min-width: $screen-xs) {
+			margin-bottom: 0;
+		}
 
 		@media (min-width: $screen-sm) {
 			text-align: right;

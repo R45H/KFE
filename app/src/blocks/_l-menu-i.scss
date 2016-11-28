@@ -1,3 +1,8 @@
 .l-menu-i {
 	position: relative;
+	padding: 0;
+
+	@media (min-width: $screen-xs) {
+		padding: 0 15px;
+	}
 }
