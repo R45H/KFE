@@ -1,0 +1,7 @@
+.separator {
+	display: inline;
+
+	@media (min-width: $screen-sm) {
+		display: block;
+	}
+}

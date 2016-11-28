@@ -107,6 +107,11 @@
 			background-image: url('../img/img-11.jpg');
 			background-position: 50% 30%;
 		}
+
+		&_img-12 {
+			background: $color-lightgray url('../img/img-12.png') no-repeat 95% 100%;
+			background-size: 20%;
+		}
 	}
 
 	&__wrap {
@@ -308,19 +313,6 @@
 				height: 95px;
 			}
 		}
-	}
-
-	&__separ {
-		display: inline;
-
-		@media (min-width: $screen-sm) {
-			display: block;
-		}
-	}
-
-	&__button {
-		display: block;
-		margin: 0 auto;
 	}
 
 	&__line {

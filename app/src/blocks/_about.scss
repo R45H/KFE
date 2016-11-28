@@ -45,6 +45,24 @@
 				right: -117px;
 			}
 		}
+
+		&_line_large {
+
+			&::after {
+
+				@media (min-width: $screen-sm) {
+					background-image: url('../img/line-slide-about-large.png');
+					width: 161px;
+					height: 485px;
+				}
+
+				@media (min-width: $screen-lg) {
+					background-image: url('../img/line-slide-about-large.png');
+					width: 161px;
+					height: 485px;
+				}
+			}
+		}
 	}
 
 	&__line {
@@ -56,6 +74,12 @@
 		}
 	}
 
+	&__name {
+		font-size: 2rem;
+		color: $color-red;
+		margin-bottom: 5px;
+	}
+
 	&__descr {
 		color: $color-gray;
 		font-size: 1.4rem;
@@ -65,13 +89,21 @@
 		}
 
 		&::after {
-			content: '';
 			@extend %line;
+			content: '';
 			background-color: $color-gray;
 			margin: 10px 0;
 
 			@media (min-width: $screen-sm) {
 				margin: 10px 0 20px;
+			}
+		}
+
+		&_dark {
+			color: $color-darkgray;
+
+			&::after {
+				background-color: $color-darkgray;
 			}
 		}
 	}
