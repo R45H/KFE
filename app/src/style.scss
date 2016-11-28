@@ -11,10 +11,13 @@
 @import url('blocks/_l-menu-i.scss');       // Обёртка внутреннего меню
 @import url('blocks/_footer-cont.scss');    // Контакты в футере
 @import url('blocks/_footer-aside.scss');   // Боковое меню в футере
+@import url('blocks/_footer-form.scss');    // Форма футера
 @import url('blocks/_lang.scss');           // Переключатель языка
 @import url('blocks/_slide.scss');          // Контейнер с картинкой
 @import url('blocks/_button.scss');         // Кнопка
 @import url('blocks/_num.scss');            // Нумерация секций
+@import url('blocks/_form-btn.scss');       // Кнопка формы
+@import url('blocks/_form-input.scss');     // Поле ввода формы
 
 @import url('blocks/_header.scss');         // Шапка
 @import url('blocks/_section.scss');        // Секция контента

@@ -18,7 +18,13 @@
 		display: inline-block;
 		width: 9px;
 		height: 31px;
-		background: url('../img/arrow.png') -9px 0px;
+		background: url('../img/arrows.png') 9px 0;
 		margin-left: 10px;
+
+		@media (min-width: $screen-lg) {
+			width: 13px;
+			height: 48px;
+			background-position: -13px 0;
+		}
 	}
 }

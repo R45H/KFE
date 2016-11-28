@@ -1,0 +1,14 @@
+.form-input {
+	background-color: $color-darkergray;
+	border: 0;
+	padding: 3px 6px;
+	color: $color-white;
+	font-size: 1.4rem;
+	transition: all $duration / 2 ease;
+
+	&:hover,
+	&:focus {
+		outline: none;
+		background-color: $color-darkgray;
+	}
+}

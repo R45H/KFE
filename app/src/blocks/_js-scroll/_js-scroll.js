@@ -6,17 +6,19 @@ $(function() {
 		scrollSpeed: 700
 	});
 
-	if (window.innerWidth <= 425) {
-		$.scrollify.disable();
-	} else {
-		$.scrollify.enable();
-	}
+	$.scrollify.disable();
 
-	$(window).on('resize', function() {
-		if (window.innerWidth <= 425) {
-			$.scrollify.disable();
-		} else {
-			$.scrollify.enable();
-		}
-	});
+	// if (window.innerWidth <= 425) {
+	// 	$.scrollify.disable();
+	// } else {
+	// 	$.scrollify.enable();
+	// }
+	//
+	// $(window).on('resize', function() {
+	// 	if (window.innerWidth <= 425) {
+	// 		$.scrollify.disable();
+	// 	} else {
+	// 		$.scrollify.enable();
+	// 	}
+	// });
 });

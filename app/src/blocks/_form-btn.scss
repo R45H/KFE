@@ -1,0 +1,18 @@
+.form-btn {
+	background-color: $color-gray;
+	border: 0;
+	text-transform: uppercase;
+	padding: 3px 12px;
+	font-size: 1.4rem;
+	transition: all $duration / 2 ease;
+
+	&:hover,
+	&:focus {
+		outline: none;
+		color: $color-red;
+	}
+
+	&:active {
+		background-color: $color-lightgray;
+	}
+}

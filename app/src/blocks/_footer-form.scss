@@ -1,0 +1,29 @@
+.footer-form {
+
+	&__col {
+		padding: 0;
+
+		@media (max-width: $screen-xs - 1) {
+			width: 100%;
+		}
+
+		@media (min-width: $screen-xs) {
+			padding: 0 5px 0 0;
+		}
+	}
+
+	&__title {
+		color: $color-gray;
+		font-size: 1.4rem;
+		margin: 0;
+	}
+
+	&__input {
+		margin: 0 0 5px;
+		width: 100%;
+	}
+
+	&__btn {
+		width: 100%;
+	}
+}
