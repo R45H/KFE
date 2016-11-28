@@ -32,21 +32,21 @@
 			right: 0;
 		}
 
-		&_color_fog {
+		&_fog {
 
 			&::before {
 				background-color: rgba(0, 0, 0, .5);
 			}
 		}
 
-		&_color_dark {
+		&_dark {
 
 			&::before {
 				background-color: $color-black;
 			}
 		}
 
-		&_color_bright {
+		&_bright {
 
 			&::before {
 				background-color: $color-lightgray;
@@ -109,8 +109,12 @@
 		}
 
 		&_img-12 {
-			background: $color-lightgray url('../img/img-12.png') no-repeat 95% 100%;
-			background-size: 20%;
+			background: $color-lightgray;
+
+			@media (min-width: $screen-sm) {
+				background: $color-lightgray url('../img/img-12.png') no-repeat 95% 100%;
+				background-size: 20%;
+			}
 		}
 	}
 
@@ -125,12 +129,12 @@
 	}
 
 	&__center {
-		text-transform: uppercase;
-		color: $color-white;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
 		width: 95%;
+		text-transform: uppercase;
+		color: $color-white;
 	}
 
 	&__bottom {
@@ -294,24 +298,7 @@
 		}
 
 		&::after {
-
-			@media (min-width: $screen-sm) {
-				content: '';
-				position: absolute;
-				background-image: url('../img/line-slide-descr.png');
-				width: 21px;
-				height: 59px;
-				top: 50%;
-				transform: translateY(-50%);
-				right: -40px;
-				max-width: 50%;
-			}
-
-			@media (min-width: $screen-lg) {
-				background-image: url('../img/line-slide-descr-lg.png');
-				width: 33px;
-				height: 95px;
-			}
+			@extend %line-right-bright;
 		}
 	}
 

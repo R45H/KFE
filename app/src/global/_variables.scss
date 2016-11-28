@@ -66,3 +66,64 @@ $height-header-lg: 120px;
 		background-image: url('../img/line-slide-title-left-red-lg.png');
 	}
 }
+
+%line-right-bright {
+
+	@media (min-width: $screen-sm) {
+		content: '';
+		position: absolute;
+		background-image: url('../img/line-slide-right-bright.png');
+		width: 21px;
+		height: 59px;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -40px;
+		max-width: 50%;
+	}
+
+	@media (min-width: $screen-lg) {
+		background-image: url('../img/line-slide-right-bright-lg.png');
+		width: 33px;
+		height: 95px;
+	}
+}
+
+%line-right-gray {
+	@extend %line-right-bright;
+
+	@media (min-width: $screen-sm) {
+		background-image: url('../img/line-slide-right-gray.png');
+		width: 19px;
+		height: 51px;
+	}
+
+	@media (min-width: $screen-lg) {
+		background-image: url('../img/line-slide-right-gray-lg.png');
+		width: 28px;
+		height: 80px;
+	}
+}
+
+%line-right-dark {
+	@extend %line-right-bright;
+
+	@media (min-width: $screen-sm) {
+		background-image: url('../img/line-slide-right-dark.png');
+	}
+
+	@media (min-width: $screen-lg) {
+		background-image: url('../img/line-slide-right-dark-lg.png');
+	}
+}
+
+%line-right-red {
+	@extend %line-right-gray;
+
+	@media (min-width: $screen-sm) {
+		background-image: url('../img/line-slide-right-red.png');
+	}
+
+	@media (min-width: $screen-lg) {
+		background-image: url('../img/line-slide-right-red-lg.png');
+	}
+}
