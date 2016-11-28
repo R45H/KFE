@@ -33,3 +33,36 @@ $height-header-lg: 120px;
 		height: 4px;
 	}
 }
+
+%line-left {
+
+	@media (min-width: $screen-sm) {
+		content: '';
+		position: absolute;
+		background-image: url('../img/line-slide-title-left.png');
+		width: 32px;
+		height: 93px;
+		top: -25px;
+		left: -40px;
+	}
+
+	@media (min-width: $screen-lg) {
+		background-image: url('../img/line-slide-title-left-lg.png');
+		width: 51px;
+		height: 148px;
+		top: -45px;
+		left: -60px;
+	}
+}
+
+%line-left_red {
+	@extend %line-left;
+
+	@media (min-width: $screen-sm) {
+		background-image: url('../img/line-slide-title-left-red.png');
+	}
+
+	@media (min-width: $screen-lg) {
+		background-image: url('../img/line-slide-title-left-red-lg.png');
+	}
+}

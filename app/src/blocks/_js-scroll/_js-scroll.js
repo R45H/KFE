@@ -6,19 +6,19 @@ $(function() {
 		scrollSpeed: 700
 	});
 
-	$.scrollify.disable();
+	// $.scrollify.disable();
 
-	// if (window.innerWidth <= 425) {
-	// 	$.scrollify.disable();
-	// } else {
-	// 	$.scrollify.enable();
-	// }
-	//
-	// $(window).on('resize', function() {
-	// 	if (window.innerWidth <= 425) {
-	// 		$.scrollify.disable();
-	// 	} else {
-	// 		$.scrollify.enable();
-	// 	}
-	// });
+	if (window.innerWidth <= 425) {
+		$.scrollify.disable();
+	} else {
+		$.scrollify.enable();
+	}
+	
+	$(window).on('resize', function() {
+		if (window.innerWidth <= 425) {
+			$.scrollify.disable();
+		} else {
+			$.scrollify.enable();
+		}
+	});
 });
