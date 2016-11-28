@@ -306,4 +306,12 @@
 		@extend %line;
 		margin: 5px auto 0;
 	}
+
+	&__count-wrap {
+		margin-top: 40px;
+	}
+
+	&__count {
+		margin-bottom: 40px;
+	}
 }
