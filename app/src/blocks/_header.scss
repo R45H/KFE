@@ -14,6 +14,10 @@
 		height: $height-header-lg;
 	}
 
+	&__menu {
+		margin: 20px 0 3px;
+	}
+
 	&__cont {
 		text-transform: uppercase;
 		color: $color-gray;
@@ -35,5 +39,12 @@
 		text-decoration: none;
 		font-size: 1.9rem;
 		font-family: $font-third;
+	}
+
+	&__pag {
+		position: absolute;
+		right: 50px;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }

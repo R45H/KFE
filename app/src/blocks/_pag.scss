@@ -1,0 +1,34 @@
+.pag {
+	display: none;
+
+	@media (min-width: $screen-sm) {
+		padding: 0;
+		margin: 0;
+		display: block;
+	}
+
+	&__item {
+		list-style-type: none;
+		margin: 3px;
+
+		@media (min-width: $screen-lg) {
+			margin: 5px;
+		}
+	}
+
+	&__link {
+		@extend %line;
+		width: 13px;
+		height: 4px;
+		background-color: $color-lightgray;
+
+		@media (min-width: $screen-lg) {
+			width: 20px;
+			height: 5px;
+		}
+
+		&_active {
+			background-color: $color-red;
+		}
+	}
+}
