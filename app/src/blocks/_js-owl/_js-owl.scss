@@ -49,45 +49,65 @@
 		}
 
 		.owl-prev,
-		.owl-next,
-		.owl-prev:hover,
-		.owl-next:hover {
+		.owl-next {
+			background: transparent;
 			border-radius: 0;
-			background: url('../img/arrows.png') no-repeat;
 			position: absolute;
 			top: $height-header;
 			bottom: 0;
 			width: 9px;
 			margin: 0;
 			padding: 44px;
-			box-sizing: content-box;
-			background-clip: content-box;
-			z-index: 1;
 
 			@media (min-width: $screen-lg) {
 				top: $height-header-lg;
-				width: 13px;
-				padding: 42px;
+				padding: 57px;
+				padding: 4%;
+			}
+
+			&::after {
+				content: '';
+				background: url('../img/arrows.png') no-repeat;
+				position: absolute;
+				width: 9px;
+				height: 31px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				@media (min-width: $screen-lg) {
+					width: 13px;
+					height: 48px;
+				}
+			}
+			
+			&:hover,
+			&:focus {
+				background-color: $color-fog;
 			}
 		}
 
-		.owl-prev,
-		.owl-prev:hover {
+		.owl-prev {
 			left: 0;
-			background-position: 18px 50%;
 
-			@media (min-width: $screen-lg) {
-				background-position: 42px 50%;
+			&::after {
+				background-position: -26px 0;
+
+				@media (min-width: $screen-lg) {
+					background-position: 0 0;
+				}
 			}
 		}
 
-		.owl-next,
-		.owl-next:hover {
+		.owl-next {
 			right: 0;
-			background-position: 9px 50%;
 
-			@media (min-width: $screen-lg) {
-				background-position: 29px 50%;
+			&::after {
+				background-position: -36px 0;
+
+				@media (min-width: $screen-lg) {
+					background-position: -13px 0;
+				}
 			}
 		}
 	}
