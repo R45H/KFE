@@ -1,0 +1,60 @@
+.bot-panel {
+
+	&__wrap {
+		padding-top: 15px;
+
+		&::before {
+			@extend %line;
+			content: '';
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	&__type {
+		font-family: $font-second;
+		color: $color-gray;
+		font-weight: 300;
+		font-size: 1.6rem;
+		margin: 0;
+	}
+
+	&__title {
+		font-family: $font-second;
+		color: $color-white;
+		font-weight: 700;
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		margin: 0;
+		position: relative;
+		vertical-align: middle;
+
+		@media (min-width: $screen-xs) {
+			font-size: 4.1rem;
+			margin: 0 50px 0 0;
+		}
+
+		@media (min-width: $screen-sm) {
+			display: inline-block;
+		}
+
+		&::after {
+			@extend %line-right-red;
+		}
+	}
+
+	&__arrow {
+		vertical-align: middle;
+		position: relative;
+		top: -3px;
+		margin-top: 10px;
+
+		@media (min-width: $screen-sm) {
+			margin-top: 0;
+		}
+	}
+
+	&_dark {
+		background-color: $color-black;
+	}
+}
