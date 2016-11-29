@@ -28,4 +28,23 @@
 			background-position: -13px 0;
 		}
 	}
+
+	&_gray {
+
+		.arrow-link {
+
+			&__i {
+				color: $color-gray;
+			}
+
+			&__arrow {
+
+				background: url('../img/arrow-gray.png');
+
+				@media (min-width: $screen-lg) {
+					background: url('../img/arrow-gray-lg.png');
+				}
+			}
+		}
+	}
 }

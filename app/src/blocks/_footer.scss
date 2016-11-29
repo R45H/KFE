@@ -119,7 +119,7 @@
 
 	&__input {
 		height: 85px;
-		background-color: #373737;
+		background-color: $color-darkergray;
 
 		@media (min-width: $screen-lg) {
 			height: 140px;

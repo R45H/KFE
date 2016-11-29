@@ -392,6 +392,20 @@
 		}
 	}
 
+	&__card-wrap {
+		margin-top: 30px;
+
+		@media (min-width: $screen-xs) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__card {
+		margin: 15px;
+		width: 22%;
+	}
+
 	&_owl {
 		min-height: 100%;
 		height: 100%;
