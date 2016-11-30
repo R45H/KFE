@@ -43,7 +43,7 @@ $height-header-lg: 120px;
 	@media (min-width: $screen-sm) {
 		content: '';
 		position: absolute;
-		background-image: url('../img/line-slide-title-left.png');
+		background-image: url('/img/line-slide-title-left.png');
 		width: 32px;
 		height: 93px;
 		top: -25px;
@@ -51,7 +51,7 @@ $height-header-lg: 120px;
 	}
 
 	@media (min-width: $screen-lg) {
-		background-image: url('../img/line-slide-title-left-lg.png');
+		background-image: url('/img/line-slide-title-left-lg.png');
 		width: 51px;
 		height: 148px;
 		top: -45px;
@@ -63,11 +63,11 @@ $height-header-lg: 120px;
 	@extend %line-left;
 
 	@media (min-width: $screen-sm) {
-		background-image: url('../img/line-slide-title-left-red.png');
+		background-image: url('/img/line-slide-title-left-red.png');
 	}
 
 	@media (min-width: $screen-lg) {
-		background-image: url('../img/line-slide-title-left-red-lg.png');
+		background-image: url('/img/line-slide-title-left-red-lg.png');
 	}
 }
 
@@ -76,7 +76,7 @@ $height-header-lg: 120px;
 	@media (min-width: $screen-sm) {
 		content: '';
 		position: absolute;
-		background-image: url('../img/line-slide-right-bright.png');
+		background-image: url('/img/line-slide-right-bright.png');
 		width: 21px;
 		height: 59px;
 		top: 50%;
@@ -86,7 +86,7 @@ $height-header-lg: 120px;
 	}
 
 	@media (min-width: $screen-lg) {
-		background-image: url('../img/line-slide-right-bright-lg.png');
+		background-image: url('/img/line-slide-right-bright-lg.png');
 		width: 33px;
 		height: 95px;
 	}
@@ -96,13 +96,13 @@ $height-header-lg: 120px;
 	@extend %line-right-bright;
 
 	@media (min-width: $screen-sm) {
-		background-image: url('../img/line-slide-right-gray.png');
+		background-image: url('/img/line-slide-right-gray.png');
 		width: 19px;
 		height: 51px;
 	}
 
 	@media (min-width: $screen-lg) {
-		background-image: url('../img/line-slide-right-gray-lg.png');
+		background-image: url('/img/line-slide-right-gray-lg.png');
 		width: 28px;
 		height: 80px;
 	}
@@ -112,11 +112,11 @@ $height-header-lg: 120px;
 	@extend %line-right-bright;
 
 	@media (min-width: $screen-sm) {
-		background-image: url('../img/line-slide-right-dark.png');
+		background-image: url('/img/line-slide-right-dark.png');
 	}
 
 	@media (min-width: $screen-lg) {
-		background-image: url('../img/line-slide-right-dark-lg.png');
+		background-image: url('/img/line-slide-right-dark-lg.png');
 	}
 }
 
@@ -124,10 +124,10 @@ $height-header-lg: 120px;
 	@extend %line-right-gray;
 
 	@media (min-width: $screen-sm) {
-		background-image: url('../img/line-slide-right-red.png');
+		background-image: url('/img/line-slide-right-red.png');
 	}
 
 	@media (min-width: $screen-lg) {
-		background-image: url('../img/line-slide-right-red-lg.png');
+		background-image: url('/img/line-slide-right-red-lg.png');
 	}
 }

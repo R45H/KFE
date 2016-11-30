@@ -20,7 +20,7 @@
 
 	&::after {
 		content: '';
-		background-image: url('../img/arrow-gray.png');
+		background-image: url('/img/arrow-gray.png');
 		width: 9px;
 		height: 31px;
 		position: absolute;
@@ -28,7 +28,7 @@
 		bottom: 25px;
 
 		@media (min-width: $screen-lg) {
-			background-image: url('../img/arrow-gray-lg.png');
+			background-image: url('/img/arrow-gray-lg.png');
 			width: 13px;
 			height: 48px;
 		}
@@ -37,10 +37,10 @@
 	&:hover {
 
 		&::after {
-			background: url('../img/arrows.png') 9px 0;
+			background: url('/img/arrows.png') 9px 0;
 
 			@media (min-width: $screen-lg) {
-				background: url('../img/arrows.png') -13px 0;
+				background: url('/img/arrows.png') -13px 0;
 			}
 		}
 	}

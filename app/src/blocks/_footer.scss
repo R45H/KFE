@@ -39,7 +39,7 @@
 		&::before {
 			content: '';
 			display: none;
-			background-image: url('../img/line-footer-dark.png');
+			background-image: url('/img/line-footer-dark.png');
 			width: 17px;
 			height: 48px;
 			position: absolute;
@@ -51,7 +51,7 @@
 			}
 
 			@media (min-width: $screen-lg) {
-				background-image: url('../img/line-footer-dark-lg.png');
+				background-image: url('/img/line-footer-dark-lg.png');
 				width: 26px;
 				height: 76px;
 				left: -40px;
@@ -85,7 +85,7 @@
 			content: '';
 			display: none;
 			position: absolute;
-			background-image: url('../img/line-footer-bright.png');
+			background-image: url('/img/line-footer-bright.png');
 			width: 17px;
 			height: 47px;
 			right: 0;
@@ -95,7 +95,7 @@
 			}
 
 			@media (min-width: $screen-lg) {
-				background-image: url('../img/line-footer-bright-lg.png');
+				background-image: url('/img/line-footer-bright-lg.png');
 				width: 26px;
 				height: 76px;
 				right: -15px;

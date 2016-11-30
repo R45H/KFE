@@ -1,6 +1,6 @@
 /*!
  * jQuery Scrollify
- * Version 1.0.7
+ * Version 1.0.8
  *
  * Requires:
  * - jQuery 1.7 or higher
@@ -41,21 +41,7 @@
 		});
 	} else if (typeof module === 'object' && module.exports) {
 		// Node/CommonJS
-		module.exports = function( root, jQuery ) {
-			if ( jQuery === undefined ) {
-				// require('jQuery') returns a factory that requires window to
-				// build a jQuery instance, we normalize how we use modules
-				// that require this pattern but the window provided is a noop
-				// if it's defined (how jquery works)
-				if ( typeof window !== 'undefined' ) {
-					jQuery = require('jquery');
-				} else {
-					jQuery = require('jquery')(root);
-				}
-			}
-			factory(jQuery, global, global.document);
-			return jQuery;
-		};
+		module.exports = factory(require('jquery'), global, global.document);
 	} else {
 		// Browser globals
 		factory(jQuery, global, global.document);
@@ -100,6 +86,7 @@
 			standardScrollElements: false,
 			setHeights: true,
 			overflowScroll:true,
+			updateHash: true,
 			before:function() {},
 			after:function() {},
 			afterResize:function() {},
@@ -130,7 +117,7 @@
 			}
 
 
-			if(settings.sectionName && !(firstLoad===true && index===0)) {
+			if(settings.updateHash && settings.sectionName && !(firstLoad===true && index===0)) {
 				if(history.pushState) {
 				    try {
 							history.replaceState(null, null, names[index]);
@@ -173,6 +160,7 @@
 						console.warn("Scrollify warning:", window.location.hash, "is not a valid jQuery expression.");
 					}
 				}
+				currentIndex = index;
 				$(settings.target).promise().done(function(){
 					currentIndex = index;
 					locked = false;
@@ -208,9 +196,8 @@
 					return false;
 				}
 	}
-	$.scrollify = function(options) {
+	var scrollify = function(options) {
 		initialised = true;
-
 		$.easing['easeOutExpo'] = function(x, t, b, c, d) {
 			return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
 		};
@@ -729,7 +716,7 @@
 			}
 		}
 	}
-	$.scrollify.move = function(panel) {
+	scrollify.move = function(panel) {
 		if(panel===undefined) {
 			return false;
 		}
@@ -737,42 +724,47 @@
 			panel = $(this).attr("href");
 		}
 		move(panel,false);
+		setTimeout(function() {
+			window.location.hash = '';
+			history.pushState("", document.title, window.location.pathname);
+			event.preventDefault();
+		}, 0);
 	};
-	$.scrollify.instantMove = function(panel) {
+	scrollify.instantMove = function(panel) {
 		if(panel===undefined) {
 			return false;
 		}
 		move(panel,true);
 	};
-	$.scrollify.next = function() {
+	scrollify.next = function() {
 		if(index<names.length) {
 			index += 1;
 			//index, instant, callbacks, toTop
 			animateScroll(index,false,true,true);
 		}
 	};
-	$.scrollify.previous = function() {
+	scrollify.previous = function() {
 		if(index>0) {
 			index -= 1;
 			//index, instant, callbacks, toTop
 			animateScroll(index,false,true,true);
 		}
 	};
-	$.scrollify.instantNext = function() {
+	scrollify.instantNext = function() {
 		if(index<names.length) {
 			index += 1;
 			//index, instant, callbacks, toTop
 			animateScroll(index,true,true,true);
 		}
 	};
-	$.scrollify.instantPrevious = function() {
+	scrollify.instantPrevious = function() {
 		if(index>0) {
 			index -= 1;
 			//index, instant, callbacks, toTop
 			animateScroll(index,true,true,true);
 		}
 	};
-	$.scrollify.destroy = function() {
+	scrollify.destroy = function() {
 		if(!initialised) {
 			return false;
 		}
@@ -800,29 +792,29 @@
 		elements = [];
 		overflow = [];
 	};
-	$.scrollify.update = function() {
+	scrollify.update = function() {
 		if(!initialised) {
 			return false;
 		}
 		util.handleUpdate();
 	};
-	$.scrollify.current = function() {
+	scrollify.current = function() {
 		return elements[index];
 	};
-	$.scrollify.disable = function() {
+	scrollify.disable = function() {
 		disabled = true;
 	};
-	$.scrollify.enable = function() {
+	scrollify.enable = function() {
 		disabled = false;
 		if (initialised) {
 			//instant,callbacks
 			manualScroll.calculateNearest(false,false);
 		}
 	};
-	$.scrollify.isDisabled = function() {
+	scrollify.isDisabled = function() {
 		return disabled;
 	};
-	$.scrollify.setOptions = function(updatedOptions) {
+	scrollify.setOptions = function(updatedOptions) {
 		if(!initialised) {
 			return false;
 		}
@@ -833,4 +825,6 @@
 			console.warn("Scrollify warning: setOptions expects an object.");
 		}
 	};
+	$.scrollify = scrollify;
+	return scrollify;
 }));

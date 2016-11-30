@@ -7,14 +7,14 @@
 	outline: 0;
 	padding: 0;
 	background-color: initial;
-	background-image: url('../img/btn-bright.png');
+	background-image: url('/img/btn-bright.png');
 	font-size: 1.3rem;
 	transition: color $duration / 2;
 
 	@media (min-width: $screen-lg) {
 		width: 426px;
 		height: 71px;
-		background-image: url('../img/btn-bright-lg.png');
+		background-image: url('/img/btn-bright-lg.png');
 	}
 
 	&:hover,
@@ -24,10 +24,10 @@
 
 	&_dark {
 		color: $color-darkgray;
-		background-image: url('../img/btn-dark.png');
+		background-image: url('/img/btn-dark.png');
 
 		@media (min-width: $screen-lg) {
-			background-image: url('../img/btn-dark-lg.png');
+			background-image: url('/img/btn-dark-lg.png');
 		}
 	}
 }
