@@ -58,6 +58,7 @@
 			width: 9px;
 			margin: 0;
 			padding: 44px;
+			transition: all $duration / 2;
 
 			@media (min-width: $screen-lg) {
 				top: $height-header-lg;
