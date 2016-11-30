@@ -29,8 +29,12 @@
 	}
 
 	&__address {
-		display: inline-block;
-		margin-right: 15px;
+		display: none;
+
+		@media (min-width: $screen-custom-sm) {
+			display: inline-block;
+			margin-right: 15px;
+		}
 	}
 
 	&__phone {
