@@ -1,6 +1,6 @@
 node_modules/
 .idea/
 npm-debug.log
-app/layout/
-app/img/backup/
-dist/
+/app/layout/
+/app/img/backup/
+/dist/
