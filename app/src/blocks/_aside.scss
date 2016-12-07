@@ -1,0 +1,20 @@
+.aside {
+	position: fixed;
+	height: 100%;
+	background-color: $color-darkergray;
+	z-index: 15;
+	transition: all cubic-bezier(0.175, 0.885, 0.32, 2) $duration;
+	width: 100%;
+
+	@media (min-width: $screen-xs) {
+		width: 200px;
+	}
+
+	&_hidden {
+		width: 0;
+
+		@media (min-width: $screen-xs) {
+			width: 0;
+		}
+	}
+}

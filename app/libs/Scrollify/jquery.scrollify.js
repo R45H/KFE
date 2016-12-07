@@ -727,7 +727,6 @@
 		setTimeout(function() {
 			window.location.hash = '';
 			history.pushState("", document.title, window.location.pathname);
-			event.preventDefault();
 		}, 0);
 	};
 	scrollify.instantMove = function(panel) {

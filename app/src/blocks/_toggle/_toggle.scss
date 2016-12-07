@@ -1,0 +1,33 @@
+.toggle {
+	display: inline-block;
+	padding: 10px;
+	cursor: pointer;
+
+	&:hover {
+
+		.toggle {
+
+			&__line {
+				background-color: $color-red;
+			}
+		}
+	}
+
+	&__line {
+		@extend %line;
+		background-color: $color-lightgray;
+		margin-bottom: 3px;
+		transition: all $duration / 2 ease;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&_fixed {
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		z-index: 20;
+	}
+}

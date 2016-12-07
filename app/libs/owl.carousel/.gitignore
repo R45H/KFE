@@ -3,6 +3,7 @@
 .bowerrc
 .idea
 /bower_components
+/docs
 /node_modules
 *.sublime*
 *.zip

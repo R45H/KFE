@@ -277,7 +277,7 @@ module.exports = function (grunt) {
     copy: {
       fonts: {
         expand: true,
-        src: 'font-awesome/**',
+        src: 'fonts/**',
         dest: 'dist/'
       },
       docs: {
@@ -478,10 +478,10 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:font-awesome', 'dist-js']);
+  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
 
   // Default task.
-  grunt.registerTask('default', ['clean:dist', 'copy:font-awesome', 'test']);
+  grunt.registerTask('default', ['clean:dist', 'copy:fonts', 'test']);
 
   grunt.registerTask('build-glyphicons-data', function () { generateGlyphiconsData.call(this, grunt); });
 
