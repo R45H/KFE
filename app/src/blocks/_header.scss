@@ -15,7 +15,11 @@
 	}
 
 	&__menu {
-		margin: 20px 0 3px;
+		margin: 20px 0 3px 38px;
+
+		@media (min-width: $screen-sm) {
+			margin: 20px 0 3px;
+		}
 	}
 
 	&__cont {
@@ -26,6 +30,11 @@
 		justify-content: space-between;
 		align-items: baseline;
 		flex-wrap: wrap;
+		margin-left: 38px;
+
+		@media (min-width: $screen-sm) {
+			margin-left: 0;
+		}
 	}
 
 	&__address {

@@ -18,7 +18,7 @@ $(function() {
 		},
 
 		afterResize: function() {
-			if (window.innerWidth < 425) {
+			if (window.innerWidth < 426) {
 				$.scrollify.disable();
 			} else {
 				$.scrollify.enable();
@@ -26,7 +26,7 @@ $(function() {
 		},
 
 		afterRender: function() {
-			if (window.innerWidth < 425) {
+			if (window.innerWidth < 426) {
 				$.scrollify.disable();
 			} else {
 				$.scrollify.enable();

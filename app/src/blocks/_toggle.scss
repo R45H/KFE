@@ -1,0 +1,75 @@
+.toggle {
+	display: inline-block;
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+
+	&:hover {
+
+		.toggle {
+
+			&__line {
+				background-color: $color-red;
+			}
+
+			&__title {
+				color: $color-red;
+			}
+		}
+	}
+
+	&__line {
+		@extend %line;
+		height: 2px;
+		width: 13px;
+		background-color: $color-lightgray;
+		margin-bottom: 2px;
+		transition: all $duration / 2 ease;
+
+		@media (min-width: $screen-lg) {
+			height: 5px;
+			margin-bottom: 5px;
+			width: 32px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		position: absolute;
+		left: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 1.5rem;
+		line-height: 1.9em;
+		height: 30px;
+		color: $color-lightgray;
+		transition: color $duration / 2 ease;
+		text-transform: uppercase;
+		padding: 0 10px 0 0;
+		display: inline-block;
+
+		@media (min-width: $screen-lg) {
+			height: 45px;
+			padding: 0 10px;
+		}
+
+		&_hidden {
+			display: none;
+		}
+	}
+
+	&_fixed {
+		z-index: 20;
+		top: 10px;
+		left: 10px;
+		position: absolute;
+
+		@media (min-width: $screen-xs) {
+			position: fixed;
+		}
+	}
+}

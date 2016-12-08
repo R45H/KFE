@@ -1,0 +1,69 @@
+.aside {
+	position: fixed;
+	height: 100%;
+	background-color: $color-darkergray;
+	z-index: 15;
+	transition: all ease $duration / 2;
+	width: 80%;
+	padding-top: $height-header;
+
+	@media (min-width: $screen-xs) {
+		width: 200px;
+	}
+
+	@media (min-width: $screen-lg) {
+		width: 300px;
+		padding-top: $height-header-lg;
+	}
+	
+	&__list {
+		display: block;
+		list-style-type: none;
+		padding: 0;
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	&__item {
+
+		&:first-child {
+
+			.aside {
+
+				&__link {
+					border-top: 1px solid $color-darkgray;
+				}
+			}
+		}
+	}
+
+	&__link {
+		display: block;
+		color: $color-lightgray;
+		background-color: $color-darkestgray;
+		padding: 10px 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+		border-bottom: 1px solid $color-darkgray;
+		font-size: 1.4rem;
+		white-space: nowrap;
+
+		&:hover,
+		&:focus {
+			background-color: $color-black;
+		}
+	}
+
+	&_hidden {
+		width: 0;
+
+		@media (min-width: $screen-xs) {
+			width: 0;
+		}
+
+		@media (min-width: $screen-lg) {
+			width: 0;
+		}
+	}
+}
