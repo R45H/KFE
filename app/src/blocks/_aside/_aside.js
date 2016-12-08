@@ -3,7 +3,9 @@ $(function() {
 	var $asideClass = 'js-aside'; // Класс бокового меню
 	var $asideHidden = 'aside_hidden'; // Переключатель видимости бокового меню
 	var $asideList = $('.js-aside .aside__list'); // Контейнер с пунктами меню
+	var $toggle = $('.js-aside-toggle'); // Гамбургер
 	var $toggleClass = 'js-aside-toggle'; // Класс гамбургера
+	var $toggleActive = 'toggle_active'; // Переключатель активности гамбургера
 	var $toggleTitle = $('.js-aside-toggle .toggle__title'); // Заголовок гамбургера
 	var $toggleTitleHidden = 'toggle__title_hidden'; // Переключатель видимости заголовка гамбургера
 	var $body = $('body'); // Ну короче это боди
@@ -15,6 +17,7 @@ $(function() {
 			if (target.classList.contains($asideClass)) return; // Если боковое меню, ничего не делаем
 			if (target.classList.contains($toggleClass)) { // Если гамбургер
 				$aside.toggleClass($asideHidden); // Скрываем / показываем меню
+				$toggle.toggleClass($toggleActive); // Меняем активность гамбургера
 				$toggleTitle.toggleClass($toggleTitleHidden); // Скрываем / показываем надпись гамбургера
 
 				if (window.innerWidth < 426) { // Если мобильное разрешение
@@ -33,6 +36,7 @@ $(function() {
 
 		if (!$aside.hasClass($asideHidden)) { // Если меню открыто
 			$aside.toggleClass($asideHidden); // Закрываем меню
+			$toggle.toggleClass($toggleActive); // Меняем активность гамбургера
 			$toggleTitle.toggleClass($toggleTitleHidden); // Убираем надпись гамбургера
 			$body.css('overflow', 'visible'); // Возвращаем полосу прокрутки
 		}

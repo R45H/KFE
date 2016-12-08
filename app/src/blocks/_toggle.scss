@@ -24,7 +24,9 @@
 		width: 13px;
 		background-color: $color-lightgray;
 		margin-bottom: 2px;
-		transition: all $duration / 2 ease;
+		transition: transform $duration / 2 ease,
+		            background-color $duration / 2 ease,
+		            opacity $duration / 4 ease;
 
 		@media (min-width: $screen-lg) {
 			height: 5px;
@@ -70,6 +72,35 @@
 
 		@media (min-width: $screen-xs) {
 			position: fixed;
+		}
+	}
+
+	&_active {
+
+		.toggle {
+
+			&__line {
+
+				&:first-child {
+					transform: translateY(4px) rotate(-45deg);
+
+					@media (min-width: $screen-lg) {
+						transform: translateY(10px) rotate(-45deg);
+					}
+				}
+
+				&:nth-child(2) {
+					opacity: 0;
+				}
+
+				&:last-child {
+					transform: translateY(-4px) rotate(45deg);
+
+					@media (min-width: $screen-lg) {
+						transform: translateY(-10px) rotate(45deg);
+					}
+				}
+			}
 		}
 	}
 }
