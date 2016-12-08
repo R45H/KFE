@@ -26,6 +26,9 @@ $(function() {
 					} else {
 						$body.css('overflow', 'visible');
 					}
+					if (!$toggle.hasClass($toggleActive)) { // Если мы закрыли меню
+						$toggle.css('position', 'absolute'); // Обрабатываем гамбургер
+					}
 				}
 				return; // Выходим из обработчика события
 			}
@@ -39,15 +42,26 @@ $(function() {
 			$toggle.toggleClass($toggleActive); // Меняем активность гамбургера
 			$toggleTitle.toggleClass($toggleTitleHidden); // Убираем надпись гамбургера
 			$body.css('overflow', 'visible'); // Возвращаем полосу прокрутки
+			if (window.innerWidth < 426) { // Обрабатываем гамбургер
+				$toggle.css('position', 'absolute');
+			}
 		}
 	});
 
 	$(window).on('resize', function() { // Обрабатываем ресайз
 		if (!$aside.hasClass($asideHidden)) { // Если меню открыто
-			if (window.innerWidth < 426) { // Убираем полосу прокрутки на мобильном разрешении
+			if (window.innerWidth < 426) { // Обрабатываем полосу прокрутки и гамбургер
 				$body.css('overflow', 'hidden');
+				$toggle.css('position', 'fixed');
 			} else {
 				$body.css('overflow', 'visible');
+				$toggle.css('position', 'fixed');
+			}
+		} else {
+			if (window.innerWidth < 426) {
+				$toggle.css('position', 'absolute');
+			} else {
+				$toggle.css('position', 'fixed');
 			}
 		}
 	});

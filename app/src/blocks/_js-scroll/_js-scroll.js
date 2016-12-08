@@ -14,9 +14,6 @@ $(function() {
 			$(".header__pag").find('a[href="#' + ref + '"]').addClass("pag__link_active");
 		},
 
-		after: function() {
-		},
-
 		afterResize: function() {
 			if (window.innerWidth < 426) {
 				$.scrollify.disable();
