@@ -504,13 +504,31 @@
 		margin-top: 50px;
 	}
 
+	&__tagline {
+		font-family: $font-third;
+		font-size: 3rem;
+		line-height: 1em;
+		text-transform: uppercase;
+		position: absolute;
+		text-align: center;
+		color: $color-white;
+		top: 10%;
+		right: 0;
+		width: 100%;
+
+		@media (min-width: $screen-xs) {
+			right: 10%;
+			width: initial;
+		}
+	}
+
 	&__logo {
 		display: none;
 
 		@media (min-width: $screen-xs) {
 			display: block;
 			position: absolute;
-			top: -50px;
+			top: -80px;
 		}
 
 		@media (min-width: $screen-lg) {
