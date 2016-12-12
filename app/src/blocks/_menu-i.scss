@@ -62,5 +62,9 @@
 			padding: .5em 0;
 			display: inline-block;
 		}
+
+		&_active {
+			color: $color-red;
+		}
 	}
 }

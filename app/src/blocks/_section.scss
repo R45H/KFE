@@ -119,6 +119,51 @@
 			background-image: url('/img/img-13.jpg');
 			background-position: 50% 0;
 		}
+
+		&_img-city-1 {
+			background-image: url('/img/img-city-1.jpg');
+			background-position: 50% 0;
+		}
+
+		&_img-city-2 {
+			background-image: url('/img/img-city-2.jpg');
+			background-position: 50% 0;
+		}
+
+		&_img-city-3 {
+			background-image: url('/img/img-city-3.jpg');
+			background-position: 50% 0;
+		}
+
+		&_img-city-4 {
+			background-image: url('/img/img-city-4.jpg');
+			background-position: 50% 0;
+		}
+
+		&_img-city-5 {
+			background-image: url('/img/img-city-5.jpg');
+			background-position: 50% 0;
+		}
+
+		&_img-city-6 {
+			background-image: url('/img/img-city-6.jpg');
+			background-position: 50% 0;
+		}
+
+		&_img-city-7 {
+			background-image: url('/img/img-city-7.jpg');
+			background-position: 50% 0;
+		}
+
+		&_img-city-8 {
+			background-image: url('/img/img-city-8.jpg');
+			background-position: 50% 0;
+		}
+
+		&_img-city-9 {
+			background-image: url('/img/img-city-9.jpg');
+			background-position: 50% 0;
+		}
 	}
 
 	&__wrap {
@@ -152,6 +197,12 @@
 		}
 	}
 
+	&__title-top {
+		margin: 0;
+		font-size: 2rem;
+		font-family: $font-second;
+	}
+
 	&__title {
 		font-size: 3.5rem;
 		font-family: $font-third;
@@ -164,6 +215,7 @@
 
 		@media (min-width: $screen-sm) {
 			font-size: 7.2rem;
+			margin: 0;
 		}
 
 		@media (min-width: $screen-lg) {
@@ -203,6 +255,31 @@
 			}
 		}
 
+		&_line-right-lg {
+
+			&::before {
+
+				@media (min-width: $screen-sm) {
+					content: '';
+					background-image: url('/img/line-slide-title-large.png');
+					width: 89px;
+					height: 266px;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: -90px;
+					max-width: 50%;
+				}
+
+				@media (min-width: $screen-lg) {
+					background-image: url('/img/line-slide-title-large-lg.png');
+					width: 132px;
+					height: 396px;
+					right: -130px;
+				}
+			}
+		}
+
 		&_line-left {
 
 			&::after {
@@ -223,7 +300,7 @@
 		margin: 40px 0 50px;
 
 		@media (min-width: $screen-sm) {
-			margin: 50px 0 0;
+			margin: 60px 0 0;
 		}
 	}
 
@@ -253,14 +330,14 @@
 				width: 100px;
 				height: 298px;
 				bottom: -20px;
-				right: -154px;
+				right: -124px;
 			}
 
 			@media (min-width: $screen-lg) {
 				background-image: url('/img/line-slide-subtitle-lg.png');
 				width: 158px;
 				height: 477px;
-				right: -214px;
+				right: -174px;
 			}
 		}
 
@@ -425,6 +502,20 @@
 
 	&__img-sm-1 {
 		margin-top: 50px;
+	}
+
+	&__logo {
+		display: none;
+
+		@media (min-width: $screen-xs) {
+			display: block;
+			position: absolute;
+			top: -50px;
+		}
+
+		@media (min-width: $screen-lg) {
+			top: -120px;
+		}
 	}
 
 	&_full {
