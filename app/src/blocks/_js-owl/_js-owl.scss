@@ -1,20 +1,17 @@
 .js-owl {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-
-	.owl-stage-outer,
-	.owl-stage,
-	.owl-item {
-		height: 100%;
-	}
+	position: relative;
 
 	// Пагинация
 	&__dots {
 		position: absolute;
-		bottom: 10%;
+		bottom: 60px;
 		left: 0;
 		right: 0;
+		pointer-events: none;
+
+		@media (min-width: $screen-xs) {
+			bottom: 16%;
+		}
 
 		@media (min-width: $screen-xs) {
 			bottom: 12%;
@@ -23,6 +20,7 @@
 		.owl-dots {
 			text-align: left;
 			display: inline-block;
+			pointer-events: auto;
 
 			.owl-dot {
 
@@ -53,7 +51,7 @@
 			background: transparent;
 			border-radius: 0;
 			position: absolute;
-			top: $height-header;
+			top: 0;
 			bottom: 0;
 			width: 9px;
 			margin: 0;
@@ -61,7 +59,6 @@
 			transition: all $duration / 2;
 
 			@media (min-width: $screen-lg) {
-				top: $height-header-lg;
 				padding: 4%;
 			}
 

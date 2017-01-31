@@ -20,7 +20,11 @@
 		&:after {
 			@extend %line;
 			content: '';
-			margin-top: 10px;
+			margin: 10px auto 0;
+
+			@media (min-width: $screen-xs) {
+				margin: 10px 0 0 0;
+			}
 		}
 	}
 }

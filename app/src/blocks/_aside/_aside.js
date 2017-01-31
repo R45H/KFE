@@ -74,12 +74,5 @@ $(function() {
 
 		this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
 		e.preventDefault();
-		$.scrollify.disable(); // Отключаем постраничный скролл
-
-		if (window.innerWidth >= 426) { // И включаем если не мобила
-			setTimeout(function() {
-				$.scrollify.enable();
-			});
-		}
 	});
 });

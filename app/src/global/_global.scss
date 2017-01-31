@@ -1,5 +1,4 @@
 html {
-	height: 100%;
 	font-size: 10px;
 
 	@media (min-width: $screen-lg) {
@@ -9,7 +8,14 @@ html {
 
 body {
 	font-family: $font-main;
-	height: 100%;
+
+	@media (min-width: $screen-xs) {
+		padding-top: $height-header;
+	}
+
+	@media (min-width: $screen-lg) {
+		padding-top: $height-header-lg;
+	}
 }
 
 a {
