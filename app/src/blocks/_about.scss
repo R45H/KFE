@@ -20,6 +20,14 @@
 			width: 90%;
 		}
 
+		@media (min-width: $screen-md) {
+			margin-top: 15px;
+		}
+
+		@media (min-width: $screen-lg) {
+			margin-top: 40px;
+		}
+
 		&::before {
 			@extend %line-left_red;
 
@@ -37,7 +45,7 @@
 			@media (min-width: $screen-sm) {
 				content: '';
 				position: absolute;
-				background-image: url('/img/line-slide-about.png');
+				background-image: url('../img/line-slide-about.png');
 				width: 74px;
 				height: 219px;
 				top: -10px;
@@ -45,7 +53,7 @@
 			}
 
 			@media (min-width: $screen-lg) {
-				background-image: url('/img/line-slide-about-lg.png');
+				background-image: url('../img/line-slide-about-lg.png');
 				width: 117px;
 				height: 350px;
 				right: -117px;
@@ -57,13 +65,13 @@
 			&::after {
 
 				@media (min-width: $screen-sm) {
-					background-image: url('/img/line-slide-about-large.png');
+					background-image: url('../img/line-slide-about-large.png');
 					width: 161px;
 					height: 485px;
 				}
 
 				@media (min-width: $screen-lg) {
-					background-image: url('/img/line-slide-about-large.png');
+					background-image: url('../img/line-slide-about-large.png');
 					width: 161px;
 					height: 485px;
 				}

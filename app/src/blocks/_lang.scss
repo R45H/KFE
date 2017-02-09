@@ -19,12 +19,12 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		display: inline-block;
-		background-image: url('/img/line-lang.png');
+		background-image: url('../img/line-lang.png');
 		width: 10px;
 		height: 25px;
 
 		@media (min-width: $screen-lg) {
-			background-image: url('/img/line-lang-lg.png');
+			background-image: url('../img/line-lang-lg.png');
 			width: 15px;
 			height: 41px;
 		}

@@ -57,12 +57,12 @@
 		display: inline-block;
 		width: 14px;
 		height: 14px;
-		background-image: url('/img/search.png');
+		background-image: url('../img/search.png');
 
 		@media (min-width: $screen-lg) {
 			width: 22px;
 			height: 22px;
-			background-image: url('/img/search-lg.png');
+			background-image: url('../img/search-lg.png');
 		}
 	}
 }

@@ -19,7 +19,7 @@
 		display: inline-block;
 		width: 9px;
 		height: 31px;
-		background: url('/img/arrows.png') 9px 0;
+		background: url('../img/arrows.png') 9px 0;
 		margin-left: 10px;
 
 		@media (min-width: $screen-lg) {
@@ -39,10 +39,10 @@
 
 			&__arrow {
 
-				background: url('/img/arrow-gray.png');
+				background: url('../img/arrow-gray.png');
 
 				@media (min-width: $screen-lg) {
-					background: url('/img/arrow-gray-lg.png');
+					background: url('../img/arrow-gray-lg.png');
 				}
 			}
 		}

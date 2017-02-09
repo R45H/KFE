@@ -17,7 +17,7 @@
 			background: $color-lightgray;
 
 			@media (min-width: $screen-sm) {
-				background: $color-lightgray url('/img/img-12.png') no-repeat 95% 100%;
+				background: $color-lightgray url('../img/img-12.png') no-repeat 95% 100%;
 				background-size: 20%;
 			}
 		}
@@ -123,107 +123,107 @@
 		}
 
 		&_img-1 {
-			background-image: url('/img/img-1.jpg');
+			background-image: url('../img/img-1.jpg');
 			background-position: 50% 80%;
 		}
 
 		&_img-2 {
-			background-image: url('/img/img-2.jpg');
+			background-image: url('../img/img-2.jpg');
 			background-position: 50% 0;
 		}
 
 		&_img-3 {
-			background-image: url('/img/img-3.jpg');
+			background-image: url('../img/img-3.jpg');
 			background-position: 50% 40%;
 		}
 
 		&_img-4 {
-			background-image: url('/img/img-4.jpg');
+			background-image: url('../img/img-4.jpg');
 			background-position: 50% 50%;
 		}
 
 		&_img-5 {
-			background-image: url('/img/img-5.jpg');
+			background-image: url('../img/img-5.jpg');
 			background-position: 50% 50%;
 		}
 
 		&_img-6 {
-			background-image: url('/img/img-6.jpg');
+			background-image: url('../img/img-6.jpg');
 			background-position: 50% 50%;
 		}
 
 		&_img-7 {
-			background-image: url('/img/img-7.jpg');
+			background-image: url('../img/img-7.jpg');
 			background-position: 50% 50%;
 		}
 
 		&_img-8 {
-			background-image: url('/img/img-8.jpg');
+			background-image: url('../img/img-8.jpg');
 			background-position: 50% 50%;
 		}
 
 		&_img-9 {
-			background-image: url('/img/img-9.jpg');
+			background-image: url('../img/img-9.jpg');
 			background-position: 50% 50%;
 		}
 
 		&_img-10 {
-			background-image: url('/img/img-10.jpg');
+			background-image: url('../img/img-10.jpg');
 			background-position: 50% 0;
 		}
 
 		&_img-11 {
-			background-image: url('/img/img-11.jpg');
+			background-image: url('../img/img-11.jpg');
 			background-position: 50% 30%;
 		}
 
 		&_img-13 {
-			background-image: url('/img/img-13.jpg');
+			background-image: url('../img/img-13.jpg');
 			background-position: 50% 0;
 		}
 
 		&_img-city-1 {
-			background-image: url('/img/img-city-1.jpg');
+			background-image: url('../img/img-city-1.jpg');
 			background-position: 50% 0;
 		}
 
 		&_img-city-2 {
-			background-image: url('/img/img-city-2.jpg');
+			background-image: url('../img/img-city-2.jpg');
 			background-position: 50% 0;
 		}
 
 		&_img-city-3 {
-			background-image: url('/img/img-city-3.jpg');
+			background-image: url('../img/img-city-3.jpg');
 			background-position: 50% 0;
 		}
 
 		&_img-city-4 {
-			background-image: url('/img/img-city-4.jpg');
+			background-image: url('../img/img-city-4.jpg');
 			background-position: 50% 0;
 		}
 
 		&_img-city-5 {
-			background-image: url('/img/img-city-5.jpg');
+			background-image: url('../img/img-city-5.jpg');
 			background-position: 50% 0;
 		}
 
 		&_img-city-6 {
-			background-image: url('/img/img-city-6.jpg');
+			background-image: url('../img/img-city-6.jpg');
 			background-position: 50% 0;
 		}
 
 		&_img-city-7 {
-			background-image: url('/img/img-city-7.jpg');
+			background-image: url('../img/img-city-7.jpg');
 			background-position: 50% 0;
 		}
 
 		&_img-city-8 {
-			background-image: url('/img/img-city-8.jpg');
+			background-image: url('../img/img-city-8.jpg');
 			background-position: 50% 0;
 		}
 
 		&_img-city-9 {
-			background-image: url('/img/img-city-9.jpg');
+			background-image: url('../img/img-city-9.jpg');
 			background-position: 50% 0;
 		}
 	}
@@ -246,7 +246,7 @@
 
 		@media (min-width: $screen-sm) {
 			font-size: 7.2rem;
-			margin: 0;
+			margin-top: 0;
 		}
 
 		@media (min-width: $screen-lg) {
@@ -268,7 +268,7 @@
 
 				@media (min-width: $screen-sm) {
 					content: '';
-					background-image: url('/img/line-slide-title.png');
+					background-image: url('../img/line-slide-title.png');
 					width: 53px;
 					height: 157px;
 					position: absolute;
@@ -279,7 +279,7 @@
 				}
 
 				@media (min-width: $screen-lg) {
-					background-image: url('/img/line-slide-title-lg.png');
+					background-image: url('../img/line-slide-title-lg.png');
 					width: 84px;
 					height: 251px;
 				}
@@ -292,7 +292,7 @@
 
 				@media (min-width: $screen-sm) {
 					content: '';
-					background-image: url('/img/line-slide-title-large.png');
+					background-image: url('../img/line-slide-title-large.png');
 					width: 89px;
 					height: 266px;
 					position: absolute;
@@ -303,7 +303,7 @@
 				}
 
 				@media (min-width: $screen-lg) {
-					background-image: url('/img/line-slide-title-large-lg.png');
+					background-image: url('../img/line-slide-title-large-lg.png');
 					width: 132px;
 					height: 396px;
 					right: -130px;
@@ -356,7 +356,7 @@
 
 			@media (min-width: $screen-sm) {
 				content: '';
-				background-image: url('/img/line-slide-subtitle.png');
+				background-image: url('../img/line-slide-subtitle.png');
 				position: absolute;
 				width: 100px;
 				height: 298px;
@@ -365,7 +365,7 @@
 			}
 
 			@media (min-width: $screen-lg) {
-				background-image: url('/img/line-slide-subtitle-lg.png');
+				background-image: url('../img/line-slide-subtitle-lg.png');
 				width: 158px;
 				height: 477px;
 				right: -174px;
@@ -377,7 +377,7 @@
 			&::after {
 
 				@media (min-width: $screen-sm) {
-					background-image: url('/img/line-slide-subtitle-large.png');
+					background-image: url('../img/line-slide-subtitle-large.png');
 					width: 124px;
 					height: 371px;
 					bottom: -20px;
@@ -385,7 +385,7 @@
 				}
 
 				@media (min-width: $screen-lg) {
-					background-image: url('/img/line-slide-subtitle-large-lg.png');
+					background-image: url('../img/line-slide-subtitle-large-lg.png');
 					height: 593px;
 					width: 197px;
 					right: -214px;
@@ -398,11 +398,11 @@
 			&::after {
 
 				@media (min-width: $screen-sm) {
-					background-image: url('/img/line-slide-subtitle-red.png');
+					background-image: url('../img/line-slide-subtitle-red.png');
 				}
 
 				@media (min-width: $screen-lg) {
-					background-image: url('/img/line-slide-subtitle-red-lg.png');
+					background-image: url('../img/line-slide-subtitle-red-lg.png');
 				}
 			}
 		}
@@ -449,7 +449,7 @@
 			@media (min-width: $screen-sm) {
 				content: '';
 				position: absolute;
-				background-image: url('/img/line-slide-count.png');
+				background-image: url('../img/line-slide-count.png');
 				width: 124px;
 				height: 370px;
 				top: -10px;
@@ -457,7 +457,7 @@
 			}
 
 			@media (min-width: $screen-lg) {
-				background-image: url('/img/line-slide-count-lg.png');
+				background-image: url('../img/line-slide-count-lg.png');
 				width: 197px;
 				height: 593px;
 				right: -150px;
