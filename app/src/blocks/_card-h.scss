@@ -1,0 +1,207 @@
+.card-h {
+	width: 100%;
+	height: 250px;
+	background-color: $color-black;
+	text-decoration: none;
+	display: block;
+
+	&:hover,
+	&:focus {
+
+		.card-h {
+
+			&__img {
+
+				&_fog {
+
+					&::before {
+						background-color: transparent;
+					}
+				}
+			}
+
+			&__title {
+				color: $color-red;
+
+				&::after {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&__img {
+		background-repeat: no-repeat;
+		background-size: cover;
+		float: left;
+		width: 33.333%;
+		height: 100%;
+		position: relative;
+
+		&_fog {
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				transition: all $duration / 2;
+				background-color: $color-light-fog;
+			}
+		}
+
+		&_1 {
+			background-image: url('/img/card-5.jpg');
+		}
+
+		&_2 {
+			background-image: url('/img/card-6.jpg');
+		}
+
+		&_3 {
+			background-image: url('/img/card-7.jpg');
+		}
+
+		&_4 {
+			background-image: url('/img/card-8.jpg');
+		}
+
+		&_5 {
+			background-image: url('/img/card-9.jpg');
+		}
+	}
+
+	&__wrap {
+		float: left;
+		width: 66.666%;
+		padding: 15px;
+	}
+
+	&__type {
+		font-family: $font-second;
+		font-size: 1.2rem;
+		font-weight: 300;
+		color: $color-lightgray;
+		margin: 0 0 3px;
+		text-transform: none;
+	}
+
+	&__title {
+		font-family: $font-second;
+		font-size: 2.2rem;
+		font-weight: 700;
+		color: $color-white;
+		margin: 0 30px 0 0;
+		position: relative;
+		line-height: 1.1em;
+		display: inline-block;
+		vertical-align: top;
+		transition: all $duration / 2;
+
+		@media (min-width: $screen-lg) {
+			margin: 0 40px 0 0;
+		}
+
+		&::before {
+			@extend %line-right-gray;
+
+			@media (min-width: $screen-sm) {
+				right: -25px;
+				top: 20px;
+			}
+
+			@media (min-width: $screen-lg) {
+				right: -35px;
+				top: 35px;
+			}
+		}
+
+		&::after {
+			@extend %line;
+			content: '';
+			margin: 5px 0 0;
+		}
+	}
+
+	&__descr {
+		display: inline-block;
+		line-height: 1.1em;
+		font-size: 1.4rem;
+		vertical-align: top;
+	}
+
+	&__descr-prim {
+		color: $color-white;
+		margin: 0;
+	}
+
+	&__descr-second {
+		color: $color-gray;
+		margin: 0;
+	}
+
+	&__cost {
+		float: right;
+		margin-right: 20px;
+		position: relative;
+
+		@media (min-width: $screen-lg) {
+			margin-right: 30px;
+		}
+
+		&::before {
+			@extend %line-right-red;
+
+			@media (min-width: $screen-sm) {
+				right: initial;
+				left: -22px;
+				top: 20px;
+			}
+
+			@media (min-width: $screen-lg) {
+				left: -30px;
+				top: 35px;
+			}
+		}
+
+		&::after {
+			@extend %line-right-gray;
+
+			@media (min-width: $screen-sm) {
+				top: initial;
+				right: -20px;
+				bottom: -25px;
+			}
+
+			@media (min-width: $screen-lg) {
+				right: -30px;
+				bottom: -40px;
+			}
+		}
+	}
+
+	&__cost-type {
+		color: $color-red;
+		margin: 0;
+		font-size: 1.4rem;
+		line-height: 1.2em;
+	}
+
+	&__cost-value {
+		color: $color-white;
+		margin: 0 0 4px;
+		font-size: 2.2rem;
+		line-height: 1.2em;
+		border-bottom: 1px solid $color-gray;
+	}
+
+	&__cost-value-meter {
+		text-transform: none;
+		color: $color-gray;
+		margin: 0;
+		font-size: 1.6rem;
+		line-height: 1.2em;
+	}
+}

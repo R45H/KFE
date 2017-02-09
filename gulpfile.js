@@ -161,7 +161,7 @@ gulp.task('watch', function() {
 	gulp.watch([app + 'src/**/*.js', '!' + app + 'src/libs.js'], ['js']); // Наблюдение за своими JS файлами
 	gulp.watch(app + 'src/libs.js', ['js-libs']); // Наблюдение за скачанными JS файлами
 	gulp.watch(app + 'img/*', ['img']); // Наблюдение за картинками
-	gulp.watch(app + 'font-awesome/*', ['fonts']); // Наблюдение за шрифтами
+	gulp.watch(app + 'fonts/*', ['fonts']); // Наблюдение за шрифтами
 
 	watcherHtml.on('change', function (event) { // Реакция на удаление HTML
 		if (event.type === 'deleted') {
