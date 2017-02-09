@@ -6,11 +6,6 @@
 	position: relative;
 	overflow: hidden;
 
-	@media (min-width: $screen-xs) {
-		display: inline-block;
-		width: 23%;
-	}
-
 	&::before {
 		@extend %line;
 		content: '';
