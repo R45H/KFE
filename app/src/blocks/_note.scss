@@ -1,0 +1,20 @@
+.note {
+	background-color: $color-fogger;
+	padding: 30px;
+	position: relative;
+
+	&__title {
+		margin: 0 0 15px;
+		font-family: $font-second;
+		font-size: 2.4rem;
+	}
+
+	&__descr {
+		margin: 0;
+		font-family: $font-second;
+		font-size: 1.4rem;
+		font-weight: 300;
+		text-transform: none;
+		line-height: 1.2;
+	}
+}
