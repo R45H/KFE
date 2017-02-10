@@ -1,5 +1,6 @@
 .count {
 	display: inline-block;
+	position: relative;
 
 	&__num {
 		font-family: $font-third;
@@ -24,6 +25,39 @@
 
 			@media (min-width: $screen-xs) {
 				margin: 10px 0 0 0;
+			}
+		}
+	}
+
+	&_line-right {
+
+		@media (min-width: $screen-sm) {
+			padding-right: 32px;
+		}
+
+		@media (min-width: $screen-lg) {
+			padding-right: 51px;
+		}
+
+		&::before {
+
+			@media (min-width: $screen-sm) {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				background-size: cover;
+				left: -62px;
+				width: 32px;
+				height: 93px;
+				background-image: url('../img/line-slide-title-left.png');
+			}
+
+			@media (min-width: $screen-lg) {
+				left: -81px;
+				width: 51px;
+				height: 148px;
+				background-image: url('../img/line-slide-title-left-lg.png');
 			}
 		}
 	}

@@ -537,6 +537,14 @@
 		}
 	}
 
+	&__simple-card-wrap {
+		margin-bottom: 30px;
+
+		@media (max-width: $screen-xs) {
+			width: 100%;
+		}
+	}
+
 	&__bot-panel {
 		position: absolute;
 		bottom: 0;
@@ -590,6 +598,30 @@
 
 		@media (min-width: $screen-lg) {
 			top: -120px;
+		}
+	}
+
+	&__h3 {
+		margin: .5em 0 .3em;
+
+		@media (min-width: $screen-sm) {
+			margin: 1.6em 0 .3em;
+		}
+
+		@media (min-width: $screen-md) {
+			margin: 1em 0 .3em;
+		}
+	}
+
+	&__space-bot {
+		margin-bottom: 2em;
+
+		@media (min-width: $screen-sm) {
+			margin-bottom: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 }
