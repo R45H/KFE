@@ -615,6 +615,10 @@
 
 	&__space-bot {
 		margin-bottom: 2em;
+	}
+
+	&__xs-space-bot {
+		margin-bottom: 2em;
 
 		@media (min-width: $screen-sm) {
 			margin-bottom: 0;
@@ -623,5 +627,9 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+
+	&__head {
+		margin: .5em 0;
 	}
 }
