@@ -1,0 +1,78 @@
+.range {
+	-webkit-appearance: none;
+	margin: 10px 0;
+	width: 100%;
+	display: inline-block;
+
+	&::-webkit-slider-runnable-track {
+		width: 100%;
+		height: 12.8px;
+		cursor: pointer;
+		background: $color-darkgray;
+	}
+
+	&::-moz-range-track {
+		width: 100%;
+		height: 12.8px;
+		cursor: pointer;
+		background: $color-darkgray;
+	}
+
+	&::-ms-track {
+		width: 100%;
+		height: 12.8px;
+		cursor: pointer;
+		background: transparent;
+		border-color: transparent;
+		border-width: 39px 0;
+		color: transparent;
+	}
+
+	&::-webkit-slider-thumb {
+		height: 20px;
+		width: 39px;
+		background: $color-red;
+		cursor: pointer;
+		-webkit-appearance: none;
+		margin-top: -3.6px;
+	}
+
+	&::-moz-range-thumb {
+		height: 20px;
+		width: 39px;
+		background: $color-red;
+		cursor: pointer;
+	}
+
+	&::-ms-thumb {
+		height: 20px;
+		width: 39px;
+		border-radius: 7px;
+		background: $color-red;
+		cursor: pointer;
+	}
+
+	&::-ms-fill-lower {
+		background: $color-darkgray;
+	}
+
+	&::-ms-fill-upper {
+		background: $color-darkgray;
+	}
+
+	&:focus {
+		outline: none;
+
+		&::-webkit-slider-runnable-track {
+			background: $color-darkgray;
+		}
+
+		&::-ms-fill-lower {
+			background: $color-darkgray;
+		}
+
+		&::-ms-fill-upper {
+			background: $color-darkgray;
+		}
+	}
+}

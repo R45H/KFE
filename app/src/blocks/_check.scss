@@ -1,0 +1,47 @@
+.check {
+	display: block;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 100%;
+		clear: both;
+	}
+
+	&__input {
+		display: none;
+
+		&:checked {
+
+			+ .check__label {
+				background-color: $color-red;
+				border-color: $color-red;
+				color: $color-white;
+			}
+		}
+	}
+
+	&__label {
+		position: relative;
+		display: inline-block;
+		font-family: $font-second;
+		font-weight: 500;
+		font-size: 2.2rem;
+		float: left;
+		margin: 0 3px 0 0;
+		width: 1.7em;
+		height: 1.7em;
+		line-height: 1.7;
+		text-align: center;
+		cursor: pointer;
+		border: 1px solid $color-darkgray;
+		color: $color-darkgray;
+		transition: $duration / 2 ease;
+		user-select: none;
+
+		&:hover,
+		&:focus {
+			background-color: $color-lightergray;
+		}
+	}
+}

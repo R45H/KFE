@@ -1,0 +1,51 @@
+.form {
+
+	&__title {
+		margin: 0 0 5px;
+		text-transform: uppercase;
+		color: $color-gray;
+		font-size: 1.2rem;
+	}
+
+	&__wrap {
+		display: inline-block;
+		margin: 0 60px 4em 0;
+		position: relative;
+		float: left;
+
+		&::before {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			right: -42px;
+			top: 50%;
+			transform: translateY(-50%);
+			background-image: url('../img/line-form.png');
+			width: 27px;
+			height: 75px;
+
+			@media (min-width: $screen-lg) {
+				right: -50px;
+				background-image: url('../img/line-form-lg.png');
+				width: 35px;
+				height: 99px;
+			}
+		}
+	}
+
+	&__check {
+		margin-top: 30px;
+
+		@media (min-width: $screen-lg) {
+			margin-top: 45px;
+		}
+
+		&::before {
+			top: 10%;
+
+			@media (min-width: $screen-lg) {
+				top: 0;
+			}
+		}
+	}
+}

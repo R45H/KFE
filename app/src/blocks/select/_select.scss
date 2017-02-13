@@ -1,0 +1,78 @@
+.select {
+	cursor: pointer;
+	user-select: none;
+	display: inline-block;
+	position: relative;
+	font-family: $font-second;
+	font-weight: 700;
+	color: $color-darkgray;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	line-height: 1.4;
+
+	&__current {
+		padding: .6em 3em .6em 10px;
+		transition: .2s ease;
+		background-color: $color-white;
+		border: 1px solid $color-darkgray;
+
+		&::after {
+			content: '\f0c9';
+			font-family: $font-awesome;
+			font-size: 2rem;
+			line-height: 1.4;
+			font-weight: 500;
+			color: $color-darkgray;
+			position: absolute;
+			right: 5px;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			transition: .2s ease;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: $color-lightergray;
+		}
+
+		&_active {
+			background-color: $color-red;
+			border-color: $color-red;
+			color: $color-white;
+
+			&::after {
+				color: $color-white;
+			}
+
+			&:hover,
+			&:focus {
+				background-color: $color-red;
+			}
+		}
+	}
+
+	&__list {
+		display: none;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		left: 0;
+		padding: 0;
+		list-style-type: none;
+		border: 1px solid $color-darkgray;
+		border-top: none;
+		z-index: 1;
+		background-color: $color-white;
+	}
+
+	&__item {
+		padding: .6em 10px;
+		transition: $duration / 2 ease;
+		white-space: nowrap;
+		overflow: hidden;
+
+		&:hover {
+			background-color: $color-lightergray;
+		}
+	}
+}

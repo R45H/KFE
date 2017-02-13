@@ -1,0 +1,48 @@
+.check-mark {
+
+	&__input {
+		display: none;
+
+		&:checked {
+
+			+ .check-mark__label {
+
+				&::after {
+					background-image: url('../img/angle.png');
+				}
+			}
+		}
+	}
+
+	&__label {
+		position: relative;
+		display: block;
+		padding-right: 15px;
+		margin: 0 3em 0 0;
+		cursor: pointer;
+		font-family: $font-second;
+		font-weight: 700;
+		color: $color-darkgray;
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		line-height: 1.4;
+		user-select: none;
+
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 100%;
+			top: 50%;
+			transform: translateY(-50%);
+			background: no-repeat 50% 50%;
+			background-size: 65%;
+			border: 1px solid $color-darkgray;
+			font-size: 2.2rem;
+			width: 1.7em;
+			height: 1.7em;
+			line-height: 1.7;
+		}
+	}
+}

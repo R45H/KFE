@@ -60,26 +60,98 @@
 <!-- 02 -->
 <section class="section">
 	<div class="num num_dark">02</div>
-	<div class="section__slide">
-		<div class="section__wrap">
-			<div class="container">
-				<div class="title title_dark">
-					<div class="bread bread_dark title__bread">
-						<span class="bread__title">Вы здесь:</span>
-						<ol class="bread__wrap breadcrumb">
-							<li class="bread__item"><a class="bread__link" href="#">Главная</a></li>
-							<li class="bread__item active">Городская недвижимость</li>
-						</ol>
+	<div class="section__slide section__slide_visible">
+		<form class="form">
+			<div class="section__wrap">
+				<div class="section__hidden">
+					<div class="container">
+						<div class="title title_dark">
+							<div class="bread bread_dark title__bread">
+								<span class="bread__title">Вы здесь:</span>
+								<ol class="bread__wrap breadcrumb">
+									<li class="bread__item"><a class="bread__link" href="#">Главная</a></li>
+									<li class="bread__item active">Городская недвижимость</li>
+								</ol>
+							</div>
+							<h2 class="title__head">Городская недвижимость</h2>
+							<p class="title__aside">
+								<span class="separator">Только актуальные</span>
+								<span class="separator">предложения</span>
+							</p>
+						</div>
 					</div>
-					<h2 class="title__head">Городская недвижимость</h2>
-					<p class="title__aside">
-						<span class="separator">Только актуальные</span>
-						<span class="separator">предложения</span>
-					</p>
 				</div>
-				<h3 class="h3 section__h3">Найдите дом своей мечты</h3>
+				<div class="container">
+					<h3 class="h3 section__h3">Найдите дом своей мечты</h3>
+					<div class="form__wrap">
+						<p class="form__title">Число спален</p>
+						<div class="check">
+							<input class="check__input" type="checkbox" name="num" id="radio1" value="1">
+							<label class="check__label" for="radio1">1</label>
+							<input class="check__input" type="checkbox" name="num" id="radio2" value="2" checked>
+							<label class="check__label" for="radio2">2</label>
+							<input class="check__input" type="checkbox" name="num" id="radio3" value="3">
+							<label class="check__label" for="radio3">3</label>
+							<input class="check__input" type="checkbox" name="num" id="radio4" value="4">
+							<label class="check__label" for="radio4">4</label>
+							<input class="check__input" type="checkbox" name="num" id="radio5" value="5+">
+							<label class="check__label" for="radio5">5+</label>
+						</div>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Общая площадь</p>
+						<input class="range" type="range" min="24" max="10805" step="1" value="24">
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Район города</p>
+						<select class="select">
+							<option value="DistrictAll">Все районы</option>
+							<option value="District1">Центральный</option>
+							<option value="District2">Приморский</option>
+							<option value="District3">Московский</option>
+							<option value="District4">Кировский</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Сортировка</p>
+						<select class="select">
+							<option value="price">По цене</option>
+							<option value="name">По наименованию</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Готовность</p>
+						<select class="select">
+							<option value="building">Строится</option>
+							<option value="built">Построено</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Отделка</p>
+						<select class="select">
+							<option value="decorate">С отделкой</option>
+							<option value="not-decorate">Без отделки</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Вид недвижимости</p>
+						<select class="select">
+							<option value="penthouse">Пентхаус</option>
+							<option value="room">Квартира</option>
+							<option value="new-building">Новостройка</option>
+							<option value="house">Дом</option>
+							<option value="discount">Дисконт</option>
+						</select>
+					</div>
+					<div class="form__wrap form__check">
+						<div class="check-mark">
+							<input class="check-mark__input" type="checkbox" name="check" id="check1" value="1">
+							<label class="check-mark__label" for="check1">C террасой</label>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+		</form>
 	</div>
 </section>
 

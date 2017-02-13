@@ -13,6 +13,10 @@
 			background-color: $color-lightgray;
 		}
 
+		&_visible {
+			overflow-y: visible;
+		}
+
 		&_img-12 {
 			background: $color-lightgray;
 
@@ -24,17 +28,17 @@
 	}
 
 	&__wrap {
-		margin-top: 20px;
-		margin-bottom: 90px;
+		padding-top: 20px;
+		padding-bottom: 90px;
 
 		@media (min-width: $screen-sm) {
-			margin-top: 50px;
-			margin-bottom: 120px;
+			padding-top: 50px;
+			padding-bottom: 120px;
 		}
 
 		&_abs {
-			margin-top: 0;
-			margin-bottom: 0;
+			padding-top: 0;
+			padding-bottom: 0;
 			position: absolute;
 			right: 0;
 			left: 0;
@@ -46,8 +50,8 @@
 			}
 
 			@media (min-width: $screen-sm) {
-				margin-top: 0;
-				margin-bottom: 0;
+				padding-top: 0;
+				padding-bottom: 0;
 			}
 
 			@media (min-width: $screen-lg) {
@@ -78,6 +82,10 @@
 				bottom: 0;
 			}
 		}
+	}
+
+	&__hidden {
+		overflow: hidden;
 	}
 
 	&__center {
@@ -637,14 +645,14 @@
 	}
 
 	&__h3 {
-		margin: .5em 0 .3em;
+		margin: .5em 0 .8em;
 
 		@media (min-width: $screen-sm) {
-			margin: 1.6em 0 .3em;
+			margin: 1.6em 0 .8em;
 		}
 
 		@media (min-width: $screen-md) {
-			margin: 1em 0 .3em;
+			margin: 1em 0 .8em;
 		}
 	}
 
