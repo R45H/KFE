@@ -30,7 +30,7 @@
 		float: left;
 		margin: 0 3px 0 0;
 		width: 1.7em;
-		height: 1.7em;
+		height: 38px;
 		line-height: 1.7;
 		text-align: center;
 		cursor: pointer;
@@ -38,6 +38,10 @@
 		color: $color-darkgray;
 		transition: $duration / 2 ease;
 		user-select: none;
+
+		@media (min-width: $screen-lg) {
+			height: 60px;
+		}
 
 		&:hover,
 		&:focus {

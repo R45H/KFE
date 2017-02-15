@@ -18,7 +18,7 @@
 		position: relative;
 		display: block;
 		padding-right: 15px;
-		margin: 0 3em 0 0;
+		margin: 31px 3em 0 0;
 		cursor: pointer;
 		font-family: $font-second;
 		font-weight: 700;
@@ -28,6 +28,9 @@
 		line-height: 1.4;
 		user-select: none;
 
+		@media (min-width: $screen-lg) {
+			margin: 46px 3em 0 0;
+		}
 
 		&::after {
 			content: '';

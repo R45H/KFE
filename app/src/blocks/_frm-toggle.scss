@@ -1,0 +1,74 @@
+.frm-toggle {
+
+	&__item {
+		width: 35px;
+		height: 45px;
+		display: inline-block;
+		margin-right: 20px;
+		background: no-repeat 50% 50%;
+		position: relative;
+
+		@media (min-width: $screen-lg) {
+			width: 60px;
+			height: 71px;
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 16px;
+			height: 46px;
+			position: absolute;
+			left: 100%;
+			top: 50%;
+			transform: translateY(-50%);
+			background: url('../img/line-frm-toggle.png');
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&_list {
+			background-image: url('../img/frm-toggle-list.png');
+
+			@media (min-width: $screen-lg) {
+				background-image: url('../img/frm-toggle-list-lg.png');
+			}
+		}
+
+		&_map {
+			background-image: url('../img/frm-toggle-map.png');
+
+			@media (min-width: $screen-lg) {
+				background-image: url('../img/frm-toggle-map-lg.png');
+			}
+		}
+
+		&_active {
+
+			&::after {
+				background-image: url('../img/line-frm-toggle-red.png');
+			}
+
+			&.frm-toggle__item {
+
+				&_list {
+					background-image: url('../img/frm-toggle-list-active.png');
+
+					@media (min-width: $screen-lg) {
+						background-image: url('../img/frm-toggle-list-lg-active.png');
+					}
+				}
+
+				&_map {
+					background-image: url('../img/frm-toggle-map-active.png');
+
+					@media (min-width: $screen-lg) {
+						background-image: url('../img/frm-toggle-map-lg-active.png');
+					}
+				}
+			}
+		}
+	}
+}

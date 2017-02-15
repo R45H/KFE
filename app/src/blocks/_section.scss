@@ -82,6 +82,14 @@
 				bottom: 0;
 			}
 		}
+
+		&_pb_zero {
+			padding-bottom: 20px;
+
+			@media (min-width: $screen-sm) {
+				padding-bottom: 20px;
+			}
+		}
 	}
 
 	&__hidden {
@@ -481,6 +489,14 @@
 		margin: 5px auto 0;
 	}
 
+	&__arrow {
+		display: block;
+		margin: 0 auto;
+		width: 31px;
+		height: 9px;
+		background-image: url('../img/arrow-bottom.png');
+	}
+
 	&__count-wrap {
 		margin-top: 40px;
 		position: relative;
@@ -678,5 +694,11 @@
 
 	&__note {
 		margin-top: 1em;
+	}
+
+	&__pad_sm {
+		padding-bottom: 30px;
+		text-align: center;
+		position: relative;
 	}
 }
