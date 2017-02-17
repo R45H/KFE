@@ -1,39 +1,41 @@
 .why-kf {
-	display:flex;
-	justify-content:space-around;
-	background: url(../img/why2.jpg);
-
-	&__why {
-	font-family:$font-third;
-	color: #fff;
-	}
-
-	&__reasons {
-		//display: flex;
-		//justify-content: space-around;
-		width: 185px;
-		text-align: center;
-		margin-top: 35px;
-	}
+	text-align: center;
+	padding: 7px;
 
 	&__img {
 		width: 130px;
 		height: 130px;
 		margin: 0 auto 19px;
-		border: 3px solid rgba(255,255,255,.3);
+		border: 3px solid $color-lighter-fog;
 		border-radius: 50%;
-		img {
-			width: 100%;
+		background: no-repeat 50% 50%;
+		background-size: cover;
+
+		&_1 {
+			background-image: url('../img/why-kf-1.png');
+		}
+
+		&_2 {
+			background-image: url('../img/why-kf-2.png');
+		}
+
+		&_3 {
+			background-image: url('../img/why-kf-3.png');
+		}
+
+		&_4 {
+			background-image: url('../img/why-kf-4.png');
+		}
+
+		&_5 {
+			background-image: url('../img/why-kf-5.png');
 		}
 	}
 
 	&__title {
-		color: white;
-		font-family: "Museo", "Arial", sans-serif;
-	}
-	&__all-reasons {
-		display: flex;
-		justify-content:space-around;
-		flex-wrap: wrap;
+		color: $color-white;
+		font-family: $font-second;
+		margin: 0;
+		font-weight: 300;
 	}
 }

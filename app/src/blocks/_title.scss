@@ -42,6 +42,13 @@
 		}
 	}
 
+	&__desc {
+		color: $color-white;
+		font-size: 2rem;
+		font-family: $font-main;
+		margin: 0 0 5px;
+	}
+
 	&_dark {
 
 		.title {
