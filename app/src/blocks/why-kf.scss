@@ -1,0 +1,39 @@
+.why-kf {
+	display:flex;
+	justify-content:space-around;
+	background: url(../img/why2.jpg);
+
+	&__why {
+	font-family:$font-third;
+	color: #fff;
+	}
+
+	&__reasons {
+		//display: flex;
+		//justify-content: space-around;
+		width: 185px;
+		text-align: center;
+		margin-top: 35px;
+	}
+
+	&__img {
+		width: 130px;
+		height: 130px;
+		margin: 0 auto 19px;
+		border: 3px solid rgba(255,255,255,.3);
+		border-radius: 50%;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__title {
+		color: white;
+		font-family: "Museo", "Arial", sans-serif;
+	}
+	&__all-reasons {
+		display: flex;
+		justify-content:space-around;
+		flex-wrap: wrap;
+	}
+}

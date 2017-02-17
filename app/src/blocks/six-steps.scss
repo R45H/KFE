@@ -1,0 +1,23 @@
+.six-steps {
+  background: #353a45;
+  &__steps {
+    font-family:$font-third;
+    color: #fff;
+  }
+  &__step-desc {
+    color: #acadaf;
+    font-family:$font-third;
+    margin-top: 5px;
+    display: block;
+    font-size: 18px;
+    width: 275px;
+  }
+  &__all-steps {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+  }
+  &__steps-width {
+    width:300px;
+  }
+}
