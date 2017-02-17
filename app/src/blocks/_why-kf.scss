@@ -10,6 +10,11 @@
 		border-radius: 50%;
 		background: no-repeat 50% 50%;
 		background-size: cover;
+		transition: $duration ease;
+
+		&:hover {
+			transform: scale(1.1);
+		}
 
 		&_1 {
 			background-image: url('../img/why-kf-1.png');
