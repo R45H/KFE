@@ -1,28 +1,29 @@
 .select {
-	cursor: pointer;
-	user-select: none;
-	position: relative;
-	font-family: $font-second;
-	font-weight: 700;
-	color: $color-darkgray;
-	text-transform: uppercase;
-	font-size: 1.4rem;
-	line-height: 1.4;
-	height: 38px;
-
-	@media (min-width: $screen-xs) {
-		display: inline-block;
-	}
-
-	@media (min-width: $screen-lg) {
-		height: 60px;
-	}
 
 	&__current {
+		outline: none;
+		margin: 0;
+		position: relative;
+		font-family: $font-second;
+		font-weight: 700;
+		color: $color-darkgray;
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		line-height: 1.4;
+		height: 38px;
 		padding: .6em 3em .6em 10px;
-		transition: .2s ease;
 		background-color: $color-white;
 		border: 1px solid $color-darkgray;
+		transition: $duration / 2 ease;
+
+
+		@media (min-width: $screen-xs) {
+			display: inline-block;
+		}
+
+		@media (min-width: $screen-lg) {
+			height: 60px;
+		}
 
 		&::after {
 			content: '\f0c9';
@@ -35,7 +36,7 @@
 			right: 5px;
 			top: 50%;
 			transform: translateX(-50%) translateY(-50%);
-			transition: .2s ease;
+			transition: $duration / 2 ease;
 		}
 
 		&:hover,
@@ -56,37 +57,50 @@
 			&:focus {
 				background-color: $color-red;
 			}
+
+			.select__text {
+				color: white;
+			}
 		}
+
+		&.ui-button {
+			width: auto;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		line-height: 1.42857143;
 	}
 
 	&__list {
-		display: none;
-		position: absolute;
-		top: 100%;
-		right: 0;
-		left: 0;
-		padding: 0;
 		list-style-type: none;
-		border: 1px solid $color-darkgray;
-		border-top: none;
 		z-index: 1;
 		background-color: $color-white;
-		max-height: 144px;
-		overflow: auto;
 
-		@media (min-width: $screen-lg) {
-			max-height: 233px;
+		.ui-menu {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			border: 1px solid $color-darkgray;
+			border-top: none;
 		}
-	}
 
-	&__item {
-		padding: .6em 3em .6em 10px;
-		transition: $duration / 2 ease;
-		white-space: nowrap;
-		overflow: hidden;
+		.ui-menu-item-wrapper {
+			cursor: pointer;
+			padding: .6em 3em .6em 10px;
+			white-space: nowrap;
+			overflow: hidden;
+			font-family: $font-second;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 1.4rem;
+			color: $color-darkgray;
+			transition: $duration / 2 ease;
 
-		&:hover {
-			background-color: $color-lightergray;
+			&.ui-state-active {
+				background-color: $color-lightergray;
+			}
 		}
 	}
 }
