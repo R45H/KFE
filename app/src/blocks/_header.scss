@@ -5,6 +5,7 @@
 	background-color: $color-white;
 	z-index: 10;
 	overflow: hidden;
+	box-shadow: 0 0 4px $color-lightgray;
 
 	@media (min-width: $screen-xs) {
 		position: fixed;
