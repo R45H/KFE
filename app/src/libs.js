@@ -14,3 +14,5 @@
 @@include('../libs/jquery-ui/ui/unique-id.js')
 @@include('../libs/jquery-ui/ui/widgets/menu.js')
 @@include('../libs/jquery-ui/ui/widgets/selectmenu.js')
+@@include('../libs/jquery-ui/ui/widgets/mouse.js')
+@@include('../libs/jquery-ui/ui/widgets/slider.js')

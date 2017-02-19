@@ -1,0 +1,47 @@
+.range {
+	border: 1px solid $color-darkgray;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 38px;
+
+	@media (min-width: $screen-lg) {
+		height: 60px;
+	}
+
+	&__prev,
+	&__next {
+		font-family: $font-second;
+		font-size: 2.2rem;
+		font-weight: 500;
+		color: $color-darkgray;
+		margin: 2px 10px;
+
+		@media (min-width: $screen-lg) {
+			margin: 4px 15px;
+		}
+	}
+
+	&__input {
+		height: 4px;
+		background: $color-darkgray;
+		width: 60%;
+
+		@media (min-width: $screen-xs) {
+			width: 200px;
+		}
+
+		.ui-slider-handle {
+			height: 27px;
+			width: 12px;
+			top: -12px;
+			background-image: url('../img/range.png');
+			cursor: pointer;
+			outline: none;
+		}
+
+		.ui-slider-range {
+			background-color: $color-red;
+		}
+	}
+}
