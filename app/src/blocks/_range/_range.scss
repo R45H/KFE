@@ -6,7 +6,7 @@
 	height: 38px;
 
 	@media (min-width: $screen-lg) {
-		height: 60px;
+		height: 50px;
 	}
 
 	&__prev,
@@ -38,6 +38,7 @@
 			background-image: url('../img/range.png');
 			cursor: pointer;
 			outline: none;
+			z-index: 1;
 		}
 
 		.ui-slider-range {

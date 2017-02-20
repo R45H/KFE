@@ -1,5 +1,6 @@
 .check {
 	display: block;
+	font-size: 2.2rem;
 
 	&::after {
 		content: '';
@@ -17,6 +18,14 @@
 				background-color: $color-red;
 				border-color: $color-red;
 				color: $color-white;
+
+				&:hover,
+				&:focus {
+
+					&::after {
+						width: 0;
+					}
+				}
 			}
 		}
 	}
@@ -26,12 +35,11 @@
 		display: inline-block;
 		font-family: $font-second;
 		font-weight: 500;
-		font-size: 2.2rem;
 		float: left;
 		margin: 0 3px 0 0;
-		width: 1.7em;
+		min-width: 1.8em;
 		height: 38px;
-		line-height: 1.7;
+		line-height: 38px;
 		text-align: center;
 		cursor: pointer;
 		border: 1px solid $color-darkgray;
@@ -40,12 +48,68 @@
 		user-select: none;
 
 		@media (min-width: $screen-lg) {
-			height: 60px;
+			height: 50px;
+			line-height: 50px;
+			min-width: 1.4em;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			height: 3px;
+			bottom: -4px;
+			left: 50%;
+			transform: translateX(-50%);
+			transition: width $duration / 2 ease-in;
+			background-color: $color-red;
+			width: 0;
+
+			@media (min-width: $screen-lg) {
+				height: 4px;
+				bottom: -5px;
+			}
 		}
 
 		&:hover,
 		&:focus {
-			background-color: $color-lightergray;
+			background-color: $color-darkgray;
+			color: white;
+
+			&::after {
+				width: 60%;
+			}
+		}
+	}
+
+	&_sm {
+		text-transform: uppercase;
+		font-size: 1.4rem;
+
+		.check {
+			// =====
+
+			&__label {
+				font-weight: 800;
+				padding: .8em 10px;
+				line-height: 1;
+
+				@media (max-width: $screen-xs - 1) {
+
+					&:first-of-type {
+						float: left;
+						width: 45%;
+					}
+
+					&:last-of-type {
+						float: right;
+						width: 45%;
+					}
+				}
+
+				@media (min-width: $screen-lg) {
+					padding: .6em 10px;
+				}
+			}
 		}
 	}
 }
