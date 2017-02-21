@@ -1,7 +1,14 @@
 .bot-panel {
+	padding-bottom: 70px;
+
+	@media (min-width: $screen-lg) {
+		padding-bottom: 100px;
+	}
+
 
 	&__wrap {
 		padding-top: 15px;
+		position: relative;
 
 		&::before {
 			@extend %line;
@@ -25,17 +32,18 @@
 		font-weight: 700;
 		font-size: 2.5rem;
 		text-transform: uppercase;
-		margin: 0;
+		margin: 0 0 15px;
 		position: relative;
 		vertical-align: middle;
 
 		@media (min-width: $screen-xs) {
 			font-size: 4.1rem;
-			margin: 0 50px 0 0;
 		}
 
 		@media (min-width: $screen-sm) {
 			display: inline-block;
+			max-width: 75%;
+			margin-right: 50px;
 		}
 
 		&::after {
@@ -46,6 +54,13 @@
 
 			&::after {
 				@extend %line-right-red;
+			}
+		}
+
+		&_sm {
+
+			@media (min-width: $screen-xs) {
+				font-size: 2.4rem;
 			}
 		}
 	}
@@ -78,18 +93,33 @@
 		vertical-align: middle;
 		position: relative;
 		top: -3px;
-		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+
+	&__date {
+		position: relative;
+		vertical-align: middle;
+		font-size: 1.4rem;
+		margin: 0 0 15px;
+		display: inline-block;
 
 		@media (min-width: $screen-sm) {
-			margin-top: 0;
+		}
+
+		&::after {
+			@extend %line-right-gray;
+		}
+
+		&_red {
+			color: $color-red;
+
+			&::after {
+				@extend %line-right-red;
+			}
 		}
 	}
 
 	&_dark {
 		background-color: $color-black;
-	}
-
-	&_fog {
-		background-color: $color-fogger;
 	}
 }

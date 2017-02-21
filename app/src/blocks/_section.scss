@@ -175,6 +175,22 @@
 			}
 		}
 
+		&_sm {
+			padding-bottom: 100%;
+
+			@media (min-width: $screen-xs) {
+				padding-bottom: 70%;
+			}
+
+			@media (min-width: $screen-custom-sm) {
+				padding-bottom: 45%;
+			}
+
+			@media (min-width: $screen-md) {
+				padding-bottom: 30%;
+			}
+		}
+
 		&_resp {
 
 			@media (min-width: $screen-xs) and (max-width: $screen-sm) {
@@ -629,28 +645,9 @@
 		}
 	}
 
-	&__bot-panel {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 180px;
-
-		@media (min-width: $screen-xs) {
-			height: 230px;
-		}
-
-		@media (min-width: $screen-sm) {
-			height: 180px;
-		}
-
-		@media (min-width: $screen-lg) {
-			height: 250px;
-		}
-	}
-
 	&__img-sm-1 {
-		margin-top: 50px;
+		position: absolute;
+		top: 50px;
 	}
 
 	&__tagline {
