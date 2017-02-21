@@ -3,31 +3,8 @@
 	flex-wrap: wrap;
 	background-color: $color-black;
 	text-decoration: none;
-
-	&:hover,
-	&:focus {
-
-		.card-h {
-
-			&__img {
-
-				&_fog {
-
-					&::before {
-						background-color: transparent;
-					}
-				}
-			}
-
-			&__title {
-				color: $color-red;
-
-				&::after {
-					width: 100%;
-				}
-			}
-		}
-	}
+	text-transform: uppercase;
+	color: $color-white;
 
 	&__img {
 		background: no-repeat 50% 50%;
@@ -300,5 +277,34 @@
 		position: absolute;
 		right: 0;
 		bottom: 0;
+	}
+}
+
+a.card-h {
+
+	&:hover,
+	&:focus {
+
+		.card-h {
+			//=====
+
+			&__img {
+
+				&_fog {
+
+					&::before {
+						background-color: transparent;
+					}
+				}
+			}
+
+			&__title {
+				color: $color-red;
+
+				&::after {
+					width: 100%;
+				}
+			}
+		}
 	}
 }
