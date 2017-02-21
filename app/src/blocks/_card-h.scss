@@ -1,5 +1,6 @@
 .card-h {
 	display: flex;
+	flex-wrap: wrap;
 	background-color: $color-black;
 	text-decoration: none;
 
@@ -29,11 +30,20 @@
 	}
 
 	&__img {
-		background-repeat: no-repeat;
+		background: no-repeat 50% 50%;
 		background-size: cover;
-		float: left;
-		width: 33.333%;
 		position: relative;
+		width: 100%;
+		padding-bottom: 100%;
+
+		@media (min-width: $screen-xs) {
+			padding-bottom: 50%;
+		}
+
+		@media (min-width: $screen-custom-sm) {
+			width: 33.333%;
+			padding-bottom: 0;
+		}
 
 		&_fog {
 
@@ -71,9 +81,12 @@
 	}
 
 	&__wrap {
-		float: left;
-		width: 66.666%;
 		padding: 15px;
+		width: 100%;
+
+		@media (min-width: $screen-custom-sm) {
+			width: 66.666%;
+		}
 	}
 
 	&__type {
@@ -94,15 +107,29 @@
 		font-size: 2.2rem;
 		font-weight: 700;
 		color: $color-white;
-		margin: 0 30px 0 0;
 		position: relative;
 		line-height: 1.1em;
-		display: inline-block;
 		vertical-align: top;
 		transition: all $duration / 2;
+		margin: 0 0 15px 0;
+
+		@media (min-width: $screen-xs) {
+			display: inline-block;
+			margin: 0 30px 15px 0;
+		}
+
+		@media (min-width: $screen-custom-sm) {
+			max-width: 160px;
+			margin: 0 30px 0 0;
+		}
+
+		@media (min-width: $screen-md) {
+			max-width: 300px;
+		}
 
 		@media (min-width: $screen-lg) {
 			margin: 0 40px 0 0;
+			max-width: 285px;
 		}
 
 		&::before {
@@ -131,6 +158,11 @@
 		line-height: 1.1em;
 		font-size: 1.4rem;
 		vertical-align: top;
+		margin: 0 30px 15px 0;
+
+		@media (min-width: $screen-custom-sm) {
+			margin: 0;
+		}
 	}
 
 	&__descr-prim {
@@ -144,10 +176,14 @@
 	}
 
 	&__cost {
-		position: absolute;
-		right: 0;
-		top: 0;
-		margin-right: 20px;
+		display: inline-block;
+
+		@media (min-width: $screen-custom-sm) {
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin-right: 20px;
+		}
 
 		@media (min-width: $screen-lg) {
 			margin-right: 30px;
@@ -209,18 +245,35 @@
 
 	&__address {
 		font-size: 1.2rem;
-		margin-top: 2em;
+		margin-top: 15px;
+
+		@media (min-width: $screen-custom-sm) {
+			margin-top: 2em;
+		}
 	}
 
 	&__bottom {
-		margin-top: 2em;
 		position: relative;
+		padding-bottom: 3em;
+		margin-top: 15px;
+
+		@media (min-width: $screen-custom-sm) {
+			margin-top: 2em;
+		}
+
+		@media (min-width: $screen-md) {
+			padding-bottom: 0;
+		}
 	}
 
 	&__count {
 		display: inline-block;
 		position: relative;
-		margin-right: 3em;
+		margin: 0 3em 1em 0;
+
+		@media (min-width: $screen-sm) {
+			margin-bottom: 0;
+		}
 
 		&::after {
 			@extend %line-right-gray;

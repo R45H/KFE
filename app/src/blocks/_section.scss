@@ -865,4 +865,12 @@
 			width: 33.333%;
 		}
 	}
+
+	&__card-h {
+		margin: 0 -15px 30px;
+
+		@media (min-width: $screen-xs) {
+			margin: 0 0 30px;
+		}
+	}
 }
