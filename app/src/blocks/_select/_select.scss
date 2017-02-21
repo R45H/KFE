@@ -90,7 +90,7 @@
 
 		.ui-menu-item-wrapper {
 			cursor: pointer;
-			padding: .6em 3em .6em 10px;
+			padding: .8em 3em .8em 10px;
 			white-space: nowrap;
 			overflow: hidden;
 			font-family: $font-second;
@@ -100,6 +100,10 @@
 			color: $color-darkgray;
 			transition: $duration / 2 ease;
 			line-height: 1;
+
+			@media (min-width: $screen-lg) {
+				padding: .6em 3em .6em 10px;
+			}
 
 			&.ui-state-active {
 				background-color: $color-lightergray;

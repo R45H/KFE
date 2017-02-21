@@ -5,6 +5,7 @@
 	padding: 15px 50px 15px 30px;
 	position: relative;
 	overflow: hidden;
+	text-align: right;
 
 	&::before {
 		@extend %line;
@@ -13,37 +14,11 @@
 		top: 0;
 	}
 
-	&::after {
-		content: '';
-		background-image: url('../img/arrow-gray.png');
-		width: 9px;
-		height: 31px;
-		position: absolute;
-		right: 25px;
-		bottom: 25px;
-
-		@media (min-width: $screen-lg) {
-			background-image: url('../img/arrow-gray-lg.png');
-			width: 13px;
-			height: 48px;
-		}
-	}
-
-	&:hover {
-
-		&::after {
-			background: url('../img/arrows.png') 9px 0;
-
-			@media (min-width: $screen-lg) {
-				background: url('../img/arrows.png') -13px 0;
-			}
-		}
-	}
-
 	&__date {
 		color: $color-red;
 		font-size: 1.4rem;
 		text-transform: uppercase;
+		text-align: left;
 	}
 
 	&__title {
@@ -51,5 +26,27 @@
 		font-weight: 300;
 		font-size: 1.8rem;
 		line-height: 1.2em;
+		overflow: hidden;
+		text-align: left;
+		margin-bottom: 1.5em;
+		position: relative;
+
+		@media (min-width: $screen-custom-sm) {
+			height: 3.6em;
+		}
+
+		&::after {
+
+			@media (min-width: $screen-custom-sm) {
+				content: '';
+				display: inline-block;
+				width: 100px;
+				height: 1.2em;
+				background: linear-gradient(to right, transparent, $color-lightergray);
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+		}
 	}
 }

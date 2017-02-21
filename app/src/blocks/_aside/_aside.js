@@ -10,8 +10,8 @@ $(function() {
 	var $toggleTitleHidden = 'toggle__title_hidden'; // Переключатель видимости заголовка гамбургера
 	var $body = $('body'); // Ну короче это боди
 
-	$(document).on('click', function() { // Обрабатываем клик по документу
-		var target = event.target;
+	$(document).on('click', function(e) { // Обрабатываем клик по документу
+		var target = e.target;
 
 		while (target.tagName != 'BODY') { // Вычисляем элемент, на который кликнули
 			if (target.classList.contains($asideClass)) return; // Если боковое меню, ничего не делаем
