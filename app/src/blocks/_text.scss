@@ -1,0 +1,45 @@
+.text {
+	font-family: $font-standart;
+	font-size: 1.2rem;
+	color: $color-darkgray;
+	line-height: 1.5;
+
+	p {
+		margin-bottom: 1em;
+		text-align: justify;
+	}
+
+	a {
+		color: $color-red;
+		border-bottom: 1px solid transparent;
+
+		&:hover,
+		&:focus {
+			border-bottom-color: inherit;
+			color: inherit;
+		}
+	}
+
+	ul {
+		padding: 0;
+		margin-bottom: 1em;
+
+		li {
+			list-style-type: none;
+			position: relative;
+			padding-left: 1.4em;
+			margin-bottom: .5em;
+
+			&::before {
+				content: '\003E';
+				width: 6px;
+				height: 1em;
+				position: absolute;
+				color: $color-red;
+				left: 0;
+				top: 1em;
+				transform: translateY(-100%);
+			}
+		}
+	}
+}
