@@ -270,6 +270,11 @@
 			background-position: 50% 50%;
 		}
 
+		&_img-16 {
+			background-image: url('../img/img-16.jpg');
+			background-position: 50% 50%;
+		}
+
 		&_img-city-1 {
 			background-image: url('../img/img-city-1.jpg');
 			background-position: 50% 0;
@@ -827,7 +832,7 @@
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
-	}
+}
 
 	&__why-kf {
 		width: 100%;
@@ -869,5 +874,10 @@
 		@media (min-width: $screen-xs) {
 			margin: 0 0 30px;
 		}
+	}
+
+	&__option {
+		display: inline-block;
+		margin: 15px;
 	}
 }

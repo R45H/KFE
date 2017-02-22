@@ -1,0 +1,222 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-option-1-hover {
+  background-image: url(RESULT.png);
+  background-position: -132px 0px;
+  width: 18px;
+  height: 27px;
+}
+.icon-option-1 {
+  background-image: url(RESULT.png);
+  background-position: -132px -27px;
+  width: 18px;
+  height: 27px;
+}
+.icon-option-10-hover {
+  background-image: url(RESULT.png);
+  background-position: -84px -29px;
+  width: 23px;
+  height: 29px;
+}
+.icon-option-10 {
+  background-image: url(RESULT.png);
+  background-position: -84px 0px;
+  width: 23px;
+  height: 29px;
+}
+.icon-option-11-hover {
+  background-image: url(RESULT.png);
+  background-position: 0px -106px;
+  width: 29px;
+  height: 18px;
+}
+.icon-option-11 {
+  background-image: url(RESULT.png);
+  background-position: -52px -81px;
+  width: 29px;
+  height: 18px;
+}
+.icon-option-12-hover {
+  background-image: url(RESULT.png);
+  background-position: 0px -58px;
+  width: 29px;
+  height: 23px;
+}
+.icon-option-12 {
+  background-image: url(RESULT.png);
+  background-position: -29px -58px;
+  width: 29px;
+  height: 23px;
+}
+.icon-option-13-hover {
+  background-image: url(RESULT.png);
+  background-position: -107px -76px;
+  width: 23px;
+  height: 24px;
+}
+.icon-option-13 {
+  background-image: url(RESULT.png);
+  background-position: -107px -52px;
+  width: 23px;
+  height: 24px;
+}
+.icon-option-14-hover {
+  background-image: url(RESULT.png);
+  background-position: -48px -106px;
+  width: 19px;
+  height: 17px;
+}
+.icon-option-14 {
+  background-image: url(RESULT.png);
+  background-position: -29px -106px;
+  width: 19px;
+  height: 17px;
+}
+.icon-option-15_1-hover {
+  background-image: url(RESULT.png);
+  background-position: -84px -106px;
+  width: 17px;
+  height: 17px;
+}
+.icon-option-15_1 {
+  background-image: url(RESULT.png);
+  background-position: -67px -106px;
+  width: 17px;
+  height: 17px;
+}
+.icon-option-16-hover {
+  background-image: url(RESULT.png);
+  background-position: 0px -124px;
+  width: 18px;
+  height: 16px;
+}
+.icon-option-16 {
+  background-image: url(RESULT.png);
+  background-position: -101px -106px;
+  width: 18px;
+  height: 16px;
+}
+.icon-option-17-hover {
+  background-image: url(RESULT.png);
+  background-position: -132px -96px;
+  width: 18px;
+  height: 18px;
+}
+.icon-option-17 {
+  background-image: url(RESULT.png);
+  background-position: -81px -81px;
+  width: 18px;
+  height: 18px;
+}
+.icon-option-2-hover {
+  background-image: url(RESULT.png);
+  background-position: 0px -29px;
+  width: 28px;
+  height: 29px;
+}
+.icon-option-2 {
+  background-image: url(RESULT.png);
+  background-position: -56px 0px;
+  width: 28px;
+  height: 29px;
+}
+.icon-option-3-hover {
+  background-image: url(RESULT.png);
+  background-position: -28px 0px;
+  width: 28px;
+  height: 29px;
+}
+.icon-option-3 {
+  background-image: url(RESULT.png);
+  background-position: 0px 0px;
+  width: 28px;
+  height: 29px;
+}
+.icon-option-4-hover {
+  background-image: url(RESULT.png);
+  background-position: -132px -54px;
+  width: 16px;
+  height: 21px;
+}
+.icon-option-4 {
+  background-image: url(RESULT.png);
+  background-position: -132px -75px;
+  width: 16px;
+  height: 21px;
+}
+.icon-option-5-hover {
+  background-image: url(RESULT.png);
+  background-position: -84px -58px;
+  width: 22px;
+  height: 19px;
+}
+.icon-option-5 {
+  background-image: url(RESULT.png);
+  background-position: -58px -58px;
+  width: 22px;
+  height: 19px;
+}
+.icon-option-6-hover {
+  background-image: url(RESULT.png);
+  background-position: -28px -29px;
+  width: 25px;
+  height: 27px;
+}
+.icon-option-6 {
+  background-image: url(RESULT.png);
+  background-position: -53px -29px;
+  width: 25px;
+  height: 27px;
+}
+.icon-option-7-hover {
+  background-image: url(RESULT.png);
+  background-position: -26px -81px;
+  width: 26px;
+  height: 25px;
+}
+.icon-option-7 {
+  background-image: url(RESULT.png);
+  background-position: 0px -81px;
+  width: 26px;
+  height: 25px;
+}
+.icon-option-8-hover {
+  background-image: url(RESULT.png);
+  background-position: -107px -26px;
+  width: 25px;
+  height: 26px;
+}
+.icon-option-8 {
+  background-image: url(RESULT.png);
+  background-position: -107px 0px;
+  width: 25px;
+  height: 26px;
+}
+.icon-option-9-hover {
+  background-image: url(RESULT.png);
+  background-position: -132px -114px;
+  width: 13px;
+  height: 10px;
+}
+.icon-option-9 {
+  background-image: url(RESULT.png);
+  background-position: -119px -106px;
+  width: 13px;
+  height: 10px;
+}
