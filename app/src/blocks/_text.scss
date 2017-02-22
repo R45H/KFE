@@ -27,18 +27,20 @@
 		li {
 			list-style-type: none;
 			position: relative;
-			padding-left: 1.4em;
+			padding-left: 15px;
 			margin-bottom: .5em;
 
 			&::before {
-				content: '\003E';
-				width: 6px;
-				height: 1em;
+				content: '';
+				font-size: 1em;
+				line-height: 1.5;
+				width: 5px;
+				height: 9px;
+				background: url('../img/list-item.png') no-repeat;
 				position: absolute;
 				color: $color-red;
 				left: 0;
-				top: 1em;
-				transform: translateY(-100%);
+				top: .5em;
 			}
 		}
 	}
