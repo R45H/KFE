@@ -524,6 +524,10 @@
 		&::after {
 			@extend %line-right-bright;
 		}
+		
+		&_white {
+			color: $color-white;
+		}
 	}
 
 	&__line {
