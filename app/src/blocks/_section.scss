@@ -876,6 +876,40 @@
 		}
 	}
 
+	&__option-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-top: 5em;
+	}
+
+	&__option-col {
+		display: inline-block;
+		margin-bottom: 30px;
+		width: 100%;
+
+		@media (min-width: $screen-xs) {
+			width: 50%;
+		}
+
+		@media (min-width: $screen-custom-sm) {
+			width: 25%;
+		}
+
+		&_half {
+			width: 50%;
+
+			@media (min-width: $screen-xs) {
+				width: 25%;
+			}
+
+			@media (min-width: $screen-custom-sm) {
+				width: 12.5%;
+			}
+		}
+	}
+
 	&__option {
 		display: inline-block;
 		margin: 0 25px 20px 0;
