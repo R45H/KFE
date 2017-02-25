@@ -55,6 +55,18 @@
 		&_5 {
 			background-image: url('../img/card-9.jpg');
 		}
+
+		&_6 {
+			background-image: url('../img/card-3.jpg');
+		}
+
+		&_7 {
+			background-image: url('../img/card-4.jpg');
+		}
+
+		&_8 {
+			background-image: url('../img/card-2.jpg');
+		}
 	}
 
 	&__wrap {
@@ -98,6 +110,7 @@
 
 		@media (min-width: $screen-custom-sm) {
 			max-width: 145px;
+			min-height: 2.5em;
 			margin: 0 30px 0 0;
 		}
 
@@ -250,21 +263,21 @@
 		margin-top: 15px;
 
 		@media (min-width: $screen-custom-sm) {
-			margin-top: 2em;
+			margin-top: 1.5em;
 		}
 	}
 
 	&__bottom {
 		position: relative;
 		padding-bottom: 3em;
-		margin-top: 15px;
-
-		@media (min-width: $screen-custom-sm) {
-			margin-top: 2em;
-		}
 
 		@media (min-width: $screen-md) {
 			padding-bottom: 0;
+			padding-right: 6em;
+		}
+
+		@media (min-width: $screen-lg) {
+			padding-right: 9em;
 		}
 
 		&_flex {
@@ -281,18 +294,38 @@
 	&__count {
 		display: inline-block;
 		position: relative;
-		margin: 0 5px 1em 0;
+		margin: 1em 15px 0 0;
 
 		@media (min-width: $screen-xs) {
-			margin: 0 2em 0 0;
+			margin: 1.5em 2em 0 0;
+		}
+
+		@media (min-width: $screen-custom-sm) {
+			margin: 2em 2em 0 0;
 		}
 
 		@media (min-width: $screen-sm) {
-			margin: 0 3em 0 0;
+			margin: 2em 3em 0 0;
+		}
+
+		@media (min-width: $screen-md) {
+			margin: 2em 3em .7em 0;
+		}
+
+		@media (min-width: $screen-lg) {
+			margin: 2em 3em 1em 0;
 		}
 
 		&::after {
 			@extend %line-right-gray;
+
+			@media (min-width: $screen-sm) {
+				right: -30px;
+			}
+
+			@media (min-width: $screen-lg) {
+				right: -40px;
+			}
 		}
 	}
 
@@ -315,6 +348,7 @@
 
 	&__more {
 		position: absolute;
+		font-size: 1.2rem;
 		right: 0;
 		bottom: 0;
 	}
