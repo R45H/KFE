@@ -1,0 +1,34 @@
+.simple-btn {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	background-color: $color-white;
+	border: none;
+	padding: 5px 15px;
+	display: inline-block;
+	text-align: center;
+	outline: none;
+	transition: $duration / 2 ease;
+
+	&:hover {
+		background-color: darken($color-white, 5%);
+		box-shadow: inset 0 0 10px darken($color-white, 15%);
+	}
+
+	&:active {
+		background-color: darken($color-white, 15%);
+	}
+
+	&_active {
+		color: $color-white;
+		background-color: $color-red;
+
+		&:hover {
+			background-color: darken($color-red, 5%);
+			box-shadow: inset 0 0 10px darken($color-red, 15%);
+		}
+
+		&:active {
+			background-color: darken($color-red, 15%);
+		}
+	}
+}

@@ -43,3 +43,8 @@
 		}
 	}
 }
+
+// Черточка
+.breadcrumb > li + li:before {
+	color: $color-darkgray;
+}

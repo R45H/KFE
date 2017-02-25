@@ -875,7 +875,7 @@
 	&__card-h {
 		margin: 0 -15px 30px;
 
-		@media (min-width: $screen-xs) {
+		@media (min-width: $screen-custom-sm) {
 			margin: 0 0 30px;
 		}
 	}
@@ -943,5 +943,13 @@
 
 	&__bread-alt {
 		margin: 0 0 3em;
+	}
+
+	&__map {
+		margin: 0 -15px;
+
+		@media (min-width: $screen-custom-sm) {
+			margin: 0;
+		}
 	}
 }
