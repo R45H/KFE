@@ -2,9 +2,12 @@
 	font-family: $font-second;
 	font-weight: 300;
 	font-size: 1.2rem;
+	position: relative;
+	padding-right: 8em;
 
 	&__title {
 		display: inline-block;
+		padding: 0 5px 0 0;
 	}
 
 	&__wrap {
@@ -12,7 +15,7 @@
 		background-color: transparent;
 		border-radius: 0;
 		margin: 0;
-		padding: 0 0 0 5px;
+		padding: 0;
 	}
 
 	&__item {
@@ -33,6 +36,15 @@
 		}
 	}
 
+	&__vendor {
+		font-family: $font-standart;
+		font-size: 1.2rem;
+		color: $color-lightgray;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
 	&_dark {
 
 		.bread {
@@ -46,6 +58,10 @@
 				&.active {
 					color: $color-red;
 				}
+			}
+
+			&__vendor {
+				color: $color-darkgray;
 			}
 		}
 	}

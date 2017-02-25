@@ -3,38 +3,20 @@
 	&::after {
 		content: '';
 		@extend %line;
-	}
+		margin: 0 auto;
 
-	&:hover {
-
-		&::after {
-			width: 100%;
-		}
-
-		.option {
-			//=====
-
-			&__img {
-
-				&::before {
-					opacity: 1;
-				}
-
-				&::after {
-					opacity: 0;
-				}
-			}
-
-			&__desc,
-			&__title {
-				color: $color-red;
-			}
+		@media (min-width: $screen-xs) {
+			margin: 0;
 		}
 	}
 
 	&__img {
 		position: relative;
-		margin-bottom: 7px;
+		margin: 0 auto 7px;
+
+		@media (min-width: $screen-xs) {
+			margin: 0 0 7px;
+		}
 
 		&::before,
 		&::after {
@@ -45,7 +27,7 @@
 			width: 100%;
 			height: 100%;
 			background-image: url('../img/option.png');
-			transition: $duration ease;
+			transition: $duration ease-out;
 		}
 
 		&::before {
@@ -61,7 +43,7 @@
 			height: 27px;
 
 			&::before {
-				background-position: -132px 0px;
+				background-position: -132px 0;
 			}
 
 			&::after {
@@ -74,11 +56,11 @@
 			height: 29px;
 
 			&::before {
-				background-position: 0px -29px;
+				background-position: 0 -29px;
 			}
 
 			&::after {
-				background-position: -56px 0px;
+				background-position: -56px 0;
 			}
 		}
 
@@ -87,11 +69,11 @@
 			height: 29px;
 
 			&::before {
-				background-position: -28px 0px;
+				background-position: -28px 0;
 			}
 
 			&::after {
-				background-position: 0px 0px;
+				background-position: 0 0;
 			}
 		}
 
@@ -143,7 +125,7 @@
 			}
 
 			&::after {
-				background-position: 0px -81px;
+				background-position: 0 -81px;
 			}
 		}
 
@@ -156,7 +138,7 @@
 			}
 
 			&::after {
-				background-position: -107px 0px;
+				background-position: -107px 0;
 			}
 		}
 
@@ -182,7 +164,7 @@
 			}
 
 			&::after {
-				background-position: -84px 0px;
+				background-position: -84px 0;
 			}
 		}
 
@@ -191,7 +173,7 @@
 			height: 18px;
 
 			&::before {
-				background-position: 0px -106px;
+				background-position: 0 -106px;
 			}
 
 			&::after {
@@ -204,7 +186,7 @@
 			height: 23px;
 
 			&::before {
-				background-position: 0px -58px;
+				background-position: 0 -58px;
 			}
 
 			&::after {
@@ -256,7 +238,7 @@
 			height: 16px;
 
 			&::before {
-				background-position: 0px -124px;
+				background-position: 0 -124px;
 			}
 
 			&::after {
@@ -298,5 +280,35 @@
 		margin-bottom: 4px;
 		line-height: 1;
 		transition: $duration ease;
+	}
+}
+
+a.option {
+
+	&:hover {
+
+		&::after {
+			width: 100%;
+		}
+
+		.option {
+			//=====
+
+			&__img {
+
+				&::before {
+					opacity: 1;
+				}
+
+				&::after {
+					opacity: 0;
+				}
+			}
+
+			&__desc,
+			&__title {
+				color: $color-red;
+			}
+		}
 	}
 }

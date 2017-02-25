@@ -187,7 +187,7 @@
 			}
 
 			@media (min-width: $screen-md) {
-				padding-bottom: 30%;
+				padding-bottom: 35%;
 			}
 		}
 
@@ -262,7 +262,7 @@
 
 		&_img-13 {
 			background-image: url('../img/img-13.jpg');
-			background-position: 50% 0;
+			background-position: 50% 50%;
 		}
 
 		&_img-14 {
@@ -885,16 +885,26 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: baseline;
-		margin-top: 5em;
+		margin-top: 3em;
+		text-align: center;
+
+		@media (min-width: $screen-xs) {
+			text-align: left;
+		}
+
+		@media (min-width: $screen-sm) {
+			margin-top: 1em;
+		}
 	}
 
 	&__option-col {
 		display: inline-block;
-		margin-bottom: 30px;
 		width: 100%;
+		margin-bottom: 10px;
 
 		@media (min-width: $screen-xs) {
 			width: 50%;
+			margin-bottom: 30px;
 		}
 
 		@media (min-width: $screen-custom-sm) {

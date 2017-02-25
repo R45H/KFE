@@ -5,12 +5,31 @@
 		margin: 2em 0 .3em;
 	}
 
+	&__head-wrap {
+		margin-bottom: 20px;
+		text-align: center;
+
+		@media (min-width: $screen-xs) {
+			text-align: left;
+		}
+
+		@media (min-width: $screen-sm) {
+			display: inline-block;
+			margin-bottom: 30px;
+		}
+
+		@media (min-width: $screen-lg) {
+			margin-bottom: 50px;
+		}
+	}
+
 	&__head {
 		font-family: $font-third;
 		color: $color-white;
 		font-size: 2.5rem;
 		text-transform: uppercase;
 		margin: 0;
+		line-height: 1.1;
 
 		@media (min-width: $screen-xs) {
 			font-size: 4rem;
@@ -20,11 +39,15 @@
 			font-size: 4.7rem;
 			position: relative;
 			display: inline-block;
-			margin-right: 60px;
+			margin-right: 50px;
 		}
 
 		&::after {
 			@extend %line-right-bright;
+		}
+
+		&_red {
+			color: $color-red;
 		}
 	}
 
@@ -33,12 +56,11 @@
 		text-transform: uppercase;
 		font-size: 1.4rem;
 		letter-spacing: 1.4px;
+		padding: 5px 0;
+		margin: 0;
 
 		@media (min-width: $screen-sm) {
 			display: inline-block;
-			position: absolute;
-			padding-top: 5px;
-			width: 300px;
 		}
 	}
 
@@ -47,6 +69,21 @@
 		font-size: 2rem;
 		font-family: $font-main;
 		margin: 0 0 5px;
+	}
+
+	&__h3 {
+		margin: .3em 0 .6em;
+
+		@media (min-width: $screen-sm) {
+			margin: .3em 0;
+		}
+	}
+
+	&__text {
+		font-size: 1.2rem;
+		color: $color-gray;
+		text-transform: uppercase;
+		margin: 0;
 	}
 
 	&_dark {
@@ -58,6 +95,21 @@
 
 				&::after {
 					@extend %line-right-dark;
+				}
+
+				&_red {
+					color: $color-red;
+
+					&::after {
+
+						@media (min-width: $screen-sm) {
+							background-image: url('../img/line-slide-right-bright.png');
+						}
+
+						@media (min-width: $screen-lg) {
+							background-image: url('../img/line-slide-right-bright-lg.png');
+						}
+					}
 				}
 			}
 
