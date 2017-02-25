@@ -14,7 +14,6 @@
 		font-size: 4.7rem;
 		position: relative;
 		display: inline-block;
-		margin-right: 60px;
 	}
 
 	&_line {
@@ -54,6 +53,14 @@
 				top: 30px;
 				font-size: 24.4rem;
 			}
+		}
+	}
+
+	&_center {
+		text-align: center;
+
+		@media (min-width: $screen-sm) {
+			display: block;
 		}
 	}
 }
