@@ -258,6 +258,78 @@
 				background-position: -81px -81px;
 			}
 		}
+
+		&_18 {
+			width: 20px;
+			height: 14px;
+
+			&::before,
+			&::after {
+				background-image: url('../img/option-2.png');
+			}
+
+			&::before {
+				background-position: 0 0;
+			}
+
+			&::after {
+				background-position: -20px 0;
+			}
+		}
+
+		&_19 {
+			width: 16px;
+			height: 17px;
+
+			&::before,
+			&::after {
+				background-image: url('../img/option-2.png');
+			}
+
+			&::before {
+				background-position: 0 -14px;
+			}
+
+			&::after {
+				background-position: -16px -14px;
+			}
+		}
+
+		&_20 {
+			width: 17px;
+			height: 16px;
+
+			&::before,
+			&::after {
+				background-image: url('../img/option-2.png');
+			}
+
+			&::before {
+				background-position: -40px 0;
+			}
+
+			&::after {
+				background-position: 0 -31px;
+			}
+		}
+
+		&_21 {
+			width: 14px;
+			height: 14px;
+
+			&::before,
+			&::after {
+				background-image: url('../img/option-2.png');
+			}
+
+			&::before {
+				background-position: -40px -16px;
+			}
+
+			&::after {
+				background-position: -17px -31px;
+			}
+		}
 	}
 
 	&__desc {

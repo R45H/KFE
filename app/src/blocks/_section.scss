@@ -933,6 +933,38 @@
 		}
 	}
 
+	&__option-left,
+	&__option-right {
+		width: 50%;
+		float: left;
+		margin-top: 30px;
+	}
+
+	&__option-left {
+		margin-right: 15px;
+		margin-left: -15px;
+	}
+
+	&__option-right {
+		margin-right: -15px;
+		margin-left: 15px;
+
+		@media (min-width: $screen-xs) {
+			text-align: right;
+		}
+	}
+
+	&__map-option {
+		display: inline-block;
+		margin: 15px;
+		max-width: 150px;
+		text-align: center;
+
+		@media (min-width: $screen-xs) {
+			text-align: left;
+		}
+	}
+
 	&__wrap-right {
 		margin-top: 30px;
 
