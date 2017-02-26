@@ -2,6 +2,17 @@
 	text-align: center;
 	padding: 7px;
 
+	&:hover {
+
+		.why-kf {
+			//=====
+
+			&__img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
 	&__img {
 		width: 130px;
 		height: 130px;
@@ -11,10 +22,6 @@
 		background: no-repeat 50% 50%;
 		background-size: cover;
 		transition: $duration ease;
-
-		&:hover {
-			transform: scale(1.1);
-		}
 
 		&_1 {
 			background-image: url('../img/why-kf-1.png');

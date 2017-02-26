@@ -342,6 +342,8 @@
 		font-family: $font-third;
 		position: relative;
 		display: inline-block;
+		color: $color-white;
+		text-transform: uppercase;
 
 		@media (min-width: $screen-xs) {
 			font-size: 3rem;
@@ -425,6 +427,30 @@
 
 			&::after {
 				@extend %line-left_red;
+			}
+		}
+
+		&_sm {
+			font-size: 2.5rem;
+			line-height: 1.1;
+			display: block;
+
+			@media (min-width: $screen-xs) {
+				font-size: 4rem;
+			}
+
+			@media (min-width: $screen-sm) {
+				font-size: 4.7rem;
+
+				&::before {
+					top: 0;
+					transform: none;
+				}
+
+			}
+
+			@media (min-width: $screen-lg) {
+				font-size: 4.7rem;
 			}
 		}
 	}
@@ -515,6 +541,8 @@
 		display: inline-block;
 		font-size: 1.8rem;
 		position: relative;
+		color: $color-white;
+		text-transform: uppercase;
 
 		&::before {
 			content: '';
@@ -524,9 +552,12 @@
 		&::after {
 			@extend %line-right-bright;
 		}
-		
-		&_white {
-			color: $color-white;
+
+		&_line_none {
+
+			&::after {
+				display: none;
+			}
 		}
 	}
 
@@ -705,6 +736,10 @@
 
 	&__space-bot {
 		margin-bottom: 2em;
+	}
+
+	&__space-bot-2x {
+		margin-bottom: 5em;
 	}
 
 	&__xs-space-bot {
@@ -982,6 +1017,19 @@
 
 		@media (min-width: $screen-custom-sm) {
 			margin: 0;
+		}
+	}
+
+	&__link {
+		font-family: $font-standart;
+		font-size: 1.2rem;
+		color: $color-red;
+		display: inline-block;
+		margin-bottom: 10px;
+
+		&:hover,
+		&:focus {
+			color: $color-lightgray;
 		}
 	}
 }
