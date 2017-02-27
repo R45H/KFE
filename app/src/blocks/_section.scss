@@ -1020,19 +1020,6 @@
 		}
 	}
 
-	&__link {
-		font-family: $font-standart;
-		font-size: 1.2rem;
-		color: $color-red;
-		display: inline-block;
-		margin-bottom: 10px;
-
-		&:hover,
-		&:focus {
-			color: $color-lightgray;
-		}
-	}
-
 	&__mar_neg {
 
 		@media (min-width: $screen-sm) {

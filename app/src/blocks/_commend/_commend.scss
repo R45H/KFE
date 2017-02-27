@@ -93,6 +93,7 @@
 
 		@media (max-width: $screen-sm - 1) {
 			padding: 0;
+			margin-top: 3em;
 		}
 
 		&:not(:last-child) {
@@ -125,20 +126,46 @@
 		text-transform: uppercase;
 		vertical-align: middle;
 		position: relative;
-		margin: 40px 0 60px 120px;
+		margin: 80px 0 40px;
+		text-align: center;
+
+		@media (min-width: $screen-xs) {
+			margin: 40px 0 60px 70px;
+			text-align: left;
+		}
+
+		@media (min-width: $screen-lg) {
+			margin: 40px 0 60px 120px;
+		}
 
 		&::before {
 			content: '';
 			position: absolute;
-			top: 50%;
-			left: -120px;
-			margin-top: -50px;
-			width: 100px;
-			height: 100px;
+			top: -70px;
+			left: 50%;
+			margin-left: -25px;
+			width: 50px;
+			height: 50px;
 			border: 2px solid $color-lightgray;
 			border-radius: 50%;
 			background: no-repeat 50% 50%;
+			background-size: 100% 100%;
 			transition: $duration ease;
+
+			@media (min-width: $screen-xs) {
+				top: 50%;
+				margin-top: -25px;
+				margin-left: 0;
+				left: -70px;
+			}
+
+			@media (min-width: $screen-lg) {
+				margin-top: -50px;
+				left: -120px;
+				width: 100px;
+				height: 100px;
+				background-size: auto auto;
+			}
 		}
 
 		&_up {
