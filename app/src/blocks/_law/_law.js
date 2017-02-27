@@ -3,6 +3,8 @@ $(function() {
 
 	checkLaw();
 
+	$('.law__body').perfectScrollbar(); // Кастомный ползунок
+
 	if (window.innerWidth < 768) {
 		var str2 =  $('.law__item.active').find('.law__link').attr('href').slice(1);
 		$('.law__tab[id=' + str2 + ']')
@@ -72,6 +74,7 @@ $(function() {
 		if (window.innerWidth >= 768) {
 			$('.law__tab:not(.active):not(.law__shadow)').hide();
 			$('.law__tab.active').show();
+			$('.law__body').perfectScrollbar('update');
 		}
 	}
 });

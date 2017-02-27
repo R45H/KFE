@@ -60,6 +60,7 @@
 
 	&__body {
 		display: none;
+		outline: none;
 
 		@media (min-width: $screen-custom-sm) {
 			display: block;
@@ -83,3 +84,28 @@
 		margin-bottom: 15px;
 	}
 }
+
+// Стилизация ползунка
+.ps-scrollbar-y-rail {
+	background-color: transparent !important;
+
+	&:hover {
+
+		.ps-scrollbar-y {
+			width: 8px !important;
+			background-color: $color-gray !important;
+		}
+	}
+}
+
+.ps-scrollbar-y {
+	width: 5px !important;
+	background-color: $color-darkgray !important;
+
+	&:hover,
+	&:active {
+		width: 8px !important;
+		background-color: $color-gray !important;
+	}
+}
+// ===================
