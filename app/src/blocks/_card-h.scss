@@ -5,6 +5,7 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	color: $color-white;
+	position: relative;
 
 	&__img {
 		background: no-repeat 50% 50%;
@@ -377,6 +378,57 @@
 
 		@media (min-width: $screen-md) {
 			margin: 1em 0 4em;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 30px;
+		height: 30px;
+		background-color: $color-darkergray;
+		transition: $duration ease;
+
+		@media (min-width: $screen-custom-sm) {
+			right: -7px;
+			top: -7px;
+		}
+
+		@media (min-width: $screen-lg) {
+			right: -10px;
+			top: -10px;
+			width: 40px;
+			height: 40px;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			background-color: $color-white;
+			height: 2px;
+			width: 70%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+
+		&::before {
+			transform: translateX(-50%) translateY(-50%) rotate(45deg);
+		}
+
+		&::after {
+			transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+		}
+
+		&:hover,
+		&:focus {
+			background-color: $color-red;
+
+			@media (min-width: $screen-custom-sm) {
+				transform: scale(1.1);
+			}
 		}
 	}
 }

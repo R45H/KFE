@@ -1,4 +1,5 @@
 $(function() {
+	if (!$('.law').length) return;
 
 	checkLaw();
 
