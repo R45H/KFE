@@ -11,4 +11,30 @@
 		outline: none;
 		background-color: $color-darkgray;
 	}
+
+	&_bright {
+		background-color: $color-white;
+		color: $color-darkgray;
+
+		&:hover,
+		&:focus {
+			background-color: $color-lightgray;
+		}
+
+		&::-webkit-input-placeholder {
+			color: $color-darkgray;
+		}
+
+		&::-moz-placeholder {
+			color: $color-darkgray;
+		}
+
+		&:-moz-placeholder {
+			color: $color-darkgray;
+		}
+
+		&:-ms-input-placeholder {
+			color: $color-darkgray;
+		}
+	}
 }
