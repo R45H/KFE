@@ -1,0 +1,85 @@
+.law {
+	position: relative;
+
+	&__head {
+		padding: 0;
+		margin: 0 -15px;
+
+		@media (min-width: $screen-xs) {
+			margin: 0;
+		}
+
+		@media (min-width: $screen-custom-sm) {
+			width: 50%;
+		}
+	}
+
+	&__item {
+		list-style-type: none;
+		border-top: 2px solid $color-darkgray;
+
+		@media (min-width: $screen-xs) {
+			border: 2px solid $color-darkgray;
+			border-bottom: none;
+		}
+
+		&:last-child {
+			border-bottom: 2px solid $color-darkgray;
+		}
+
+		&.active {
+
+			.law {
+				//=====
+
+				&__link {
+					color: $color-white;
+
+					@media (max-width: $screen-custom-sm - 1) {
+						border-bottom: 1px solid $color-darkgray;
+					}
+				}
+			}
+		}
+	}
+
+	&__link {
+		font-family: $font-standart;
+		display: block;
+		font-size: 1.2rem;
+		color: $color-darkgray;
+		line-height: 1.5;
+		cursor: default;
+		padding: 20px;
+
+		&:hover,
+		&:focus {
+			color: $color-gray;
+		}
+	}
+
+	&__body {
+		display: none;
+
+		@media (min-width: $screen-custom-sm) {
+			display: block;
+			position: absolute;
+			width: 50%;
+			right: 0;
+			top: 0;
+			height: 100%;
+			overflow: auto;
+			border: 2px solid $color-darkgray;
+			margin-right: 2px;
+		}
+	}
+
+	&__tab {
+		color: $color-white;
+		padding: 20px;
+	}
+
+	&__num {
+		margin-bottom: 15px;
+	}
+}

@@ -1,63 +1,64 @@
-@import url('global/_variables.scss');       // Переменные
-@import url('global/_fonts.scss');           // Шрифты
-@import url('global/_global.scss');          // Глобальные стили
+@import url('global/_variables.scss');        // Переменные
+@import url('global/_fonts.scss');            // Шрифты
+@import url('global/_global.scss');           // Глобальные стили
 
-@import url('blocks/_logo.scss');            // Лого
-@import url('blocks/_soc.scss');             // Социальные иконки
-@import url('blocks/_arrow-link.scss');      // Ссылка со стрелочкой
-@import url('blocks/_copyright.scss');       // Права
-@import url('blocks/_menu.scss');            // Главное меню
-@import url('blocks/_menu-i.scss');          // Внутреннее меню
-@import url('blocks/_l-menu-i.scss');        // Обёртка внутреннего меню
-@import url('blocks/_footer-cont.scss');     // Контакты в футере
-@import url('blocks/_footer-aside.scss');    // Боковое меню в футере
-@import url('blocks/_footer-form.scss');     // Форма футера
-@import url('blocks/_lang.scss');            // Переключатель языка
-@import url('blocks/_slide.scss');           // Контейнер с картинкой
-@import url('blocks/_button.scss');          // Кнопка
-@import url('blocks/_num.scss');             // Нумерация секций
-@import url('blocks/_form-btn.scss');        // Кнопка формы
-@import url('blocks/_form-input.scss');      // Поле ввода формы
-@import url('blocks/_about.scss');           // Блок "о компании"
-@import url('blocks/_separator.scss');       // Разделает текст по строкам
-@import url('blocks/_h3.scss');              // Подзаголовок
-@import url('blocks/_title.scss');           // Заголовок
-@import url('blocks/_bread.scss');           // Хлебные крошки
-@import url('blocks/_num-sm.scss');          // Маленькая цифра
-@import url('blocks/_count.scss');           // Карточка с цифрой
-@import url('blocks/_count-sm.scss');        // Карточка с маленькой цифрой
-@import url('blocks/_news.scss');            // Анонс новости
-@import url('blocks/_card.scss');            // Карточка объекта
-@import url('blocks/_card-h.scss');          // Горизонтальная карточка объекта
-@import url('blocks/_bot-panel.scss');       // Нижняя панель секции
-@import url('blocks/_pag.scss');             // Секционная пагинация
-@import url('blocks/_toggle.scss');          // Гамбургер
-@import url('blocks/_rub.scss');             // Знак рубля
-@import url('blocks/_head.scss');            // Заголовок
-@import url('blocks/_h4.scss');              // Ещё один подзаголовок
-@import url('blocks/_simple-card.scss');     // Простая вариация карточки объекта
-@import url('blocks/_note.scss');            // Кривая плашка в слайдере
-@import url('blocks/_search.scss');          // Поиск по названию
-@import url('blocks/_form.scss');            // Форма фильтров
-@import url('blocks/_check.scss');           // Чекбокс
-@import url('blocks/_check-mark.scss');      // Чекбокс с галочкой
-@import url('blocks/_select/_select.scss');  // Селект
-@import url('blocks/_range/_range.scss');    // Ползунок
-@import url('blocks/_frm-toggle.scss');      // Переключатель списка и карты
-@import url('blocks/_why-kf.scss');          // Блок "Почему Knight Frank?"
-@import url('blocks/_text.scss');            // Текстовый блок
-@import url('blocks/_option.scss');          // Ссылка с картинкой
-@import url('blocks/_bread-alt.scss');       // Альтернативные хлебные крошки
-@import url('blocks/map/_map.scss');         // Карта
-@import url('blocks/_simple-btn.scss');      // Простая кнопка для карты
-@import url('blocks/_half.scss');            // Секция, разбитая на два блока
-@import url('blocks/_simple-form.scss');     // Стандартная форма
-@import url('blocks/commend/_commend.scss'); // Панель с табами (рекомендации)
+@import url('blocks/_logo.scss');             // Лого
+@import url('blocks/_soc.scss');              // Социальные иконки
+@import url('blocks/_arrow-link.scss');       // Ссылка со стрелочкой
+@import url('blocks/_copyright.scss');        // Права
+@import url('blocks/_menu.scss');             // Главное меню
+@import url('blocks/_menu-i.scss');           // Внутреннее меню
+@import url('blocks/_l-menu-i.scss');         // Обёртка внутреннего меню
+@import url('blocks/_footer-cont.scss');      // Контакты в футере
+@import url('blocks/_footer-aside.scss');     // Боковое меню в футере
+@import url('blocks/_footer-form.scss');      // Форма футера
+@import url('blocks/_lang.scss');             // Переключатель языка
+@import url('blocks/_slide.scss');            // Контейнер с картинкой
+@import url('blocks/_button.scss');           // Кнопка
+@import url('blocks/_num.scss');              // Нумерация секций
+@import url('blocks/_form-btn.scss');         // Кнопка формы
+@import url('blocks/_form-input.scss');       // Поле ввода формы
+@import url('blocks/_about.scss');            // Блок "о компании"
+@import url('blocks/_separator.scss');        // Разделает текст по строкам
+@import url('blocks/_h3.scss');               // Подзаголовок
+@import url('blocks/_title.scss');            // Заголовок
+@import url('blocks/_bread.scss');            // Хлебные крошки
+@import url('blocks/_num-sm.scss');           // Маленькая цифра
+@import url('blocks/_count.scss');            // Карточка с цифрой
+@import url('blocks/_count-sm.scss');         // Карточка с маленькой цифрой
+@import url('blocks/_news.scss');             // Анонс новости
+@import url('blocks/_card.scss');             // Карточка объекта
+@import url('blocks/_card-h.scss');           // Горизонтальная карточка объекта
+@import url('blocks/_bot-panel.scss');        // Нижняя панель секции
+@import url('blocks/_pag.scss');              // Секционная пагинация
+@import url('blocks/_toggle.scss');           // Гамбургер
+@import url('blocks/_rub.scss');              // Знак рубля
+@import url('blocks/_head.scss');             // Заголовок
+@import url('blocks/_h4.scss');               // Ещё один подзаголовок
+@import url('blocks/_simple-card.scss');      // Простая вариация карточки объекта
+@import url('blocks/_note.scss');             // Кривая плашка в слайдере
+@import url('blocks/_search.scss');           // Поиск по названию
+@import url('blocks/_form.scss');             // Форма фильтров
+@import url('blocks/_check.scss');            // Чекбокс
+@import url('blocks/_check-mark.scss');       // Чекбокс с галочкой
+@import url('blocks/_select/_select.scss');   // Селект
+@import url('blocks/_range/_range.scss');     // Ползунок
+@import url('blocks/_frm-toggle.scss');       // Переключатель списка и карты
+@import url('blocks/_why-kf.scss');           // Блок "Почему Knight Frank?"
+@import url('blocks/_text.scss');             // Текстовый блок
+@import url('blocks/_option.scss');           // Ссылка с картинкой
+@import url('blocks/_bread-alt.scss');        // Альтернативные хлебные крошки
+@import url('blocks/_map/_map.scss');         // Карта
+@import url('blocks/_simple-btn.scss');       // Простая кнопка для карты
+@import url('blocks/_half.scss');             // Секция, разбитая на два блока
+@import url('blocks/_simple-form.scss');      // Стандартная форма
+@import url('blocks/_commend/_commend.scss'); // Панель с табами (рекомендации)
+@import url('blocks/_law/_law.scss');         // Панель с табами (важнейшие законы)
 
-@import url('blocks/_header.scss');          // Шапка
-@import url('blocks/_aside/_aside.scss');    // Боковое меню
-@import url('blocks/_section.scss');         // Секция контента
-@import url('blocks/_footer.scss');          // Подвал
+@import url('blocks/_header.scss');           // Шапка
+@import url('blocks/_aside/_aside.scss');     // Боковое меню
+@import url('blocks/_section.scss');          // Секция контента
+@import url('blocks/_footer.scss');           // Подвал
 
 
-@import url('blocks/_js-owl/_js-owl.scss');  // Стили для главного слайдера
+@import url('blocks/_js-owl/_js-owl.scss');   // Стили для главного слайдера

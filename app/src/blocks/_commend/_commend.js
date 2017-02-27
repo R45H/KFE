@@ -20,9 +20,7 @@ $(function() {
 		;
 	});
 
-	if (window.innerWidth < 768) {
-		checkTabs();
-	}
+	checkTabs();
 
 	$(window).on('resize', function() {
 		checkTabs();
