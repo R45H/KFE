@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('partials/head.html')
+	<title>Foreign Real Estate | Knight Frank</title>
+</head>
+<body>
+
+@@include('partials/aside.html')
+@@include('partials/header.html')
+@@include('partials/menu-i.html')
+
+<!-- 01 -->
+<section class="section">
+	<div class="num">01</div>
+	<div class="js-owl">
+		<div class="section__slide">
+			<div class="section__phone section__phone_fog section__phone_img-city-property-1"></div>
+			<div class="section__wrap section__wrap_abs container">
+				<div class="section__center">
+					<h1 class="section__title section__title_line-bot section__title_line-right">
+						<span class="separator">Найди виллу</span>
+						<span class="separator">своей мечты...</span>
+					</h1>
+					<div></div>
+					<p class="section__descr">
+						<span class="separator">Быстрый поиск - быстрый переезд</span>
+						<span class="separator">с нашей новой программой по поиску недвижимости</span>
+					</p>
+				</div>
+			</div>
+			<div class="section__bottom">
+				<button class="button">Перейти к выбору объекта</button>
+				<span class="section__line"></span>
+			</div>
+		</div>
+		<div class="section__slide">
+			<div class="section__phone section__phone_fog section__phone_img-2"></div>
+			<div class="section__wrap section__wrap_abs container">
+				<div class="section__center">
+					<h2 class="section__title section__title_line-bot section__title_line-right">
+						<span class="separator">Недвижимость</span>
+						<span class="separator">в Санкт-Петербурге</span>
+					</h2>
+					<div></div>
+					<p class="section__descr">
+						<span class="separator">Большой опыт продажи элитных квартир в санкт-петербурге,</span>
+						<span class="separator">отличное знание рынка и обширная база предложений</span>
+					</p>
+				</div>
+			</div>
+			<div class="section__bottom">
+				<button class="button">Перейти к выбору объекта</button>
+				<span class="section__line"></span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 02 -->
+<section class="section">
+	<div class="num num_dark">02</div>
+	<div class="section__slide">
+		<form class="form">
+			<div class="section__wrap section__wrap_pb_zero">
+				<div class="section__hidden">
+					<div class="container">
+						<div class="title title_dark">
+							<div class="bread bread_dark title__bread">
+								<span class="bread__title">Вы здесь:</span>
+								<ol class="bread__wrap breadcrumb">
+									<li class="bread__item"><a class="bread__link" href="#">Главная</a></li>
+									<li class="bread__item active">Зарубежная недвижимость</li>
+								</ol>
+							</div>
+							<h2 class="title__head">Зарубежная недвижимость</h2>
+							<p class="title__aside">
+								<span class="separator">Только актуальные</span>
+								<span class="separator">предложения</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<h3 class="h3 section__h3">Найдите дом своей мечты</h3>
+					<div class="form__wrap">
+						<p class="form__title">Страна</p>
+						<select class="select">
+							<option value="1">Россия</option>
+							<option value="2">Казахстан</option>
+							<option value="3">Узбекистан</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Город</p>
+						<select class="select">
+							<option value="4">Москва</option>
+							<option value="5">Санкт-Петербург</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Вид недвижимости</p>
+						<select class="select">
+							<option value="6">Пентхаус</option>
+							<option value="7">Квартира</option>
+							<option value="8">Новостройка</option>
+							<option value="9">Дом</option>
+							<option value="10">Дисконт</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Стоимость, млн. рублей</p>
+						<div class="range">
+							<span class="range__prev">0</span>
+							<div class="range__input" id="range-1"></div>
+							<span class="range__next">250+</span>
+						</div>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Особенности</p>
+						<select class="select">
+							<option value="11">Вид на озеро</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Валюта</p>
+						<div class="check">
+							<input class="check__input" type="checkbox" name="num" id="radio1" value="1">
+							<label class="check__label" for="radio1"><span class="fa fa-rub"></span></label>
+							<input class="check__input" type="checkbox" name="num" id="radio2" value="2" checked>
+							<label class="check__label" for="radio2"><span class="fa fa-eur"></span></label>
+							<input class="check__input" type="checkbox" name="num" id="radio3" value="3">
+							<label class="check__label" for="radio3"><span class="fa fa-usd"></span></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="section__pad_sm">
+					<div class="search form__search">
+						<input type="text" class="search__input" placeholder="Поиск по названию">
+					</div>
+					<div class="frm-toggle form__toggle">
+						<a href="#" class="frm-toggle__item frm-toggle__item_list frm-toggle__item_active"></a>
+						<a href="#" class="frm-toggle__item frm-toggle__item_map"></a>
+					</div>
+					<button class="button button_half_dark">Подходящие варианты <span class="button__num">973</span></button>
+					<span class="section__arrow"></span>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+
+<!-- 03 -->
+<section class="section">
+	<div class="num num_gray">03</div>
+	<div class="section__slide section__slide_dark">
+		<div class="section__wrap container-fluid">
+			<div class="container">
+				<div class="title">
+					<h2 class="title__head">Лучшие предложения</h2>
+					<p class="title__aside">
+						<span class="separator">Избранное</span>
+						<span class="separator">для избранных</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_5"></div>
+						<div class="card__i">
+							<p class="card__type">Апартаменты</p>
+							<p class="card__title">
+								<span class="separator">Montreux</span>
+								<span class="separator">Vaud</span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+									<span class="arrow-link__text">
+										<span class="separator">Монтре, ВО,</span>
+										<span class="separator">Швейцария</span>
+									</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Продажа</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_6"></div>
+						<div class="card__i">
+							<p class="card__type">Престижный шале</p>
+							<p class="card__title">
+								<span class="separator">Champery</span>
+								<span class="separator">Valais</span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+									<span class="arrow-link__text">
+										<span class="separator">Шампери, Вале, Швейцария</span>
+										<span class="separator"></span>
+									</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Продажа</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_7"></div>
+						<div class="card__i">
+							<p class="card__type">Вилла</p>
+							<p class="card__title">
+								<span class="separator">Chemin De La</span>
+								<span class="separator">Marniere</span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+								<span class="arrow-link__text">
+									<span class="separator">Швейцария</span>
+									<span class="separator"></span>
+								</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Продажа</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_8"></div>
+						<div class="card__i">
+							<p class="card__type">Апартаменты</p>
+							<p class="card__title">
+								<span class="separator">Montreux</span>
+								<span class="separator"></span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+								<span class="arrow-link__text">
+									<span class="separator">Швейцария</span>
+									<span class="separator"></span>
+								</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Аренда</p>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="section__bottom">
+				<button class="button">Смотреть все предложения</button>
+				<span class="section__line"></span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 04 -->
+<section class="section">
+	<div class="num num_gray">04</div>
+	<div class="section__slide section__slide_dark">
+		<div class="section__wrap container-fluid">
+			<h3 class="h3 h3_gray h3_center h3_space">Все виды недвижимости</h3>
+			<div class="row">
+				<div class="col-xs-6 col-sm-2 col-sm-push-1 section__count-col section__xs-space-bot">
+					<div class="count">
+						<p class="count__num">112</p>
+						<p class="count__title">Квартир</p>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-2 col-sm-push-1 section__count-col section__xs-space-bot">
+					<div class="count count_line-right">
+						<p class="count__num">53</p>
+						<p class="count__title">Новостройки</p>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-2 col-sm-push-1 section__count-col section__xs-space-bot">
+					<div class="count count_line-right">
+						<p class="count__num">27</p>
+						<p class="count__title">Домов</p>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-2 col-sm-push-1 section__count-col section__xs-space-bot">
+					<div class="count count_line-right">
+						<p class="count__num">3</p>
+						<p class="count__title">Пентхауса</p>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-2 col-sm-push-1 section__count-col section__xs-space-bot">
+					<div class="count count_line-right">
+						<p class="count__num">18</p>
+						<p class="count__title">Дисконты</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 05 -->
+<section class="section">
+	<div class="num">05</div>
+	<div class="js-owl">
+		<div class="section__slide">
+			<div class="section__phone section__phone_fog section__phone_big section__phone_img-city-property-2"></div>
+			<div class="section__wrap section__wrap_abs section__wrap_top container">
+				<div class="section__center">
+					<h2 class="section__title section__title_line-left">
+						<span class="separator">Эксперты</span>
+						<span class="separator">на рынке элитной</span>
+						<span class="separator">недвижимости</span>
+					</h2>
+					<div class="note section__note">
+						<h3 class="note__title">370 офисов в 55 странах</h3>
+						<p class="note__descr">Консультанты компании - это специалисты высочайшей квалификации, поэтому девелоперы, собственники и арендаторы коммерческой и жилой недвижимости могут быть уверены в том, что сотрудничество с Knight Frank – это гарантия получения желаемого результата в кратчайшие сроки.</p>
+					</div>
+				</div>
+			</div>
+			<div class="section__bottom">
+				<button class="button">Посмотреть подробнее</button>
+				<span class="section__line"></span>
+			</div>
+		</div>
+		<div class="section__slide">
+			<div class="section__phone section__phone_fog section__phone_big section__phone_img-city-property-2"></div>
+			<div class="section__wrap section__wrap_abs section__wrap_top container">
+				<div class="section__center">
+					<h2 class="section__title section__title_line-left">
+						<span class="separator">Эксперты</span>
+						<span class="separator">на рынке элитной</span>
+						<span class="separator">недвижимости</span>
+					</h2>
+					<div class="note section__note">
+						<h3 class="note__title">370 офисов в 55 странах</h3>
+						<p class="note__descr">Консультанты компании - это специалисты высочайшей квалификации, поэтому девелоперы, собственники и арендаторы коммерческой и жилой недвижимости могут быть уверены в том, что сотрудничество с Knight Frank – это гарантия получения желаемого результата в кратчайшие сроки.</p>
+					</div>
+				</div>
+			</div>
+			<div class="section__bottom">
+				<button class="button">Посмотреть подробнее</button>
+				<span class="section__line"></span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 06 -->
+<section class="section">
+	<div class="num num_gray">06</div>
+	<div class="section__slide section__slide_dark">
+		<div class="section__wrap container-fluid">
+			<div class="container">
+				<div class="title">
+					<div class="bread title__bread">
+						<span class="bread__title">Вы здесь:</span>
+						<ol class="bread__wrap breadcrumb">
+							<li class="bread__item"><a class="bread__link" href="#">Главная</a></li>
+							<li class="bread__item active">Объекты</li>
+						</ol>
+					</div>
+					<h2 class="title__head">Уникальные предложения</h2>
+					<p class="title__aside">
+						<span class="separator">Избранное</span>
+						<span class="separator">для избранных</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_1"></div>
+						<div class="card__i">
+							<p class="card__type">Жилой комплекс</p>
+							<p class="card__title">
+								<span class="separator">Brilliant</span>
+								<span class="separator">House</span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+								<span class="arrow-link__text">
+									<span class="separator">Санкт-Петербург,</span>
+									<span class="separator">Динамо проспект, 6</span>
+								</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Продажа</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_2"></div>
+						<div class="card__i">
+							<p class="card__type">Особняк</p>
+							<p class="card__title">
+								<span class="separator">На Каменном</span>
+								<span class="separator">острове</span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+								<span class="arrow-link__text">
+									<span class="separator">Санкт-Петербург, Крестовский остров,</span>
+									<span class="separator">реки Крестовки Набережная, 3</span>
+								</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Продажа</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_3"></div>
+						<div class="card__i">
+							<p class="card__type">Элитный комплекс</p>
+							<p class="card__title">
+								<span class="separator">Royal</span>
+								<span class="separator">Park</span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+								<span class="arrow-link__text">
+									<span class="separator">Санкт-Петербург,</span>
+									<span class="separator">Петровский проспект, 2</span>
+								</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Продажа</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_4"></div>
+						<div class="card__i">
+							<p class="card__type">Жилой комплекс</p>
+							<p class="card__title">
+								<span class="separator">Парадный</span>
+								<span class="separator">Квартал</span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+								<span class="arrow-link__text">
+									<span class="separator">Санкт-Петербург,</span>
+									<span class="separator">Парадная улица, 3</span>
+								</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Аренда</p>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="section__bottom">
+				<button class="button">Смотреть все предложения</button>
+				<span class="section__line"></span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 07 -->
+<section class="section">
+	<div class="num">06</div>
+	<div class="section__slide section__slide_img-12">
+		<div class="section__wrap container">
+			<div class="about section__center">
+				<h2 class="about__title about__title_line_large">Многие признаются в том, что чувствуют себя в Петербурге невероятно комфортно и гармонично, часто приезжают сюда не только по делам. Несмотря на то, что цены на премиальную недвижимость в городе стабильны, они существенно ниже, чем в Москве. При этом предложение весьма разнообразно – от исторических зданий с «открыточными» видами до новых элитных комплексов в центральных районах.</h2>
+				<div class="about__line"></div>
+				<p class="about__name">Екатерина Немченко</p>
+				<p class="about__descr about__descr_dark">
+					<span class="separator">Директор департамента элитной жилой</span>
+					<span class="separator">недвижимости компании knight frank st. petersburg</span>
+				</p>
+			</div>
+		</div>
+		<div class="section__bottom">
+			<button class="button button_dark">Наверх страницы</button>
+			<span class="section__line"></span>
+		</div>
+	</div>
+</section>
+
+@@include('partials/footer.html')
+
+</body>
+</html>

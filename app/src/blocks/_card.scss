@@ -41,6 +41,22 @@
 		&_4 {
 			background-image: url('../img/card-4.jpg');
 		}
+
+		&_5 {
+			background-image: url('../img/card-10.jpg');
+		}
+
+		&_6 {
+			background-image: url('../img/card-11.jpg');
+		}
+
+		&_7 {
+			background-image: url('../img/card-12.jpg');
+		}
+
+		&_8 {
+			background-image: url('../img/card-13.jpg');
+		}
 	}
 
 	&__i {
@@ -73,6 +89,7 @@
 
 		@media (min-width: $screen-xs) {
 			max-width: 80%;
+			min-height: 2.6em;
 		}
 
 		&::before {
