@@ -11,6 +11,8 @@
 	font-size: 1.3rem;
 	transition: color $duration / 2;
 	position: relative;
+	display: inline-block;
+	line-height: 3.4;
 
 	@media (min-width: $screen-lg) {
 		width: 426px;

@@ -1,6 +1,6 @@
 $(function() {
-	$('.commend__link').click(function(e) {
-		e.preventDefault();
+	$('.commend__link').click(function(event) {
+		event.preventDefault();
 		$(this).tab('show');
 	});
 

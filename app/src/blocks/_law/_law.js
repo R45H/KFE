@@ -18,8 +18,8 @@ $(function() {
 		;
 	}
 
-	$('.law__link').click(function(e) {
-		e.preventDefault();
+	$('.law__link').click(function(event) {
+		event.preventDefault();
 		if (window.innerWidth >= 768) {
 			$(this).tab('show');
 		} else {
