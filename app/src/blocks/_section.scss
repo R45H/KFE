@@ -1032,4 +1032,11 @@
 			color: $color-lightgray;
 		}
 	}
+
+	&__mar_neg {
+
+		@media (min-width: $screen-sm) {
+			margin: 0 -30px;
+		}
+	}
 }
