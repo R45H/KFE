@@ -9,6 +9,18 @@
 		color: $color-red;
 		text-transform: uppercase;
 		text-decoration: none;
+
+		&:hover,
+		&:focus {
+
+			.arrow-link {
+				//=====
+
+				&__arrow {
+					left: 5px;
+				}
+			}
+		}
 	}
 
 	&__text {
@@ -16,11 +28,14 @@
 	}
 
 	&__arrow {
+		position: relative;
 		display: inline-block;
 		width: 9px;
 		height: 31px;
 		background: url('../img/arrows.png') 9px 0;
 		margin-left: 10px;
+		transition: $duration / 2 ease;
+		left: 0;
 
 		@media (min-width: $screen-lg) {
 			width: 13px;
