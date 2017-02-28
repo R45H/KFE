@@ -6,11 +6,11 @@
 
 	@media (min-width: $screen-sm) {
 		text-align: right;
+		margin-top: 0;
 	}
 
 	@media (min-width: $screen-lg) {
 		text-align: right;
-		margin-top: 5px;
 	}
 
 	&__link {
@@ -20,6 +20,18 @@
 		&:hover,
 		&:focus {
 			text-decoration: underline;
+		}
+	}
+
+	&__webcenter {
+		color: $color-red;
+		text-decoration: none;
+		border-bottom: 1px dashed transparent;
+
+		&:hover,
+		&:focus {
+			color: $color-webcenter;
+			border-bottom: 1px dashed $color-webcenter;
 		}
 	}
 }

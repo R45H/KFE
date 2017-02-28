@@ -11,6 +11,13 @@
 		margin-bottom: 40px;
 	}
 
+	&__col {
+
+		@media (max-width: $screen-custom-sm - 1) {
+			width: 100%;
+		}
+	}
+
 	&__logo {
 
 		@media (min-width: $screen-xs) {
@@ -70,7 +77,12 @@
 		position: relative;
 		margin: 0 auto;
 		padding: 10px 0;
+		text-align: center;
 
+		@media (min-width: $screen-custom-sm) {
+			text-align: left;
+		}
+		
 		@media (min-width: $screen-sm) {
 			display: inline-block;
 			padding-right: 30px;
@@ -106,7 +118,11 @@
 		&::after {
 			@extend %line;
 			content: '';
-			margin-top: 12px;
+			margin: 12px auto 0;
+
+			@media (min-width: $screen-custom-sm) {
+				margin: 12px 0 0;
+			}
 		}
 
 		&:hover {

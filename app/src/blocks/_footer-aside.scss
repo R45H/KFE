@@ -37,24 +37,37 @@
 	&__social {
 		margin-top: 12px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
+
+		@media (min-width: $screen-xs) {
+			display: block;
+		}
 
 		@media (min-width: $screen-sm) {
 			float: right;
-			display: block;
 		}
 	}
 
 	&__soc-item {
 		display: inline-block;
-		margin-bottom: 10px;
+		margin: 0 0 10px;
+
+		@media (min-width: $screen-xs) {
+			margin: 0 30px 10px 0;
+		}
 
 		@media (min-width: $screen-sm) {
 			display: block;
+			margin: 0 0 10px;
 		}
 
 		@media (min-width: $screen-lg) {
 			margin-bottom: 8px;
+		}
+
+		&:last-child {
+			margin-right: 0;
 		}
 	}
 }

@@ -1,11 +1,16 @@
 .footer-cont {
-	display: flex;
-	justify-content: space-around;
-	align-items: baseline;
-	flex-wrap: wrap;
 	margin-bottom: 40px;
+	text-align: center;
+
+	@media (min-width: $screen-custom-sm) {
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
+		flex-wrap: wrap;
+	}
 
 	@media (min-width: $screen-sm) {
+		text-align: left;
 		display: inline-block;
 		margin-bottom: 0;
 	}
@@ -36,6 +41,11 @@
 			@extend %line;
 			content: '';
 			display: block;
+			margin: 0 auto;
+
+			@media (min-width: $screen-custom-sm) {
+				margin: 0;
+			}
 		}
 
 		&:hover {
