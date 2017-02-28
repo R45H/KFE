@@ -7,6 +7,13 @@
 
 		.card {
 
+			&__img {
+
+				&_scale {
+					transform: scale(1.1);
+				}
+			}
+
 			&__title {
 				color: $color-red;
 
@@ -17,10 +24,17 @@
 		}
 	}
 
+	&__img-wrap {
+		background-color: $color-white;
+		padding: 7% 14%;
+	}
+
 	&__img {
+		background: no-repeat 50% 50%;
 		background-size: cover;
 		padding-bottom: 70%;
 		margin: 0 -15px;
+		transition: $duration ease;
 
 		@media (min-width: $screen-xs) {
 			margin: 0;
@@ -56,6 +70,26 @@
 
 		&_8 {
 			background-image: url('../img/card-13.jpg');
+		}
+
+		&_9 {
+			background-image: url('../img/partner-1.png');
+			background-size: contain;
+		}
+
+		&_10 {
+			background-image: url('../img/partner-2.png');
+			background-size: contain;
+		}
+
+		&_11 {
+			background-image: url('../img/partner-3.png');
+			background-size: contain;
+		}
+
+		&_12 {
+			background-image: url('../img/partner-4.png');
+			background-size: contain;
 		}
 	}
 
