@@ -135,6 +135,14 @@
 			content: '';
 			margin: 5px 0 0;
 		}
+
+		&_sm {
+			font-size: 1.8rem;
+
+			@media (min-width: $screen-xs) {
+				min-height: 2.2em;
+			}
+		}
 	}
 
 	&__address {
