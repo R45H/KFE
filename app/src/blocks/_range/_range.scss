@@ -45,4 +45,29 @@
 			background-color: $color-red;
 		}
 	}
+	&__input-prev {
+		font-family: "Museo", "Arial", sans-serif;
+		font-size: 2.2rem;
+		font-weight: 500;
+		color: #565655;
+		border: none;
+		height: 100%;
+		margin: 0 15px;
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__input-next {
+		font-family: "Museo", "Arial", sans-serif;
+		font-size: 2.2rem;
+		font-weight: 500;
+		color: #565655;
+		border: none;
+		height: 100%;
+		margin: 0 15px;
+		&:focus {
+			outline: none;
+		}
+	}
 }

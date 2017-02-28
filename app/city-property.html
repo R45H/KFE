@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	@@include('partials/head.html')
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>-->
 	<title>City Property | Knight Frank</title>
 </head>
 <body>
@@ -101,10 +102,11 @@
 					<div class="form__wrap">
 						<p class="form__title">Общая площадь, м<sup>2</sup></p>
 						<div class="range">
-							<span class="range__prev">24</span>
-							<div class="range__input" id="range-1"></div>
-							<span class="range__next">10805</span>
+							<input  class="range__input-prev" type="text" id="minCost" value="0"/>
+							<div  class="range__input" id="slider"></div>
+							<input  class="range__input-next" type="text" id="maxCost" value="1000"/>
 						</div>
+
 					</div>
 					<div class="form__wrap">
 						<p class="form__title">Район города</p>
