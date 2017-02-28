@@ -11,7 +11,7 @@
 @@include('partials/menu-i.html')
 
 <!-- 01 -->
-<section class="section">
+<section class="section" id="section-1">
 	<div class="num">01</div>
 	<div class="js-owl">
 		<div class="section__slide">
@@ -30,7 +30,7 @@
 				</div>
 			</div>
 			<div class="section__bottom">
-				<a class="button" href="#">Перейти к выбору объекта</a>
+				<a class="button scroll" href="#section-2">Перейти к выбору объекта</a>
 				<span class="section__line"></span>
 			</div>
 		</div>
@@ -50,7 +50,7 @@
 				</div>
 			</div>
 			<div class="section__bottom">
-				<a class="button" href="#">Перейти к выбору объекта</a>
+				<a class="button scroll" href="#section-2">Перейти к выбору объекта</a>
 				<span class="section__line"></span>
 			</div>
 		</div>
@@ -58,7 +58,7 @@
 </section>
 
 <!-- 02 -->
-<section class="section">
+<section class="section" id="section-2"  >
 	<div class="num num_dark">02</div>
 	<div class="section__slide">
 		<form class="form">
@@ -69,7 +69,7 @@
 							<div class="bread bread_dark title__bread">
 								<span class="bread__title">Вы здесь:</span>
 								<ol class="bread__wrap breadcrumb">
-									<li class="bread__item"><a class="bread__link" href="#">Главная</a></li>
+									<li class="bread__item"><a class="bread__link" href="/">Главная</a></li>
 									<li class="bread__item active">Зарубежная недвижимость</li>
 								</ol>
 							</div>
@@ -125,11 +125,11 @@
 					<div class="form__wrap">
 						<p class="form__title">Валюта</p>
 						<div class="check">
-							<input class="check__input" type="checkbox" name="num" id="radio1" value="1">
+							<input class="check__input" type="radio" name="price" id="radio1" value="rub">
 							<label class="check__label" for="radio1"><span class="fa fa-rub"></span></label>
-							<input class="check__input" type="checkbox" name="num" id="radio2" value="2" checked>
+							<input class="check__input" type="radio" name="price" id="radio2" value="eur" checked>
 							<label class="check__label" for="radio2"><span class="fa fa-eur"></span></label>
-							<input class="check__input" type="checkbox" name="num" id="radio3" value="3">
+							<input class="check__input" type="radio" name="price" id="radio3" value="usd">
 							<label class="check__label" for="radio3"><span class="fa fa-usd"></span></label>
 						</div>
 					</div>
@@ -166,10 +166,9 @@
 					</p>
 				</div>
 			</div>
-
 			<div class="row">
 				<div class="col-xs-6 col-sm-3 section__card-wrap">
-					<a class="card" href="#">
+					<a class="card" href="villa.html">
 						<div class="card__img card__img_5"></div>
 						<div class="card__i">
 							<p class="card__type">Апартаменты</p>
@@ -191,7 +190,7 @@
 					</a>
 				</div>
 				<div class="col-xs-6 col-sm-3 section__card-wrap">
-					<a class="card" href="#">
+					<a class="card" href="villa.html">
 						<div class="card__img card__img_6"></div>
 						<div class="card__i">
 							<p class="card__type">Престижный шале</p>
@@ -213,7 +212,7 @@
 					</a>
 				</div>
 				<div class="col-xs-6 col-sm-3 section__card-wrap">
-					<a class="card" href="#">
+					<a class="card" href="villa.html">
 						<div class="card__img card__img_7"></div>
 						<div class="card__i">
 							<p class="card__type">Вилла</p>
@@ -235,7 +234,7 @@
 					</a>
 				</div>
 				<div class="col-xs-6 col-sm-3 section__card-wrap">
-					<a class="card" href="#">
+					<a class="card" href="villa.html">
 						<div class="card__img card__img_8"></div>
 						<div class="card__i">
 							<p class="card__type">Апартаменты</p>
@@ -328,7 +327,7 @@
 				</div>
 			</div>
 			<div class="section__bottom">
-				<a class="button" href="#">Посмотреть подробнее</a>
+				<a class="button" href="analytics.html">Посмотреть подробнее</a>
 				<span class="section__line"></span>
 			</div>
 		</div>
@@ -348,7 +347,7 @@
 				</div>
 			</div>
 			<div class="section__bottom">
-				<a class="button" href="#">Посмотреть подробнее</a>
+				<a class="button" href="analytics.html">Посмотреть подробнее</a>
 				<span class="section__line"></span>
 			</div>
 		</div>
@@ -365,7 +364,7 @@
 					<div class="bread title__bread">
 						<span class="bread__title">Вы здесь:</span>
 						<ol class="bread__wrap breadcrumb">
-							<li class="bread__item"><a class="bread__link" href="#">Главная</a></li>
+							<li class="bread__item"><a class="bread__link" href="/">Главная</a></li>
 							<li class="bread__item active">Объекты</li>
 						</ol>
 					</div>
@@ -492,7 +491,7 @@
 			</div>
 		</div>
 		<div class="section__bottom">
-			<a class="button button_dark" href="#">Наверх страницы</a>
+			<a class="button button_dark scroll" href="#section-1">Наверх страницы</a>
 			<span class="section__line"></span>
 		</div>
 	</div>
