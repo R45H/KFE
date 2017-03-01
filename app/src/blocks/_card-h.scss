@@ -431,6 +431,95 @@
 			}
 		}
 	}
+
+	&_sm {
+		background-color: $color-fogger;
+
+		.card-h {
+			// =====
+
+			&__wrap {
+
+				@media (min-width: $screen-custom-sm) {
+					width: 100%;
+					padding: 30px 25px;
+				}
+			}
+
+			&__title {
+				min-height: initial;
+				margin-bottom: 20px;
+
+				@media (min-width: $screen-custom-sm) {
+					max-width: 100%;
+				}
+
+				@media (min-width: $screen-md) {
+					max-width: 100%;
+				}
+
+				@media (min-width: $screen-lg) {
+					max-width: 100%;
+				}
+			}
+
+			&__cost {
+				position: relative;
+
+				@media (min-width: $screen-sm) {
+					margin-left: 30px;
+				}
+			}
+
+			&__text {
+				bottom: 0;
+
+				@media (min-width: $screen-md) {
+					margin: 1em 0 0;
+				}
+
+				&::after {
+					display: none;
+				}
+			}
+
+			&__bottom {
+				padding: 0;
+			}
+
+			&__count {
+				margin: 1em 0 0 0;
+
+				@media (min-width: $screen-xs) {
+					margin: 1em 0 0 0;
+				}
+
+				@media (min-width: $screen-custom-sm) {
+					margin: 1em 0 0 0;
+				}
+
+				@media (min-width: $screen-sm) {
+					margin: 1em 0 0 0;
+				}
+
+				@media (min-width: $screen-md) {
+					margin: 1em 0 0 0;
+				}
+
+				@media (min-width: $screen-lg) {
+					margin: 1em 0 0 0;
+				}
+			}
+
+			&__count-val {
+				text-transform: uppercase;
+				font-size: 1.8rem;
+				line-height: 1.4;
+				word-break: break-all;
+				vertical-align: top;
+			}
+		}
+	}
 }
 
 a.card-h {

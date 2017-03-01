@@ -13,17 +13,27 @@
 		height: 100%;
 		width: 100%;
 
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			pointer-events: none;
+		}
+
 		&_fog {
 
 			&::after {
-				content: '';
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
 				background-color: $color-light-fog;
-				pointer-events: none;
+			}
+		}
+
+		&_fogger {
+
+			&::after {
+				background-color: $color-light-fogger;
 			}
 		}
 	}
@@ -40,6 +50,22 @@
 
 		&:last-child {
 			margin-right: 0;
+		}
+	}
+
+	&_sm {
+		padding-bottom: 600px;
+
+		@media (min-width: $screen-custom-sm) {
+			padding-bottom: 60%;
+		}
+
+		@media (min-width: $screen-sm) {
+			padding-bottom: 50%;
+		}
+
+		@media (min-width: $screen-md) {
+			padding-bottom: 40%;
 		}
 	}
 }

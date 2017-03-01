@@ -1,8 +1,9 @@
 function initMap() {
-	if (!$('#map').length) return;
+	if (!$('.map').length) return;
 
 	/* Точки */
 	var dot1 = {lat: 59.973305, lng: 30.245392};
+	var dot2 = {lat: 59.933519, lng: 30.357568};
 	/* ===== */
 
 	/* Карты */
@@ -10,6 +11,16 @@ function initMap() {
 		var map1 = new google.maps.Map(document.getElementById('map'), {
 			zoom: 15,
 			center: dot1,
+			scrollwheel: false,
+			mapTypeControl: false,
+			streetViewControl: false
+		});
+	}
+
+	if (document.getElementById('mapContacts')) { // Карта на странице "контакты"
+		var map2 = new google.maps.Map(document.getElementById('mapContacts'), {
+			zoom: 18,
+			center: dot2,
 			scrollwheel: false,
 			mapTypeControl: false,
 			streetViewControl: false
@@ -42,6 +53,19 @@ function initMap() {
 		});
 		marker1.addListener('click', function() {
 			infowindow.open(map1, marker1);
+		});
+	}
+
+	if (document.getElementById('mapContacts')) {
+		var marker2 = new google.maps.Marker({
+			position: dot2,
+			map: map2,
+			icon: image,
+			title: 'Контакты',
+			id: 'markerCard-2'
+		});
+		marker2.addListener('click', function() {
+			infowindow.open(map2, marker2);
 		});
 	}
 	/* ======= */

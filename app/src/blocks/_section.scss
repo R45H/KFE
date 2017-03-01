@@ -118,6 +118,22 @@
 				padding-top: 80px;
 			}
 		}
+
+		&_pt_4x {
+			padding-top: 40px;
+
+			@media (min-width: $screen-custom-sm) {
+				padding-top: 70px;
+			}
+
+			@media (min-width: $screen-sm) {
+				padding-top: 90px;
+			}
+
+			@media (min-width: $screen-lg) {
+				padding-top: 120px;
+			}
+		}
 	}
 
 	&__hidden {

@@ -1,6 +1,8 @@
 .half {
-	display: flex;
-	flex-wrap: wrap;
+
+	@media (min-width: $screen-custom-sm) {
+		display: flex;
+	}
 
 	&__item {
 		background: no-repeat 50% 50%;
@@ -27,6 +29,18 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
+		}
+
+		&_pad_zero {
+			padding: 0;
+
+			@media (min-width: $screen-xs) {
+				padding: 0;
+			}
+
+			@media (min-width: $screen-sm) {
+				padding: 0;
+			}
 		}
 
 		&_black {
@@ -72,6 +86,19 @@
 			text-align: center;
 			width: 100%;
 			display: block;
+		}
+	}
+
+	&__card-h {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		width: 100%;
+		max-width: 440px;
+
+		@media (min-width: $screen-lg) {
+			max-width: 650px;
 		}
 	}
 }
