@@ -341,6 +341,11 @@
 			background-image: url('../img/img-city-property-2.jpg');
 			background-position: 50% 0;
 		}
+
+		&_img-404 {
+			background-image: url('../img/404.jpg');
+			background-position: 50% 50%;
+		}
 	}
 
 	&__title-top {
@@ -463,6 +468,26 @@
 
 			@media (min-width: $screen-lg) {
 				font-size: 4.7rem;
+			}
+		}
+
+		&_big {
+			font-size: 10rem;
+
+			@media (min-width: $screen-xs) {
+				font-size: 10rem;
+			}
+
+			@media (min-width: $screen-custom-sm) {
+				font-size: 14.4rem;
+			}
+
+			@media (min-width: $screen-sm) {
+				font-size: 14.4rem;
+			}
+
+			@media (min-width: $screen-lg) {
+				font-size: 12rem;
 			}
 		}
 	}
