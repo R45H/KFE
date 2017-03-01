@@ -98,13 +98,20 @@
 		bottom: 0;
 		left: 15px;
 		min-height: 2.7em;
-
-		@media (min-width: $screen-xs) {
-			max-width: 80%;
-		}
+		max-width: 80%;
+		padding-bottom: .5em;
+		word-wrap: break-word;
 
 		&::before {
 			@extend %line-right-bright;
+
+			@media (min-width: $screen-sm) {
+				right: -25px;
+			}
+
+			@media (min-width: $screen-lg) {
+				right: -40px;
+			}
 		}
 
 		&::after {

@@ -7,7 +7,7 @@
 		content: '';
 		margin: 10px auto 0;
 
-		@media (min-width: $screen-xs) {
+		@media (min-width: $screen-sm) {
 			margin: 10px 0 0 0;
 		}
 	}
@@ -27,6 +27,17 @@
 		line-height: 1em;
 		font-weight: 100;
 		margin: 0;
+
+		@media (min-width: $screen-xs) {
+			height: 2em;
+		}
+
+		&_row_one {
+
+			@media (min-width: $screen-xs) {
+				height: 1em;
+			}
+		}
 	}
 
 	&__desc {
@@ -42,7 +53,7 @@
 		}
 	}
 
-	&_line-right {
+	&_line_left {
 
 		@media (min-width: $screen-sm) {
 			padding-right: 32px;
