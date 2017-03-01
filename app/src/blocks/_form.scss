@@ -73,18 +73,17 @@
 	}
 
 	&__search {
-		padding: 11px 0;
-		margin: 0 auto 30px;
 
 		@media (min-width: $screen-custom-sm) {
 			position: absolute;
-			left: 44px;
 			top: 0;
+			left: 0;
 		}
 
-		@media (min-width: $screen-lg) {
-			left: 70px;
-			padding: 18px 0;
+		@media (max-width: $screen-custom-sm - 1) {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
 		}
 	}
 }

@@ -1,10 +1,53 @@
 .search {
 	position: relative;
-	display: block;
+	display: inline-block;
 	width: 125px;
+	margin-left: 44px;
+	padding: 11px 0;
 
 	@media (min-width: $screen-lg) {
 		width: 200px;
+		margin-left: 70px;
+		padding: 18px 0;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+	}
+
+	&::before {
+		background: url('../img/search-name.png') no-repeat;
+		width: 18px;
+		height: 18px;
+		margin-top: -9px;
+		left: -44px;
+
+		@media (min-width: $screen-lg) {
+			background: url('../img/search-name-lg.png') no-repeat;
+			width: 33px;
+			height: 33px;
+			margin-top: -16px;
+			left: -70px;
+		}
+	}
+
+	&::after {
+		background: url('../img/line-frm-toggle.png') no-repeat;
+		width: 16px;
+		height: 46px;
+		margin-top: -23px;
+		left: -21px;
+
+		@media (min-width: $screen-lg) {
+			background: url('../img/line-form.png') no-repeat;
+			width: 27px;
+			height: 75px;
+			margin-top: -37px;
+			left: -32px;
+		}
 	}
 
 	&__input {
@@ -67,45 +110,6 @@
 			&:-ms-input-placeholder {
 				color: $color-lightgray;
 			}
-		}
-	}
-
-	&::before,
-	&::after {
-		content: '';
-		position: absolute;
-		top: 50%;
-	}
-
-	&::before {
-		background: url('../img/search-name.png') no-repeat;
-		width: 18px;
-		height: 18px;
-		margin-top: -9px;
-		left: -44px;
-
-		@media (min-width: $screen-lg) {
-			background: url('../img/search-name-lg.png') no-repeat;
-			width: 33px;
-			height: 33px;
-			margin-top: -16px;
-			left: -70px;
-		}
-	}
-
-	&::after {
-		background: url('../img/line-frm-toggle.png') no-repeat;
-		width: 16px;
-		height: 46px;
-		margin-top: -23px;
-		left: -21px;
-
-		@media (min-width: $screen-lg) {
-			background: url('../img/line-form.png') no-repeat;
-			width: 27px;
-			height: 75px;
-			margin-top: -37px;
-			left: -32px;
 		}
 	}
 }

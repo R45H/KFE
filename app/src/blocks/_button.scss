@@ -56,4 +56,17 @@
 			background-image: url('../img/btn-half-dark-lg.png');
 		}
 	}
+
+	&_sm_dark {
+		color: $color-darkgray;
+		background-image: url('../img/btn-sm-dark.png');
+		width: 133px;
+		height: 46px;
+
+		@media (min-width: $screen-lg) {
+			background-image: url('../img/btn-sm-dark-lg.png');
+			width: 214px;
+			height: 72px;
+		}
+	}
 }
