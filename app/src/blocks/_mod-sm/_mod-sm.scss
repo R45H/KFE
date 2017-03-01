@@ -1,0 +1,93 @@
+.mod-sm {
+
+	&__wrap {
+		background-color: $color-black;
+		margin: 0;
+		width: auto;
+
+		@media (min-width: $screen-xs) {
+			margin: 5% auto 0;
+			width: 426px;
+		}
+
+		@media (min-width: $screen-custom-sm) {
+			width: 550px;
+		}
+
+		@media (min-width: $screen-lg) {
+			width: 850px;
+		}
+	}
+
+	&__head {
+		padding: 20px 50px 10px 20px;
+		position: relative;
+		overflow: auto;
+
+		@media (min-width: $screen-lg) {
+			padding: 40px 60px 20px 40px;
+		}
+	}
+
+	&__body {
+		padding: 10px 20px 20px;
+
+		@media (min-width: $screen-lg) {
+			padding: 20px 40px 40px;
+		}
+	}
+
+	&__title {
+		font-family: $font-second;
+		text-transform: uppercase;
+		position: relative;
+		font-weight: 700;
+		font-size: 2.7rem;
+		line-height: 1.1;
+		margin: 0;
+		display: inline-block;
+		color: $color-white;
+		width: 100%;
+		word-wrap: break-word;
+
+		&:after {
+			content: '';
+			@extend %line;
+			margin-top: 5px;
+		}
+	}
+
+	&__table-cell {
+		color: $color-lightergray;
+		font-family: $font-standart;
+		font-size: 1.2rem;
+		padding: 15px;
+		border: 1px solid $color-darkergray;
+		border-bottom: none;
+
+		&:last-child {
+			border-bottom: 1px solid $color-darkergray;
+		}
+	}
+
+	&__desc {
+		color: $color-gray;
+		font-family: $font-standart;
+		font-size: 1.2rem;
+		padding: 15px 15px 0;
+		margin: 0;
+		position: relative;
+
+		&::before {
+			content: '* ';
+			position: absolute;
+			left: 0;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+}

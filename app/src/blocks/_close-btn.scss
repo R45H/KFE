@@ -1,0 +1,42 @@
+.close-btn {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background-color: $color-darkergray;
+	transition: $duration ease;
+	cursor: pointer;
+
+	@media (min-width: $screen-lg) {
+		width: 40px;
+		height: 40px;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+		background-color: $color-white;
+		height: 2px;
+		width: 70%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+
+	&::before {
+		transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	}
+
+	&::after {
+		transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+	}
+
+	&:hover,
+	&:focus {
+		background-color: $color-red;
+
+		@media (min-width: $screen-custom-sm) {
+			transform: scale(1.1);
+		}
+	}
+}

@@ -27,6 +27,7 @@
 @import url('blocks/_count.scss');            // Карточка с цифрой
 @import url('blocks/_count-sm.scss');         // Карточка с маленькой цифрой
 @import url('blocks/_news.scss');             // Анонс новости
+@import url('blocks/_close-btn.scss');        // Кнопка "Закрыть"
 @import url('blocks/_card.scss');             // Карточка объекта
 @import url('blocks/_card-h.scss');           // Горизонтальная карточка объекта
 @import url('blocks/_bot-panel.scss');        // Нижняя панель секции
@@ -54,13 +55,14 @@
 @import url('blocks/_simple-form.scss');      // Стандартная форма
 @import url('blocks/_commend/_commend.scss'); // Панель с табами (рекомендации)
 @import url('blocks/_law/_law.scss');         // Панель с табами (важнейшие законы)
-@import url('blocks/_up/_up.scss');           // Кнопка "наверх"
-@import url('blocks/_result.scss');            // Блок результата поиска
+@import url('blocks/_up/_up.scss');           // Кнопка "Наверх"
+@import url('blocks/_result.scss');           // Блок результата поиска
 
 @import url('blocks/_header.scss');           // Шапка
 @import url('blocks/_aside/_aside.scss');     // Боковое меню
 @import url('blocks/_section.scss');          // Секция контента
 @import url('blocks/_footer.scss');           // Подвал
+@import url('blocks/_mod-sm/_mod-sm.scss');   // Маленькая модалка
 
 
 @import url('blocks/_js-owl/_js-owl.scss');   // Стили для главного слайдера
