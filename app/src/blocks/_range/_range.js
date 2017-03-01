@@ -32,22 +32,28 @@ $(function () {
 
 		$('.' + slMin.attr('class') + ', .' + slMax.attr('class')).on('input', function () { // Обработка изменения полей ввода вручную
 			var
-				value1 = slMin.val(), // Значение поля min
-				value2 = slMax.val(); // Значение поля max
+				value1 = +parseInt(slMin.val()), // Значение поля min
+				value2 = +parseInt(slMax.val()); // Значение поля max
 
 			if (this.value.match(/[^0-9]/g)) { // Можно только цифры
 				this.value = this.value.replace(/[^0-9]/g, '');
 			}
 
-			if (this.value == '') {
-				this.value = '0';
+			if (!value1) {
+				value1 = 0;
 			}
-
-			if (parseInt(value1) > parseInt(value2)) {
+			if (!value2) {
+				value2 = 0;
+			}
+			if (value2 > slMaxVal) {
+				value2 = slMaxVal;
+			}
+			if (value1 > value2) {
 				value1 = value2;
-				slMin.val(value2);
 			}
 
+			slMin.val(value1);
+			slMax.val(value2);
 			$this.slider("values", 0, value1);
 			$this.slider("values", 1, value2);
 			changeInput();
@@ -61,8 +67,8 @@ $(function () {
 			if (e.keyCode != 38 && e.keyCode != 40) return;
 
 			var
-				value1 = slMin.val(), // Значение поля min
-				value2 = slMax.val(); // Значение поля max
+				value1 = parseInt(slMin.val()), // Значение поля min
+				value2 = parseInt(slMax.val()); // Значение поля max
 
 			if (e.keyCode == 38) {
 				value1++;
@@ -71,10 +77,10 @@ $(function () {
 				value1--;
 			}
 
-			if (parseInt(value1) > parseInt(value2)) {
+			if (value1 > value2) {
 				value1 = value2;
 			}
-			if (parseInt(value1) < slMinVal) {
+			if (value1 < slMinVal) {
 				value1 = slMinVal;
 			}
 
@@ -87,8 +93,8 @@ $(function () {
 			if (e.keyCode != 38 && e.keyCode != 40) return;
 
 			var
-				value1 = slMin.val(), // Значение поля min
-				value2 = slMax.val(); // Значение поля max
+				value1 = parseInt(slMin.val()), // Значение поля min
+				value2 = parseInt(slMax.val()); // Значение поля max
 
 			if (e.keyCode == 38) {
 				value2++;
@@ -97,10 +103,10 @@ $(function () {
 				value2--;
 			}
 
-			if (parseInt(value2) < parseInt(value1)) {
+			if (value2 < value1) {
 				value2 = value1;
 			}
-			if (parseInt(value2) > slMaxVal) {
+			if (value2 > slMaxVal) {
 				value2 = slMaxVal;
 			}
 

@@ -472,22 +472,22 @@
 		}
 
 		&_big {
-			font-size: 10rem;
+			font-size: 12rem;
 
 			@media (min-width: $screen-xs) {
-				font-size: 10rem;
+				font-size: 12rem;
 			}
 
 			@media (min-width: $screen-custom-sm) {
-				font-size: 14.4rem;
+				font-size: 17rem;
 			}
 
 			@media (min-width: $screen-sm) {
-				font-size: 14.4rem;
+				font-size: 17rem;
 			}
 
 			@media (min-width: $screen-lg) {
-				font-size: 12rem;
+				font-size: 14rem;
 			}
 		}
 	}

@@ -3,11 +3,12 @@
 
 	&__num {
 		margin-bottom: 1em;
+		color: $color-lightergray;
 	}
 
 	&__title {
 		font-family: $font-second;
-		color: $color-white;
+		color: $color-lightergray;
 		font-size: 2.2rem;
 		line-height: 1em;
 		margin: 0;

@@ -33,7 +33,7 @@
 				//=====
 
 				&__link {
-					color: $color-white;
+					color: $color-lightergray;
 
 					@media (max-width: $screen-custom-sm - 1) {
 						border-bottom: 1px solid $color-darkgray;
@@ -76,7 +76,7 @@
 	}
 
 	&__tab {
-		color: $color-white;
+		color: $color-lightergray;
 		padding: 20px;
 	}
 

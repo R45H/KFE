@@ -10,4 +10,15 @@
 		@extend %line;
 		width: 100%;
 	}
+
+	&_border {
+		border: 1px solid $color-red;
+		min-width: 1.6em;
+		padding: .25em 0 .2em;
+		text-align: center;
+
+		&::after {
+			display: none;
+		}
+	}
 }
