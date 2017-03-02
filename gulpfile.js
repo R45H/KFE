@@ -1,22 +1,25 @@
 /* ===== ПОДКЛЮЧЕНИЕ ПЛАГИНОВ ===== */
-var gulp         = require('gulp'),                         // GULP
-    sass         = require('gulp-sass'),                    // Препроцессор Sass
-    browserSync  = require('browser-sync'),                 // Автоперезагрузка браузера
-    concat       = require('gulp-concat'),                  // Конкатенация (соединение) файлов
-    uglify       = require('gulp-uglifyjs'),                // Сжатие JS
-    rename       = require('gulp-rename'),                  // Для переименования файлов
-    del          = require('del'),                          // Для удаления файлов и папок
-    imagemin     = require('gulp-imagemin'),                // Для работы с изображениями
-    pngquant     = require('imagemin-pngquant'),            // Для работы с PNG
-    cache        = require('gulp-cache'),                   // Для кэширования
-    autoprefixer = require('gulp-autoprefixer'),            // Автоматическое добавление префиксов
-    include      = require('gulp-file-include'),            // Подключение файлов в другие файлы
-    queries      = require('gulp-group-css-media-queries'), // Объединение медиа запросов
-    sprite       = require('gulp.spritesmith'),             // Создание спрайтов
-    plumber      = require('gulp-plumber'),                 // Перехват ошибок
-    gutil        = require('gulp-util'),                    // Различные вспомогательные утилиты
-    cssImport    = require('gulp-cssimport'),               // Работа @import
-	 path         = require('path')                          // Для работы с путями
+var
+	gulp         = require('gulp'),                         // GULP
+   sass         = require('gulp-sass'),                    // Препроцессор Sass
+   browserSync  = require('browser-sync'),                 // Автоперезагрузка браузера
+   concat       = require('gulp-concat'),                  // Конкатенация (соединение) файлов
+   uglify       = require('gulp-uglifyjs'),                // Сжатие JS
+   rename       = require('gulp-rename'),                  // Для переименования файлов
+   del          = require('del'),                          // Для удаления файлов и папок
+   imagemin     = require('gulp-imagemin'),                // Для работы с изображениями
+   pngquant     = require('imagemin-pngquant'),            // Для работы с PNG
+   cache        = require('gulp-cache'),                   // Для кэширования
+   autoprefixer = require('gulp-autoprefixer'),            // Автоматическое добавление префиксов
+   include      = require('gulp-file-include'),            // Подключение файлов в другие файлы
+   queries      = require('gulp-group-css-media-queries'), // Объединение медиа запросов
+   sprite       = require('gulp.spritesmith'),             // Создание спрайтов
+   plumber      = require('gulp-plumber'),                 // Перехват ошибок
+   gutil        = require('gulp-util'),                    // Различные вспомогательные утилиты
+   cssImport    = require('gulp-cssimport'),               // Работа @import
+	strip        = require('gulp-strip-css-comments'),      // Убирает комментарии
+	path         = require('path'),                         // Для работы с путями
+	runSequence  = require('run-sequence');                 // Для синхронного выполнения задач
 ;
 /* ================================ */
 
@@ -47,10 +50,10 @@ var dist = 'dist/'; //Папка готового проекта
 /* ===== ТАСК "BROWSER-SYNC" ====== */
 gulp.task('browser-sync', function() {
 	browserSync({ // Выполняем browserSync
-		server: { // Определяем параметры сервера
-			baseDir: dist // Директория для сервера
-		},
-		notify: false // Отключаем уведомления
+		server: dist, // Директория для сервера
+		notify: false, // Отключаем уведомления
+		open: 'external', // Внешняя ссылка вместо localhost
+		ghostMode: false // Отключаем синхронизацию между устройствами
 	});
 });
 /* ================================ */
@@ -60,8 +63,7 @@ gulp.task('html', function () {
 	return gulp.src(app + '*.html') //Выберем файлы по нужному пути
 		.pipe(plumber(err)) // Отслеживаем ошибки
 		.pipe(include()) // Прогоним через file-include
-		.pipe(gulp.dest(dist)) //Выплюнем их
-		.pipe(reload({stream: true})); //Перезагрузим сервер
+		.pipe(gulp.dest(dist)); //Выплюнем их
 });
 /* ================================ */
 
@@ -84,6 +86,9 @@ gulp.task('css-libs', function() {
 		.pipe(plumber(err)) // Отслеживаем ошибки
 		.pipe(cssImport()) // Запускаем @import
 		.pipe(sass({outputStyle: 'compressed'})) // Преобразуем SCSS в CSS
+		.pipe(strip({ // Убираем комментарии
+			preserve: false // /* */ - Такие тоже
+		}))
 		.pipe(rename({suffix: '.min'})) // Добавляем суффикс ".min"
 		.pipe(gulp.dest(dist + 'css')) // Выгружаем
 		.pipe(reload({stream: true})); //Перезагружаем сервер
@@ -141,21 +146,26 @@ gulp.task('clean', function() {
 /* ================================ */
 
 /* ========= ТАСК "BUILD" ========= */
-gulp.task('build', [
-	'clean',
-	'html',
-	'sass',
-	'css-libs',
-	'js',
-	'js-libs',
-	'img',
-	'fonts'
-]);
+gulp.task('build', function(callback) {
+	runSequence(
+		'clean',
+		[
+			'html',
+			'sass',
+			'css-libs',
+			'js',
+			'js-libs',
+			'img',
+			'fonts'
+		],
+		callback
+	);
+});
 /* ================================ */
 
 /* ========= ТАСК "WATCH" ========= */
 gulp.task('watch', function() {
-	var watcherHtml = gulp.watch(app + '**/*.html', ['html']); // Наблюдение за HTML файлами
+	var watcherHtml = gulp.watch(app + '**/*.html', ['html', reload]); // Наблюдение за HTML файлами
 	gulp.watch([app + 'src/**/*.scss', '!' + app + 'src/libs.scss'], ['sass']); // Наблюдение за своими SCSS файлами
 	gulp.watch(app + 'src/libs.scss', ['css-libs']); // Наблюдение за скачанными CSS файлами
 	gulp.watch([app + 'src/**/*.js', '!' + app + 'src/libs.js'], ['js']); // Наблюдение за своими JS файлами
@@ -180,7 +190,14 @@ gulp.task('watch', function() {
 /* -------------------------------- */
 
 /* ===== КОМАНДА ПО УМОЛЧАНИЮ ===== */
-gulp.task('default', ['build', 'browser-sync', 'watch']);
+gulp.task('default', function(callback) {
+	runSequence(
+		'build',
+		'browser-sync',
+		'watch',
+		callback
+	);
+});
 /* ================================ */
 
 /* ======== ОЧИСТКА КЭША ========== */
