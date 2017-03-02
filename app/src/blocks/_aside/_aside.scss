@@ -6,10 +6,14 @@
 	z-index: 15;
 	transition: all ease $duration / 2;
 	width: 80%;
-	padding-top: $height-header;
+	padding-top: $height-header-sm;
 
 	@media (min-width: $screen-xs) {
 		width: 200px;
+	}
+
+	@media (min-width: $screen-custom-sm) {
+		padding-top: $height-header;
 	}
 
 	@media (min-width: $screen-lg) {

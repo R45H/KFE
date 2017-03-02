@@ -10,6 +10,10 @@ body {
 	font-family: $font-main;
 
 	@media (min-width: $screen-xs) {
+		padding-top: $height-header-sm;
+	}
+
+	@media (min-width: $screen-custom-sm) {
 		padding-top: $height-header;
 	}
 

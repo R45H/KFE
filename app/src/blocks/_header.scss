@@ -1,7 +1,7 @@
 .header {
 	top: 0;
 	width: 100%;
-	height: $height-header;
+	height: $height-header-sm;
 	background-color: $color-white;
 	z-index: 10;
 	overflow: hidden;
@@ -11,12 +11,21 @@
 		position: fixed;
 	}
 
+	@media (min-width: $screen-custom-sm) {
+		height: $height-header;
+	}
+
 	@media (min-width: $screen-lg) {
 		height: $height-header-lg;
 	}
 
 	&__menu {
 		margin: 20px 0 3px 38px;
+		float: left;
+
+		@media (min-width: $screen-custom-sm) {
+			float: none;
+		}
 
 		@media (min-width: $screen-sm) {
 			margin: 20px 0 3px;
@@ -24,17 +33,32 @@
 	}
 
 	&__cont {
+		margin-top: 20px;
 		text-transform: uppercase;
 		color: $color-gray;
 		font-size: 1.1rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: baseline;
-		flex-wrap: wrap;
-		margin-left: 38px;
+		float: right;
+
+		@media (min-width: $screen-custom-sm) {
+			float: none;
+			margin-top: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			flex-wrap: wrap;
+			margin-left: 38px;
+		}
 
 		@media (min-width: $screen-sm) {
 			margin-left: 0;
+		}
+	}
+
+	&__city {
+		display: none;
+
+		@media (min-width: $screen-custom-sm) {
+			display: inline-block;
 		}
 	}
 
@@ -53,6 +77,10 @@
 		text-decoration: none;
 		font-size: 1.9rem;
 		font-family: $font-third;
+
+		@media (max-width: $screen-custom-sm - 1) {
+			line-height: 1;
+		}
 	}
 
 	&__pag {
