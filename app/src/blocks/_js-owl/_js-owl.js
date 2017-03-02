@@ -1,3 +1,4 @@
+/* Слайдеры */
 $(document).ready(function(){
 	$('.js-owl').owlCarousel({
 		items: 1,
@@ -9,3 +10,4 @@ $(document).ready(function(){
 
 	$('.js-owl .owl-dots').wrap('<div class="container js-owl__dots"></div>');
 });
+/* ========== */

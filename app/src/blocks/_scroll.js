@@ -1,3 +1,4 @@
+/* Плавный скролл */
 $(function(){
 	$('.scroll').on('click', function (event) {
 		event.preventDefault();
@@ -15,3 +16,4 @@ $(function(){
 		$('body, html').animate({scrollTop: $top}, 700);
 	});
 });
+/* ========== */

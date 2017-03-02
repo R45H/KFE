@@ -1,3 +1,4 @@
+/* Кастомные селекты */
 $(function() {
 	$('.select').selectmenu({
 		classes: {
@@ -13,3 +14,4 @@ $(function() {
 		$('.select').selectmenu('close');
 	});
 });
+/* ========== */

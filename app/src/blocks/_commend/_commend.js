@@ -1,3 +1,4 @@
+/* Другие табы */
 $(function() {
 	$('.commend__link').click(function(event) {
 		event.preventDefault();
@@ -39,3 +40,4 @@ $(function() {
 		}
 	}
 });
+/* ========== */

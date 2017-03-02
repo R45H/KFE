@@ -1,3 +1,4 @@
+/* Инициализация карты */
 function initMap() {
 	if (!$('.map').length) return;
 
@@ -70,3 +71,4 @@ function initMap() {
 	}
 	/* ======= */
 }
+/* ========== */

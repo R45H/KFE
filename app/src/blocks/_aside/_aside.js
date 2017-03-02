@@ -1,3 +1,4 @@
+/* Боковое меню */
 $(function() {
 	var $aside = $('.js-aside'); // Боковое меню
 	var $asideClass = 'js-aside'; // Класс бокового меню
@@ -75,3 +76,4 @@ $(function() {
 		e.preventDefault();
 	});
 });
+/* ========== */
