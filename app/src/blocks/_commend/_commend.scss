@@ -84,12 +84,15 @@
 	}
 
 	&__half {
-		margin-top: 4em;
 		overflow: hidden;
+		margin-top: 2em;
+
+		@media (min-width: $screen-lg) {
+			margin-top: 4em;
+		}
 
 		@media (max-width: $screen-sm - 1) {
 			padding: 0;
-			margin-top: 3em;
 		}
 
 		&:not(:last-child) {
@@ -122,11 +125,11 @@
 		text-transform: uppercase;
 		vertical-align: middle;
 		position: relative;
-		margin: 80px 0 40px;
+		margin: 80px 0 30px;
 		text-align: center;
 
 		@media (min-width: $screen-xs) {
-			margin: 40px 0 60px 70px;
+			margin: 20px 0 30px 70px;
 			text-align: left;
 		}
 

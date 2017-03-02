@@ -2,28 +2,6 @@
 	text-decoration: none;
 	display: block;
 
-	&:hover,
-	&:focus {
-
-		.card {
-
-			&__img {
-
-				&_scale {
-					transform: scale(1.1);
-				}
-			}
-
-			&__title {
-				color: $color-red;
-
-				&::after {
-					width: 100%;
-				}
-			}
-		}
-	}
-
 	&__img-wrap {
 		background-color: $color-white;
 		padding: 7% 14%;
@@ -35,9 +13,24 @@
 		padding-bottom: 70%;
 		margin: 0 -15px;
 		transition: $duration ease;
+		position: relative;
 
 		@media (min-width: $screen-xs) {
 			margin: 0;
+		}
+
+		&_fog {
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				transition: all $duration / 2;
+				background-color: $color-light-fog;
+			}
 		}
 
 		&_1 {
@@ -156,5 +149,38 @@
 		color: $color-red;
 		text-transform: uppercase;
 		margin: 0;
+	}
+}
+
+a.card {
+
+	&:hover,
+	&:focus {
+
+		.card {
+			//=====
+
+			&__img {
+
+				&_fog {
+
+					&::before {
+						background-color: transparent;
+					}
+				}
+
+				&_scale {
+					transform: scale(1.1);
+				}
+			}
+
+			&__title {
+				color: $color-red;
+
+				&::after {
+					width: 100%;
+				}
+			}
+		}
 	}
 }
