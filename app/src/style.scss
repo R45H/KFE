@@ -57,12 +57,14 @@
 @import url('blocks/_law/_law.scss');         // Панель с табами (важнейшие законы)
 @import url('blocks/_up/_up.scss');           // Кнопка "Наверх"
 @import url('blocks/_result.scss');           // Блок результата поиска
+@import url('blocks/_input/_input.scss');     // Поля ввода
 
 @import url('blocks/_header.scss');           // Шапка
 @import url('blocks/_aside/_aside.scss');     // Боковое меню
 @import url('blocks/_section.scss');          // Секция контента
 @import url('blocks/_footer.scss');           // Подвал
 @import url('blocks/_mod-sm/_mod-sm.scss');   // Маленькая модалка
+@import url('blocks/_mod/_mod.scss');         // Обычная модалка
 
 
 @import url('blocks/_js-owl/_js-owl.scss');   // Стили для главного слайдера

@@ -1,0 +1,33 @@
+.input {
+	padding: 15px 0;
+	border: 0;
+	border-bottom: 2px solid $color-lightergray;
+	outline: none;
+	color: $color-darkgray;
+	transition: $duration ease;
+
+	&:hover,
+	&:focus {
+		border-color: $color-lightgray;
+	}
+
+	&::-webkit-input-placeholder {
+		color: $color-gray;
+	}
+
+	&::-moz-placeholder {
+		color: $color-gray;
+	}
+
+	&:-moz-placeholder {
+		color: $color-gray;
+	}
+
+	&:-ms-input-placeholder {
+		color: $color-gray;
+	}
+
+	&_fill {
+		border-color: $color-lightgray;
+	}
+}
