@@ -13,28 +13,28 @@
 	}
 
 	&_bright {
-		background-color: $color-white;
-		color: $color-darkgray;
+		background-color: $color-darkgray;
+		color: $color-darkergray;
 
 		&:hover,
 		&:focus {
-			background-color: $color-lightgray;
+			background-color: $color-gray;
 		}
 
 		&::-webkit-input-placeholder {
-			color: $color-darkgray;
+			color: $color-darkergray;
 		}
 
 		&::-moz-placeholder {
-			color: $color-darkgray;
+			color: $color-darkergray;
 		}
 
 		&:-moz-placeholder {
-			color: $color-darkgray;
+			color: $color-darkergray;
 		}
 
 		&:-ms-input-placeholder {
-			color: $color-darkgray;
+			color: $color-darkergray;
 		}
 	}
 }
