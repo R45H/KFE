@@ -35,11 +35,17 @@
 	&__link {
 		color: $color-darkgray;
 		text-decoration: none;
+		border-bottom: 1px solid transparent;
+
+		@media (min-width: $screen-lg) {
+			border-width: 2px;
+		}
 
 		&:hover,
 		&:focus {
 			color: $color-red;
-			text-decoration: underline;
+			text-decoration: none;
+			border-color: $color-red;
 		}
 	}
 }

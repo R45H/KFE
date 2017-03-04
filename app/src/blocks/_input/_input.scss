@@ -28,6 +28,38 @@
 	}
 
 	&_fill {
-		border-color: $color-lightgray;
+		border-color: $color-darkgray;
+
+		&:hover,
+		&:focus {
+			border-color: $color-darkgray;
+		}
+	}
+
+	&_invalid {
+		border-color: $color-red;
+		color: $color-red;
+
+		&:hover,
+		&:focus {
+			border-color: $color-red;
+			color: $color-red;
+		}
+
+		&::-webkit-input-placeholder {
+			color: $color-red;
+		}
+
+		&::-moz-placeholder {
+			color: $color-red;
+		}
+
+		&:-moz-placeholder {
+			color: $color-red;
+		}
+
+		&:-ms-input-placeholder {
+			color: $color-red;
+		}
 	}
 }

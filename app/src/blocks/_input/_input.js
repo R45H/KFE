@@ -4,7 +4,7 @@ $(function() {
 		$input = $('.input'), // Стандартные инпуты
 		$inputFillClass = 'input_fill'; // Класс заполненного инпута
 
-	$input.on('change', function() {
+	$input.on('input', function() {
 		if ($(this).val()) {
 			$(this).addClass($inputFillClass);
 		} else {
