@@ -131,6 +131,14 @@
 				width: 100%;
 			}
 		}
+
+		&_active {
+			color: $color-red;
+
+			&::after {
+				width: 100%;
+			}
+		}
 	}
 
 	&__input {

@@ -42,6 +42,17 @@
 				display: block;
 			}
 		}
+
+		&_active {
+
+			.menu {
+				// =====
+
+				&__link {
+					color: $color-red;
+				}
+			}
+		}
 	}
 
 	&__link {

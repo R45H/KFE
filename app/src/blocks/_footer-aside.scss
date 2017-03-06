@@ -22,6 +22,17 @@
 			display: list-item;
 			margin: 0;
 		}
+
+		&_active {
+
+			.footer-aside {
+				// =====
+
+				&__link {
+					color: $color-red;
+				}
+			}
+		}
 	}
 
 	&__link {

@@ -43,6 +43,17 @@
 				height: 41px;
 			}
 		}
+
+		&_active {
+
+			.menu-i {
+				// =====
+
+				&__link {
+					color: $color-red;
+				}
+			}
+		}
 	}
 
 	&__link {
@@ -58,10 +69,6 @@
 		@media (min-width: $screen-sm) {
 			padding: .5em 0;
 			display: inline-block;
-		}
-
-		&_active {
-			color: $color-red;
 		}
 	}
 }
