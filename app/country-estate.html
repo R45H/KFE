@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	@@include('partials/head.html')
-	<title>City Property | Knight Frank</title>
+	<title>Country Estate | Knight Frank</title>
 </head>
 <body>
 
@@ -19,8 +19,8 @@
 			<div class="section__wrap section__wrap_abs container">
 				<div class="section__center">
 					<h1 class="section__title section__title_line-bot section__title_line-right">
-						<span class="separator">Найди квартиру</span>
-						<span class="separator">своей мечты...</span>
+						<span class="separator">Найдите</span>
+						<span class="separator">загородный дом</span>
 					</h1>
 					<div></div>
 					<p class="section__descr">
@@ -35,17 +35,17 @@
 			</div>
 		</div>
 		<div class="section__slide">
-			<div class="section__phone section__phone_fog section__phone_img-2"></div>
+			<div class="section__phone section__phone_fog section__phone_img-city-property-1"></div>
 			<div class="section__wrap section__wrap_abs container">
 				<div class="section__center">
-					<h2 class="section__title section__title_line-bot section__title_line-right">
-						<span class="separator">Недвижимость</span>
-						<span class="separator">в Санкт-Петербурге</span>
-					</h2>
+					<h1 class="section__title section__title_line-bot section__title_line-right">
+						<span class="separator">Найдите</span>
+						<span class="separator">загородный дом</span>
+					</h1>
 					<div></div>
 					<p class="section__descr">
-						<span class="separator">Большой опыт продажи элитных квартир в санкт-петербурге,</span>
-						<span class="separator">отличное знание рынка и обширная база предложений</span>
+						<span class="separator">Быстрый поиск - быстрый переезд</span>
+						<span class="separator">с нашей новой программой по поиску недвижимости</span>
 					</p>
 				</div>
 			</div>
@@ -70,10 +70,10 @@
 								<span class="bread__title">Вы здесь:</span>
 								<ol class="bread__wrap breadcrumb">
 									<li class="bread__item"><a class="bread__link" href="/">Главная</a></li>
-									<li class="bread__item active">Городская недвижимость</li>
+									<li class="bread__item active">Загородная недвижимость</li>
 								</ol>
 							</div>
-							<h2 class="title__head">Городская недвижимость</h2>
+							<h2 class="title__head">Загородная недвижимость</h2>
 							<p class="title__aside">
 								<span class="separator">Только актуальные</span>
 								<span class="separator">предложения</span>
@@ -83,6 +83,59 @@
 				</div>
 				<div class="container">
 					<h3 class="h3 section__h3">Найдите дом своей мечты</h3>
+					<div class="form__wrap">
+						<p class="form__title">Район города</p>
+						<select class="select">
+							<option value="DistrictAll">Все районы</option>
+							<option value="District1">Центральный</option>
+							<option value="District2">Приморский</option>
+							<option value="District3">Московский</option>
+							<option value="District4">Кировский</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">&nbsp;</p>
+						<div class="check check_sm">
+							<input class="check__input" type="radio" name="buy-rent" id="radio6" value="buy" checked>
+							<label class="check__label" for="radio6">Купить</label>
+							<input class="check__input" type="radio" name="buy-rent" id="radio7" value="rent">
+							<label class="check__label" for="radio7">Снять</label>
+						</div>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Стоимость, млн. рублей</p>
+						<div class="range">
+							<input class="range__prev" value="0">
+							<div class="range__input"></div>
+							<input class="range__next" value="250">
+						</div>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Вид недвижимости</p>
+						<select class="select">
+							<option value="penthouse">Пентхаус</option>
+							<option value="room">Квартира</option>
+							<option value="new-building">Новостройка</option>
+							<option value="house">Дом</option>
+							<option value="discount">Дисконт</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Площадь участка, м<sup>2</sup></p>
+						<div class="range">
+							<input class="range__prev" type="text" value="0">
+							<div class="range__input"></div>
+							<input class="range__next" type="text" value="1000">
+						</div>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Площадь дома, м<sup>2</sup></p>
+						<div class="range">
+							<input class="range__prev" type="text" value="20">
+							<div class="range__input"></div>
+							<input class="range__next" type="text" value="120">
+						</div>
+					</div>
 					<div class="form__wrap">
 						<p class="form__title">Число спален</p>
 						<div class="check">
@@ -98,76 +151,10 @@
 							<label class="check__label" for="radio5">5+</label>
 						</div>
 					</div>
-					<div class="form__wrap">
-						<p class="form__title">Общая площадь, м<sup>2</sup></p>
-						<div class="range">
-							<input class="range__prev" type="text" value="0">
-							<div class="range__input"></div>
-							<input class="range__next" type="text" value="1000">
-						</div>
-					</div>
-					<div class="form__wrap">
-						<p class="form__title">Район города</p>
-						<select class="select">
-							<option value="DistrictAll">Все районы</option>
-							<option value="District1">Центральный</option>
-							<option value="District2">Приморский</option>
-							<option value="District3">Московский</option>
-							<option value="District4">Кировский</option>
-						</select>
-					</div>
-					<div class="form__wrap">
-						<p class="form__title">Стоимость, млн. рублей</p>
-						<div class="range">
-							<input class="range__prev" value="0">
-							<div class="range__input"></div>
-							<input class="range__next" value="250">
-						</div>
-					</div>
-					<div class="form__wrap">
-						<p class="form__title">Сортировка</p>
-						<select class="select">
-							<option value="price">По цене</option>
-							<option value="name">По наименованию</option>
-						</select>
-					</div>
-					<div class="form__wrap">
-						<p class="form__title">Готовность</p>
-						<select class="select">
-							<option value="building">Строится</option>
-							<option value="built">Построено</option>
-						</select>
-					</div>
-					<div class="form__wrap">
-						<p class="form__title">Отделка</p>
-						<select class="select">
-							<option value="decorate">С отделкой</option>
-							<option value="not-decorate">Без отделки</option>
-						</select>
-					</div>
-					<div class="form__wrap">
-						<p class="form__title">Вид недвижимости</p>
-						<select class="select">
-							<option value="penthouse">Пентхаус</option>
-							<option value="room">Квартира</option>
-							<option value="new-building">Новостройка</option>
-							<option value="house">Дом</option>
-							<option value="discount">Дисконт</option>
-						</select>
-					</div>
 					<div class="form__wrap form__check">
 						<div class="check-mark">
 							<input class="check-mark__input" type="checkbox" name="check" id="check1" value="1">
-							<label class="check-mark__label" for="check1">C террасой</label>
-						</div>
-					</div>
-					<div class="form__wrap">
-						<p class="form__title">&nbsp;</p>
-						<div class="check check_sm">
-							<input class="check__input" type="radio" name="buy-rent" id="radio6" value="buy" checked>
-							<label class="check__label" for="radio6">Купить</label>
-							<input class="check__input" type="radio" name="buy-rent" id="radio7" value="rent">
-							<label class="check__label" for="radio7">Снять</label>
+							<label class="check-mark__label" for="check1">C отделкой</label>
 						</div>
 					</div>
 				</div>
@@ -201,7 +188,7 @@
 						<div class="simple-card__img simple-card__img_1"></div>
 						<p class="simple-card__title">
 							<span class="separator">Все элитные</span>
-							<span class="separator">новостройки</span>
+							<span class="separator">поселки</span>
 						</p>
 					</a>
 				</div>
@@ -209,7 +196,7 @@
 					<a class="simple-card" href="#">
 						<div class="simple-card__img simple-card__img_2"></div>
 						<p class="simple-card__title">
-							<span class="separator">Квартира</span>
+							<span class="separator">Дом</span>
 							<span class="separator">месяца</span>
 						</p>
 					</a>
@@ -295,54 +282,7 @@
 
 <!-- 05 -->
 <section class="section" >
-	<div class="num">05</div>
-	<div class="js-owl">
-		<div class="section__slide">
-			<div class="section__phone section__phone_fog section__phone_big section__phone_img-city-property-2"></div>
-			<div class="section__wrap section__wrap_abs section__wrap_top container">
-				<div class="section__center">
-					<h2 class="section__title section__title_line-left">
-						<span class="separator">Эксперты</span>
-						<span class="separator">на рынке элитной</span>
-						<span class="separator">недвижимости</span>
-					</h2>
-					<div class="note section__note">
-						<h3 class="note__title">370 офисов в 55 странах</h3>
-						<p class="note__descr">Консультанты компании - это специалисты высочайшей квалификации, поэтому девелоперы, собственники и арендаторы коммерческой и жилой недвижимости могут быть уверены в том, что сотрудничество с Knight Frank – это гарантия получения желаемого результата в кратчайшие сроки.</p>
-					</div>
-				</div>
-			</div>
-			<div class="section__bottom">
-				<a class="button" href="analytics.html">Посмотреть подробнее</a>
-				<span class="section__line"></span>
-			</div>
-		</div>
-		<div class="section__slide">
-			<div class="section__phone section__phone_fog section__phone_big section__phone_img-city-property-2"></div>
-			<div class="section__wrap section__wrap_abs section__wrap_top container">
-				<div class="section__center">
-					<h2 class="section__title section__title_line-left">
-						<span class="separator">Эксперты</span>
-						<span class="separator">на рынке элитной</span>
-						<span class="separator">недвижимости</span>
-					</h2>
-					<div class="note section__note">
-						<h3 class="note__title">370 офисов в 55 странах</h3>
-						<p class="note__descr">Консультанты компании - это специалисты высочайшей квалификации, поэтому девелоперы, собственники и арендаторы коммерческой и жилой недвижимости могут быть уверены в том, что сотрудничество с Knight Frank – это гарантия получения желаемого результата в кратчайшие сроки.</p>
-					</div>
-				</div>
-			</div>
-			<div class="section__bottom">
-				<a class="button" href="analytics.html">Посмотреть подробнее</a>
-				<span class="section__line"></span>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- 06 -->
-<section class="section" >
-	<div class="num num_gray">06</div>
+	<div class="num num_gray">05</div>
 	<div class="section__slide section__slide_dark">
 		<div class="section__wrap container-fluid">
 			<div class="container">
@@ -461,9 +401,9 @@
 	</div>
 </section>
 
-<!-- 07 -->
+<!-- 06 -->
 <section class="section">
-	<div class="num">07</div>
+	<div class="num">06</div>
 	<div class="section__slide section__slide_img-12">
 		<div class="section__wrap container">
 			<div class="about section__center">
