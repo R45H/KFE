@@ -1,0 +1,25 @@
+{
+  "name": "google-map-infobubble",
+  "version": "0.8.0",
+  "homepage": "https://github.com/googlemaps/js-info-bubble",
+  "authors": [
+    "Luke Mahe"
+  ],
+  "description": "CSS3 InfoBubble with tabs for Google Maps API V3",
+  "main": "src/infobubble.js",
+  "keywords": [
+    "google",
+    "maps",
+    "infobubble",
+    "info-bubble",
+    "infowindow"
+  ],
+  "license": "Apache License, Version 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

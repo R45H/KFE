@@ -3,6 +3,7 @@
 @@include('../libs/owl.carousel/dist/owl.carousel.js')
 @@include('../libs/perfect-scrollbar/js/perfect-scrollbar.jquery.js')
 @@include('../libs/jquery.maskedinput/dist/jquery.maskedinput.js')
+@@include('../libs/google-map-infobubble/src/infobubble.js')
 
 @@include('../libs/jquery-ui/ui/version.js')
 @@include('../libs/jquery-ui/ui/safe-active-element.js')

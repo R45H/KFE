@@ -31,13 +31,27 @@ function initMap() {
 
 	/* Образец карточки */
 	var contentString =
-			'<p>Текст карточки объекта</p>'
+			'<div class="map__info-wrap">' +
+				'<span class="map__info-title">Привилегия</span>' +
+				'<span class="map__info-addr">Вязовая улица, 8</span>' +
+			'</div>'
 		;
 	/* ================ */
 
 	/* Рамка */
-	var infowindow = new google.maps.InfoWindow({
-		content: contentString
+	var infoBubble = new InfoBubble({
+		content: contentString,
+		arrowSize: 0,
+		padding: 0,
+		borderWidth: 0,
+		disableAutoPan: false,
+		borderRadius: 0,
+		disableAnimation: true,
+		hideCloseButton: true,
+		backgroundColor: 'white',
+		shadowStyle: 0,
+		minHeight: 0,
+		minWidth: 0
 	});
 	/* ===== */
 
@@ -53,7 +67,7 @@ function initMap() {
 			id: 'markerCard-1'
 		});
 		marker1.addListener('click', function() {
-			infowindow.open(map1, marker1);
+			infoBubble.open(map1, marker1);
 		});
 	}
 
@@ -64,9 +78,6 @@ function initMap() {
 			icon: image,
 			title: 'Контакты',
 			id: 'markerCard-2'
-		});
-		marker2.addListener('click', function() {
-			infowindow.open(map2, marker2);
 		});
 	}
 	/* ======= */
