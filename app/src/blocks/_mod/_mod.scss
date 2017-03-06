@@ -41,7 +41,10 @@
 			transition: $duration ease;
 
 			@media (min-width: $screen-custom-sm) {
-				display: none;
+				top: 45px;
+				right: 0;
+				left: initial;
+				width: 50px;
 			}
 		}
 
