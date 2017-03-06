@@ -7,6 +7,7 @@
 
 	&::after {
 		content: '';
+		transition: $duration ease all;
 		@extend %line;
 		margin: 0 auto;
 
@@ -18,6 +19,7 @@
 	&__img {
 		position: relative;
 		margin: 0 auto 7px;
+		transition: $duration ease;
 
 		@media (min-width: $screen-xs) {
 			margin: 0 0 7px;
@@ -33,6 +35,8 @@
 			height: 100%;
 			background-image: url('../img/option.png');
 			transition: $duration ease-out;
+			opacity: 1;
+			transform: scale(1);
 		}
 
 		&::before {
@@ -385,6 +389,60 @@ a.option {
 			&__desc,
 			&__title {
 				color: $color-red;
+			}
+		}
+	}
+
+	&_like-active {
+		cursor: default;
+
+		&::after {
+			width: 100%;
+			background-color: $color-lightergray;
+		}
+
+		&:hover {
+
+			.option {
+				// =====
+
+				&__img {
+
+					&::before {
+						opacity: 0;
+						transform: scale(2);
+					}
+
+					&::after {
+						opacity: .2;
+					}
+				}
+
+				&__desc,
+				&__title {
+					color: $color-lightergray;
+				}
+			}
+		}
+
+		.option {
+			// =====
+
+			&__img {
+
+				&::before {
+					opacity: 0;
+					transform: scale(2);
+				}
+
+				&::after {
+					opacity: .2;
+				}
+			}
+
+			&__desc,
+			&__title {
+				color: $color-lightergray;
 			}
 		}
 	}
