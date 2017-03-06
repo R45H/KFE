@@ -13,8 +13,11 @@ function initMap() {
 			zoom: 15,
 			center: dot1,
 			scrollwheel: false,
-			mapTypeControl: false,
-			streetViewControl: false
+			mapTypeControl: true,
+			streetViewControl: false,
+			mapTypeControlOptions: {
+				mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.SATELLITE]
+			}
 		});
 	}
 
