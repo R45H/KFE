@@ -113,6 +113,7 @@
 		line-height: 1.1em;
 		display: inline-block;
 		transition: all $duration / 2;
+		word-wrap: break-word;
 
 		@media (min-width: $screen-xs) {
 			max-width: 80%;
