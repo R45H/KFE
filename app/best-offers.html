@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('partials/head.html')
+	<title>Best offers | Knight Frank</title>
+</head>
+<body>
+
+@@include('partials/aside.html')
+@@include('partials/header.html')
+@@include('partials/menu-i.html')
+
+<!-- 01 -->
+<section class="section">
+	<div class="num num_dark">01</div>
+	<div class="section__slide">
+		<form class="form">
+			<div class="section__wrap section__wrap_pb_zero section__wrap_pt_4x">
+				<div class="section__hidden">
+					<div class="container">
+						<div class="title title_dark">
+							<h2 class="title__head">Городская недвижимость</h2>
+							<p class="title__aside">
+								<span class="separator">Только актуальные</span>
+								<span class="separator">предложения</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<h3 class="h3 section__h3">Найдите квартиру своей мечты</h3>
+					<div class="form__wrap">
+						<p class="form__title">Район города</p>
+						<select class="select">
+							<option value="DistrictAll">Все районы</option>
+							<option value="District1">Центральный</option>
+							<option value="District2">Приморский</option>
+							<option value="District3">Московский</option>
+							<option value="District4">Кировский</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Число спален</p>
+						<div class="check">
+							<input class="check__input" type="checkbox" name="num" id="radio1" value="1">
+							<label class="check__label" for="radio1">1</label>
+							<input class="check__input" type="checkbox" name="num" id="radio2" value="2" checked>
+							<label class="check__label" for="radio2">2</label>
+							<input class="check__input" type="checkbox" name="num" id="radio3" value="3">
+							<label class="check__label" for="radio3">3</label>
+							<input class="check__input" type="checkbox" name="num" id="radio4" value="4">
+							<label class="check__label" for="radio4">4</label>
+							<input class="check__input" type="checkbox" name="num" id="radio5" value="5+">
+							<label class="check__label" for="radio5">5+</label>
+						</div>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Стоимость, млн. рублей</p>
+						<div class="range">
+							<input class="range__prev" value="0">
+							<div class="range__input"></div>
+							<input class="range__next" value="250">
+						</div>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">&nbsp;</p>
+						<div class="check check_sm">
+							<input class="check__input" type="radio" name="buy-rent" id="radio6" value="buy" checked>
+							<label class="check__label" for="radio6">Купить</label>
+							<input class="check__input" type="radio" name="buy-rent" id="radio7" value="rent">
+							<label class="check__label" for="radio7">Снять</label>
+						</div>
+					</div>
+
+				</div>
+				<div class="container form__add-wrap">
+					<button class="button button_dark form__add-btn">Дополнительные параметры</button>
+				</div>
+				<div class="container form__add">
+					<div class="form__wrap">
+						<p class="form__title">Общая площадь, м<sup>2</sup></p>
+						<div class="range">
+							<input class="range__prev" type="text" value="0">
+							<div class="range__input"></div>
+							<input class="range__next" type="text" value="1000">
+						</div>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Сортировка</p>
+						<select class="select">
+							<option value="price">По цене</option>
+							<option value="name">По наименованию</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Готовность</p>
+						<select class="select">
+							<option value="building">Строится</option>
+							<option value="built">Построено</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Отделка</p>
+						<select class="select">
+							<option value="decorate">С отделкой</option>
+							<option value="not-decorate">Без отделки</option>
+						</select>
+					</div>
+					<div class="form__wrap">
+						<p class="form__title">Вид недвижимости</p>
+						<select class="select">
+							<option value="penthouse">Пентхаус</option>
+							<option value="room">Квартира</option>
+							<option value="new-building">Новостройка</option>
+							<option value="house">Дом</option>
+							<option value="discount">Дисконт</option>
+						</select>
+					</div>
+					<div class="form__wrap form__check">
+						<div class="check-mark">
+							<input class="check-mark__input" type="checkbox" name="check" id="check1" value="1">
+							<label class="check-mark__label" for="check1">C террасой</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="section__pad_sm">
+					<div class="search form__search">
+						<input type="text" class="search__input" placeholder="Поиск по названию">
+					</div>
+					<div class="frm-toggle form__toggle">
+						<a href="#" class="frm-toggle__item frm-toggle__item_list frm-toggle__item_active"></a>
+						<a href="#" class="frm-toggle__item frm-toggle__item_map"></a>
+					</div>
+					<button class="button button_half_dark">Подходящие варианты <span class="button__num">973</span></button>
+					<span class="section__arrow"></span>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+
+<!-- 02 -->
+<section class="section">
+	<div class="num num_gray">02</div>
+	<div class="section__slide">
+		<div class="section__wrap">
+			<div class="container">
+				<div class="form__wrap">
+					<p class="form__title">Сортировка по цене</p>
+					<select class="select">
+						<option>По возрастанию</option>
+						<option>По убыванию</option>
+					</select>
+				</div>
+			</div>
+			<div class="container">
+				<a class="card-h section__card-h" href="#">
+					<div class="card-h__img card-h__img_fog card-h__img_7"></div>
+					<div class="card-h__wrap">
+						<p class="card-h__type">Жилой комплекс</p>
+						<div class="card-h__inner">
+							<h3 class="card-h__title card-h__title_line-right">Парадный квартал</h3>
+							<div class="card-h__descr">
+								<p class="card-h__descr-prim">Квартира</p>
+								<p class="card-h__descr-second"></p>
+							</div>
+							<div class="card-h__cost card-h__cost_line-right">
+								<p class="card-h__cost-type">Продажа</p>
+								<p class="card-h__cost-value card-h__cost-value_line">От 12 000 000 <span class="rub">p</span>
+								</p>
+								<p class="card-h__cost-value-meter">101 000 <span class="rub">p</span>/м<sup>2</sup></p>
+							</div>
+						</div>
+						<div class="arrow-link arrow-link_gray card-h__address">
+							<div class="arrow-link__i">
+						<span class="arrow-link__text">
+							<span class="separator">Санкт-Петербург</span>
+							<span class="separator">Парадная улица, 3</span>
+						</span>
+								<span class="arrow-link__arrow"></span>
+							</div>
+						</div>
+						<div class="card-h__bottom card-h__bottom_flex">
+							<div class="card-h__count">
+								<p class="card-h__count-val">3</p>
+								<p class="card-h__count-desc">Спальни</p>
+							</div>
+							<div class="card-h__count">
+								<p class="card-h__count-val">4</p>
+								<p class="card-h__count-desc">Комнаты</p>
+							</div>
+							<div class="card-h__count">
+								<p class="card-h__count-val">2</p>
+								<p class="card-h__count-desc">Санузла</p>
+							</div>
+							<div class="card-h__count">
+								<p class="card-h__count-val">105 м<sup>2</sup></p>
+								<p class="card-h__count-desc">Площадь</p>
+							</div>
+							<div class="arrow-link card-h__more">
+								<div class="arrow-link__i">
+									<span class="arrow-link__text">Подробнее</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a class="card-h section__card-h" href="#">
+					<div class="card-h__img card-h__img_fog card-h__img_6"></div>
+					<div class="card-h__wrap">
+						<p class="card-h__type">Элитный комплекс</p>
+						<div class="card-h__inner">
+							<h3 class="card-h__title card-h__title_line-right">Royal Park</h3>
+							<div class="card-h__descr">
+								<p class="card-h__descr-prim">Апартаменты</p>
+								<p class="card-h__descr-second"></p>
+							</div>
+							<div class="card-h__cost card-h__cost_line-right">
+								<p class="card-h__cost-type">Продажа</p>
+								<p class="card-h__cost-value card-h__cost-value_line">От 32 000 000 <span class="rub">p</span>
+								</p>
+								<p class="card-h__cost-value-meter">150 000 <span class="rub">p</span>/м<sup>2</sup></p>
+							</div>
+						</div>
+						<div class="arrow-link arrow-link_gray card-h__address">
+							<div class="arrow-link__i">
+						<span class="arrow-link__text">
+							<span class="separator">Санкт-Петербург</span>
+							<span class="separator">Петровский проспект, 2</span>
+						</span>
+								<span class="arrow-link__arrow"></span>
+							</div>
+						</div>
+						<div class="card-h__bottom card-h__bottom_flex">
+							<div class="card-h__count">
+								<p class="card-h__count-val">5</p>
+								<p class="card-h__count-desc">Спален</p>
+							</div>
+							<div class="card-h__count">
+								<p class="card-h__count-val">9</p>
+								<p class="card-h__count-desc">Комнат</p>
+							</div>
+							<div class="card-h__count">
+								<p class="card-h__count-val">2</p>
+								<p class="card-h__count-desc">Санузла</p>
+							</div>
+							<div class="card-h__count">
+								<p class="card-h__count-val">385 м<sup>2</sup></p>
+								<p class="card-h__count-desc">Площадь</p>
+							</div>
+							<div class="arrow-link card-h__more">
+								<div class="arrow-link__i">
+									<span class="arrow-link__text">Подробнее</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 03 -->
+<section class="section">
+	<div class="num num_gray">03</div>
+	<div class="section__slide section__slide_dark">
+		<div class="section__wrap container-fluid">
+
+			<div class="row">
+				<div class="col-xs-6 col-sm-3 section__simple-card-wrap">
+					<a class="simple-card" href="#">
+						<div class="simple-card__img simple-card__img_1"></div>
+						<p class="simple-card__title">
+							<span class="separator">Все элитные</span>
+							<span class="separator">новостройки</span>
+						</p>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__simple-card-wrap">
+					<a class="simple-card" href="#">
+						<div class="simple-card__img simple-card__img_2"></div>
+						<p class="simple-card__title">
+							<span class="separator">Объекты</span>
+							<span class="separator">месяца</span>
+						</p>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__simple-card-wrap">
+					<a class="simple-card" href="service.html">
+						<div class="simple-card__img simple-card__img_3"></div>
+						<p class="simple-card__title">
+							<span class="separator">Выгодные</span>
+							<span class="separator">предложения</span>
+						</p>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__simple-card-wrap">
+					<a class="simple-card" href="#">
+						<div class="simple-card__img simple-card__img_4"></div>
+						<p class="simple-card__title">
+							<span class="separator">Закрытые</span>
+							<span class="separator">продажи</span>
+						</p>
+					</a>
+				</div>
+			</div>
+
+			<h3 class="h3 h3_gray h3_center h3_space">Все виды недвижимости</h3>
+
+			<div class="row">
+				<div class="col-xs-3 col-sm-2 col-sm-push-1 section__count-col section__xs-space-bot section__xxs_2">
+					<div class="count">
+						<p class="count__num">112</p>
+						<p class="count__title count__title_row_one">Квартиры</p>
+					</div>
+				</div>
+				<div class="col-xs-3 col-sm-2 col-sm-push-1 section__count-col section__xs-space-bot section__xxs_2">
+					<div class="count count_line_left">
+						<p class="count__num">53</p>
+						<p class="count__title count__title_row_one">Новостройки</p>
+					</div>
+				</div>
+				<div class="col-xs-3 col-sm-2 col-sm-push-1 section__count-col section__xs-space-bot section__xxs_2">
+					<div class="count count_line_left">
+						<p class="count__num">27</p>
+						<p class="count__title count__title_row_one">Дома</p>
+					</div>
+				</div>
+				<div class="col-xs-3 col-sm-2 col-sm-push-1 section__count-col section__xs-space-bot section__xxs_2">
+					<div class="count count_line_left">
+						<p class="count__num">3</p>
+						<p class="count__title count__title_row_one">Пентхаусы</p>
+					</div>
+				</div>
+				<div class="col-xs-3 col-sm-2 col-sm-push-1 section__count-col section__xs-space-bot section__xxs_2">
+					<div class="count count_line_left">
+						<p class="count__num">18</p>
+						<p class="count__title count__title_row_one">Дисконты</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 04 -->
+<section class="section">
+	<div class="num num_dark">04</div>
+	<div class="section__slide">
+		<div class="section__wrap container">
+			<h2 class="head head_question head_line section__head">
+				<span class="separator">Покупаете или продаёте</span>
+				<span class="separator">недвижимость</span>
+			</h2>
+			<h4 class="h4 section__space-bot">
+				<span class="separator">Оставьте заявку и мы подберем</span>
+				<span class="separator">для вас варианты</span>
+			</h4>
+		</div>
+		<div class="section__bottom">
+			<a class="button button_dark" href="#" data-toggle="modal" data-target="#mod-4" data-backdrop="false">Оставить заявку</a>
+			<span class="section__line"></span>
+		</div>
+	</div>
+</section>
+
+<!-- 05 -->
+<section class="section">
+	<div class="num num_gray">05</div>
+	<div class="section__slide section__slide_dark">
+		<div class="section__wrap container-fluid">
+			<div class="container">
+				<div class="title">
+					<div class="bread title__bread">
+						<span class="bread__title">Вы здесь:</span>
+						<ol class="bread__wrap breadcrumb">
+							<li class="bread__item"><a class="bread__link" href="/">Главная</a></li>
+							<li class="bread__item active">Объекты</li>
+						</ol>
+					</div>
+					<h2 class="title__head">Уникальные предложения</h2>
+					<p class="title__aside">
+						<span class="separator">Избранное</span>
+						<span class="separator">для избранных</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_fog card__img_1"></div>
+						<div class="card__i">
+							<p class="card__type">Жилой комплекс</p>
+							<p class="card__title">
+								<span class="separator">Brilliant</span>
+								<span class="separator">House</span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+								<span class="arrow-link__text">
+									<span class="separator">Санкт-Петербург,</span>
+									<span class="separator">Динамо проспект, 6</span>
+								</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Продажа</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_fog card__img_2"></div>
+						<div class="card__i">
+							<p class="card__type">Особняк</p>
+							<p class="card__title">
+								<span class="separator">На Каменном</span>
+								<span class="separator">острове</span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+								<span class="arrow-link__text">
+									<span class="separator">Санкт-Петербург, Крестовский остров,</span>
+									<span class="separator">реки Крестовки Набережная, 3</span>
+								</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Продажа</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_fog card__img_3"></div>
+						<div class="card__i">
+							<p class="card__type">Элитный комплекс</p>
+							<p class="card__title">
+								<span class="separator">Royal</span>
+								<span class="separator">Park</span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+								<span class="arrow-link__text">
+									<span class="separator">Санкт-Петербург,</span>
+									<span class="separator">Петровский проспект, 2</span>
+								</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Продажа</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 section__card-wrap">
+					<a class="card" href="#">
+						<div class="card__img card__img_fog card__img_4"></div>
+						<div class="card__i">
+							<p class="card__type">Жилой комплекс</p>
+							<p class="card__title">
+								<span class="separator">Парадный</span>
+								<span class="separator">Квартал</span>
+							</p>
+							<div class="arrow-link arrow-link_gray card__address">
+								<div class="arrow-link__i">
+								<span class="arrow-link__text">
+									<span class="separator">Санкт-Петербург,</span>
+									<span class="separator">Парадная улица, 3</span>
+								</span>
+									<span class="arrow-link__arrow"></span>
+								</div>
+							</div>
+							<p class="card__sale">Аренда</p>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="section__bottom">
+				<a class="button" href="#">Смотреть все предложения</a>
+				<span class="section__line"></span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 06 -->
+<section class="section">
+	<div class="num">06</div>
+	<div class="section__slide section__slide_img-12">
+		<div class="section__wrap container">
+			<div class="about section__center">
+				<h2 class="about__title about__title_line_large">Многие признаются в том, что чувствуют себя в Петербурге невероятно комфортно и гармонично, часто приезжают сюда не только по делам. Несмотря на то, что цены на премиальную недвижимость в городе стабильны, они существенно ниже, чем в Москве. При этом предложение весьма разнообразно – от исторических зданий с «открыточными» видами до новых элитных комплексов в центральных районах.</h2>
+				<div class="about__line"></div>
+				<p class="about__name">Екатерина Немченко</p>
+				<p class="about__descr about__descr_dark">
+					<span class="separator">Директор департамента элитной жилой</span>
+					<span class="separator">недвижимости компании knight frank st. petersburg</span>
+				</p>
+			</div>
+		</div>
+		<div class="section__bottom">
+			<a class="button button_dark scroll" href="#section-1">Наверх страницы</a>
+			<span class="section__line"></span>
+		</div>
+	</div>
+</section>
+
+@@include('partials/footer.html')
+
+<!-- END OF VISIBLE CONTENT -->
+
+@@include('partials/up.html')
+@@include('partials/modal.html')
+
+</body>
+</html>

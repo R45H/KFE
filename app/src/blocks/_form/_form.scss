@@ -86,4 +86,17 @@
 			margin-bottom: 30px;
 		}
 	}
+
+	&__add-wrap {
+		text-align: center;
+	}
+
+	&__add-btn {
+		margin-bottom: 3em;
+	}
+
+	&__add {
+		display: none;
+		margin-bottom: 2em;
+	}
 }
