@@ -16,6 +16,12 @@
 		}
 	}
 
+	&__img-wrap {
+		height: 35px;
+		display: flex;
+		align-items: flex-end;
+	}
+
 	&__img {
 		position: relative;
 		margin: 0 auto 7px;
