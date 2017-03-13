@@ -1,8 +1,17 @@
 .l-menu-i {
-	position: relative;
-	padding: 0;
 
 	@media (min-width: $screen-xs) {
-		padding: 0 15px;
+		position: fixed;
+		width: 100%;
+		z-index: 9;
+		top: $height-header-sm;
+	}
+
+	@media (min-width: $screen-custom-sm) {
+		top: $height-header;
+	}
+
+	@media (min-width: $screen-lg) {
+		top: $height-header-lg;
 	}
 }

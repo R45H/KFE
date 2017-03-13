@@ -1,7 +1,7 @@
 .bread-alt {
 	position: relative;
 	font-size: 1.3rem;
-	color: $color-darkgray;
+	color: $color-lightergray;
 	text-transform: uppercase;
 
 	&__title {
@@ -33,7 +33,7 @@
 	}
 
 	&__link {
-		color: $color-darkgray;
+		color: $color-lightgray;
 		text-decoration: none;
 		border-bottom: 1px solid transparent;
 
@@ -52,5 +52,5 @@
 
 // Черточка
 .breadcrumb > li + li:before {
-	color: $color-darkgray;
+	color: $color-lightgray;
 }

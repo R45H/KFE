@@ -1,24 +1,16 @@
 .menu-i {
 	background-color: $color-darkestgray;
 	list-style-type: none;
-	padding: 0;
 	margin: 0;
-	z-index: 5;
 
 	@media (min-width: $screen-xs) {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		margin: 0 -15px;
 	}
 
-	@media (min-width: $screen-sm) {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		margin: 0;
-		padding: 0 20px;
+	@media (min-width: $screen-custom-sm) {
+		margin: 0 auto;
 	}
 
 	&__item {

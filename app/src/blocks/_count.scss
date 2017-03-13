@@ -6,6 +6,7 @@
 		@extend %line;
 		content: '';
 		margin: 10px auto 0;
+		transition: $duration ease;
 
 		@media (min-width: $screen-sm) {
 			margin: 10px 0 0 0;
@@ -27,6 +28,7 @@
 		line-height: 1em;
 		font-weight: 100;
 		margin: 0;
+		transition: $duration ease;
 
 		@media (min-width: $screen-xs) {
 			height: 2em;
@@ -83,6 +85,25 @@
 				height: 148px;
 				background-image: url('../img/line-slide-title-left-lg.png');
 			}
+		}
+	}
+}
+
+a.count {
+
+	&:hover,
+	&:focus {
+
+		.count {
+			// =====
+
+			&__title {
+				color: $color-red;
+			}
+		}
+
+		&::after {
+			width: 100%;
 		}
 	}
 }
