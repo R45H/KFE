@@ -1,0 +1,42 @@
+.gallery {
+
+	&__fade {
+
+		// Тень
+		&.mfp-bg {
+			/* overlay at start */
+			opacity: 0;
+			transition: $duration / 2 ease-out;
+
+			/* overlay animate in */
+			&.mfp-ready {
+				opacity: 0.8;
+			}
+			/* overlay animate out */
+			&.mfp-removing {
+				opacity: 0;
+			}
+		}
+
+		// Контент
+		&.mfp-wrap {
+
+			/* content at start */
+			.mfp-content {
+				opacity: 0;
+				transition: $duration / 2 ease-out all $duration / 4;
+			}
+
+			/* content animate it */
+			&.mfp-ready .mfp-content {
+				opacity: 1;
+			}
+
+			/* content animate out */
+			&.mfp-removing .mfp-content {
+				opacity: 0;
+				transition: $duration / 2 ease-out;
+			}
+		}
+	}
+}
