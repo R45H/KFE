@@ -85,4 +85,8 @@ function initMap() {
 	}
 	/* ======= */
 }
+
+$(function() {
+	initMap();
+});
 /* ========== */
