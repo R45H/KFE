@@ -1,6 +1,6 @@
 /* Инициализация карты */
 function initMap() {
-	if (!$('.map').length) return;
+	if (!$('.map').length || $('.map').is(':hidden')) return;
 
 	/* Точки */
 	var dot1 = {lat: 59.973305, lng: 30.245392};
@@ -85,8 +85,4 @@ function initMap() {
 	}
 	/* ======= */
 }
-
-$(function() {
-	initMap();
-});
 /* ========== */

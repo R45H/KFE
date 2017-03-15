@@ -1014,6 +1014,7 @@
 
 		@media (min-width: $screen-xs) {
 			text-align: left;
+			justify-content: flex-start;
 		}
 
 		@media (min-width: $screen-sm) {
