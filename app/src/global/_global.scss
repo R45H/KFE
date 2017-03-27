@@ -22,6 +22,11 @@ body {
 	}
 }
 
+::selection {
+	background-color: $color-lightgray;
+	color: $color-black;
+}
+
 a {
 	color: $color-black;
 	text-decoration: none;
