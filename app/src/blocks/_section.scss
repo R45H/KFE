@@ -1167,4 +1167,15 @@
 			margin-top: 70px;
 		}
 	}
+
+	&__share {
+		margin: 0 25px 20px 0;
+		display: inline-block;
+		white-space: nowrap;
+		overflow: hidden;
+		vertical-align: middle;
+		max-width: 50%;
+		opacity: 1;
+		transition: $duration ease;
+	}
 }
