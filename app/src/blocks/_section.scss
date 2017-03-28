@@ -1090,10 +1090,35 @@
 		}
 	}
 
-	&__wrap-right {
-		margin-top: 30px;
+	&__flex-option {
+		display: inline-block;
+		width: 40%;
+		margin: 0 5% 20px;
+		text-align: center;
 
 		@media (min-width: $screen-xs) {
+			width: auto;
+			margin: 0 25px 20px 0;
+			text-align: left;
+		}
+
+		&:last-child {
+
+			@media (min-width: $screen-xs) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__wrap-right {
+		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: baseline;
+
+		@media (min-width: $screen-xs) {
+			display: block;
 			text-align: right;
 		}
 	}

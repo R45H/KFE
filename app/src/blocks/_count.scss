@@ -90,6 +90,7 @@
 }
 
 a.count {
+	transition: none;
 
 	&:hover,
 	&:focus {

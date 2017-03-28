@@ -2,6 +2,7 @@
 	display: inline-block;
 	font-size: 1.4rem;
 	text-align: left;
+	transition: none;
 
 	&__i {
 		display: flex;
@@ -31,6 +32,7 @@
 		position: relative;
 		display: inline-block;
 		width: 9px;
+		min-width: 9px;
 		height: 31px;
 		background: url('../img/arrows.png') 9px 0;
 		margin-left: 10px;
@@ -39,6 +41,7 @@
 
 		@media (min-width: $screen-lg) {
 			width: 12px;
+			min-width: 12px;
 			height: 48px;
 			background-position: -13px 0;
 		}

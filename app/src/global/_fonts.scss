@@ -71,6 +71,18 @@
 }
 
 @font-face {
+	font-family: 'Tahoma';
+	src: url('../fonts/tahoma/tahoma.eot');
+	src: url('../fonts/tahoma/tahoma.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/tahoma/tahoma.woff2') format('woff2'),
+	url('../fonts/tahoma/tahoma.woff') format('woff'),
+	url('../fonts/tahoma/tahoma.ttf') format('truetype'),
+	url('../fonts/tahoma/tahoma.svg#tahoma') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'ALSRubl';
 	src: url('../fonts/alsrubl/rouble.eot');
 	src: url('../fonts/alsrubl/rouble.eot?#iefix') format('embedded-opentype'),
