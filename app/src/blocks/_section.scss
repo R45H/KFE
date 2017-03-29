@@ -1102,7 +1102,7 @@
 			text-align: left;
 		}
 
-		&:last-child {
+		&:last-of-type {
 
 			@media (min-width: $screen-xs) {
 				margin-right: 0;
@@ -1193,14 +1193,34 @@
 		}
 	}
 
-	&__share {
-		margin: 0 25px 20px 0;
-		display: inline-block;
-		white-space: nowrap;
-		overflow: hidden;
+	&__share-wrap {
 		vertical-align: middle;
-		max-width: 50%;
-		opacity: 1;
-		transition: $duration ease;
+		margin-bottom: 20px;
+		display: inline-block;
+		width: 100%;
+		text-align: right;
+
+		@media (min-width: $screen-custom-sm) {
+			width: auto;
+			text-align: left;
+		}
+	}
+
+	&__share-i {
+		margin-left: 20px;
+		white-space: nowrap;
+		display: none;
+	}
+
+	&__share {
+		margin-left: 5px;
+
+		&:first-child {
+			margin-left: 0;
+
+			@media (min-width: $screen-custom-sm) {
+				margin-left: 5px;
+			}
+		}
 	}
 }

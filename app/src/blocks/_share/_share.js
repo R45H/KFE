@@ -1,3 +1,4 @@
+/* Кнопки "Поделиться" */
 $(function() {
 	Share = {
 
@@ -53,18 +54,6 @@ $(function() {
 				+ '&noparse=true';
 		},
 
-		// Одноклассники
-		ok: function(_options) {
-			var options = $.extend({
-				url:    location.href,
-				text:   ''
-			}, _options);
-
-			return 'http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1'
-				+ '&st.comments=' + encodeURIComponent(options.text)
-				+ '&st._surl='    + encodeURIComponent(options.url);
-		},
-
 		// Facebook
 		fb: function(_options) {
 			var options = $.extend({
@@ -81,20 +70,6 @@ $(function() {
 				+ '&p[images][0]=' + encodeURIComponent(options.image);
 		},
 
-		// Живой Журнал
-		lj: function(_options) {
-			var options = $.extend({
-				url:    location.href,
-				title:  document.title,
-				text:   ''
-			}, _options);
-
-			return 'http://livejournal.com/update.bml?'
-				+ 'subject='        + encodeURIComponent(options.title)
-				+ '&event='         + encodeURIComponent(options.text + '<br/><a href="' + options.url + '">' + options.title + '</a>')
-				+ '&transform=1';
-		},
-
 		// Твиттер
 		tw: function(_options) {
 			var options = $.extend({
@@ -107,46 +82,6 @@ $(function() {
 				+ 'text='      + encodeURIComponent(options.title)
 				+ '&url='      + encodeURIComponent(options.url)
 				+ '&counturl=' + encodeURIComponent(options.count_url);
-		},
-
-		// Mail.Ru
-		mr: function(_options) {
-			var options = $.extend({
-				url:    location.href,
-				title:  document.title,
-				image:  '',
-				text:   ''
-			}, _options);
-
-			return 'http://connect.mail.ru/share?'
-				+ 'url='          + encodeURIComponent(options.url)
-				+ '&title='       + encodeURIComponent(options.title)
-				+ '&description=' + encodeURIComponent(options.text)
-				+ '&imageurl='    + encodeURIComponent(options.image);
-		},
-
-		// Google+
-		gg: function (_options) {
-			var options = $.extend({
-				url: location.href
-			}, _options);
-
-			return 'https://plus.google.com/share?url='
-				+ encodeURIComponent(options.url);
-		},
-
-		//LinkedIn
-		li: function(_options) {
-			var options = $.extend({
-				url:    location.href,
-				title:  document.title,
-				text:   ''
-			}, _options);
-
-			return 'http://www.linkedin.com/shareArticle?mini=true'
-				+ '&url='       + encodeURIComponent(options.url)
-				+ '&title='     + encodeURIComponent(options.title)
-				+ '&summary='   + encodeURIComponent(options.text);
 		},
 
 		// Открыть окно шаринга
@@ -162,5 +97,9 @@ $(function() {
 
 	$('.option_share').on('click',function(e) {
 		e.preventDefault();
+
+		$('.section__share-i').toggle(300);
+		$(this).toggleClass('option_share-active');
 	});
 });
+/* ========== */

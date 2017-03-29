@@ -373,7 +373,8 @@
 
 a.option {
 
-	&:hover {
+	&:hover,
+	&_share-active {
 
 		&::after {
 			width: 100%;
