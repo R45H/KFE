@@ -126,24 +126,8 @@
 	&_half {
 
 		@media (min-width: $screen-custom-sm) {
-			background: url('../img/img-4.jpg') no-repeat 50% 50%;
-			background-size: cover;
-		}
-
-		&::after {
-
-			@media (min-width: $screen-custom-sm) {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-color: rgba(0, 0, 0, .7);
-				z-index: -1;
-			}
-
+			width: 55%;
+			margin: 0 auto;
 		}
 
 		.section {
@@ -152,8 +136,7 @@
 			&__slide {
 
 				@media (min-width: $screen-custom-sm) {
-					width: 70%;
-					margin: 0 auto;
+
 				}
 			}
 
@@ -164,15 +147,7 @@
 			&__phone {
 
 				@media (min-width: $screen-custom-sm) {
-					padding-bottom: 60%;
-				}
-
-				@media (min-width: $screen-sm) {
-					padding-bottom: 60%;
-				}
-
-				@media (min-width: $screen-md) {
-					padding-bottom: 50%;
+					padding-bottom: 75%;
 				}
 
 				&_fog {
@@ -195,15 +170,76 @@
 			}
 		}
 
-		.owl-nav {
+		.owl-stage-outer {
+			overflow: visible;
+		}
+
+		.js-owl__dots {
+			padding: 0 15px;
+			bottom: 70px;
+
+			@media (min-width: $screen-xs) {
+				bottom: 16%;
+			}
+		}
+
+		+ .owl-nav {
+			display: none;
+
+			@media (min-width: $screen-custom-sm) {
+				display: block;
+			}
 
 			.owl-prev,
 			.owl-next {
+				top: 0;
+				height: 100%;
+				position: absolute;
+				padding: 11.25%;
+				background: transparent no-repeat 50% 50%;
+				background-size: cover;
+				z-index: 2;
+				transition: all $duration / 2;
+				cursor: pointer;
+
+
+				@media (min-width: $screen-lg) {
+					padding: 11.25%;
+				}
+
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(0, 0, 0, .7);
+					transition: all $duration / 2;
+
+					@media (min-width: $screen-lg) {
+						width: 100%;
+						height: 100%;
+					}
+				}
 
 				&:hover,
 				&:focus {
-					background-color: $color-light-fog;
+					background: no-repeat 50% 50%;
+					background-size: cover;
+
+					&::after {
+						background-color: $color-fog;
+					}
 				}
+			}
+
+			.owl-prev {
+				left: 0;
+			}
+
+			.owl-next {
+				right: 0;
 			}
 		}
 	}
