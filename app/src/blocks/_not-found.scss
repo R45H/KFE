@@ -1,0 +1,25 @@
+.not-found {
+	text-align: center;
+	padding: 15px;
+
+	&__img {
+		width: 64px;
+		height: 85px;
+		background: url('../img/lup.png');
+		margin: 0 auto 2em;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		margin: 0 0 .5em;
+		font-weight: 600;
+		font-size: 2.5rem;
+		font-family: $font-main;
+	}
+
+	&__desc {
+		text-transform: uppercase;
+		margin: 0 0 5px;
+		font-size: 1.4rem;
+	}
+}
