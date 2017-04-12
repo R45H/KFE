@@ -49,6 +49,32 @@
 		&_red {
 			color: $color-red;
 		}
+
+		&_min {
+			font-size: 3rem;
+
+			@media (min-width: $screen-xs) {
+				font-size: 3rem;
+			}
+
+			@media (min-width: $screen-sm) {
+				font-size: 3rem;
+			}
+
+			&::after {
+
+				@media (min-width: $screen-sm) {
+					width: 10px;
+					height: 29px;
+					background-size: contain;
+				}
+
+				@media (min-width: $screen-lg) {
+					width: 16px;
+					height: 47px;
+				}
+			}
+		}
 	}
 
 	&__aside {
@@ -101,6 +127,23 @@
 
 						@media (min-width: $screen-lg) {
 							background-image: url('../img/line-slide-right-bright-lg.png');
+						}
+					}
+				}
+
+				&_min {
+
+					&::after {
+
+						@media (min-width: $screen-sm) {
+							width: 10px;
+							height: 29px;
+							background-size: contain;
+						}
+
+						@media (min-width: $screen-lg) {
+							width: 16px;
+							height: 47px;
 						}
 					}
 				}
