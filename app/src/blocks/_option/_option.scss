@@ -39,10 +39,10 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-image: url('../img/option.png');
 			transition: $duration ease-out;
 			opacity: 1;
 			transform: scale(1);
+			@include bgi-retina('../img/option', 'png', 150px, 142px);
 		}
 
 		&::before {
@@ -59,10 +59,18 @@
 
 			&::before {
 				background-position: -132px 0;
+
+				@include retina() {
+					background-position: -132px -27px;
+				}
 			}
 
 			&::after {
 				background-position: -132px -27px;
+
+				@include retina() {
+					background-position: -132px 0;
+				}
 			}
 		}
 
@@ -70,12 +78,25 @@
 			width: 28px;
 			height: 29px;
 
+			@include retina() {
+				width: 27px;
+				height: 29px;
+			}
+
 			&::before {
 				background-position: 0 -29px;
+
+				@include retina() {
+					background-position: -28px -29px;
+				}
 			}
 
 			&::after {
 				background-position: -56px 0;
+
+				@include retina() {
+					background-position: 0 -29px;
+				}
 			}
 		}
 
@@ -83,12 +104,24 @@
 			width: 28px;
 			height: 29px;
 
+			@include retina() {
+				width: 29px;
+			}
+
 			&::before {
 				background-position: -28px 0;
+
+				@include retina() {
+					background-position: 0 0;
+				}
 			}
 
 			&::after {
 				background-position: 0 0;
+
+				@include retina() {
+					background-position: -29px 0;
+				}
 			}
 		}
 
@@ -109,8 +142,16 @@
 			width: 22px;
 			height: 19px;
 
+			@include retina() {
+				width: 24px;
+			}
+
 			&::before {
 				background-position: -84px -58px;
+
+				@include retina() {
+					background-position: -84px -59px;
+				}
 			}
 
 			&::after {
@@ -122,12 +163,24 @@
 			width: 25px;
 			height: 27px;
 
+			@include retina() {
+				width: 23px;
+			}
+
 			&::before {
 				background-position: -28px -29px;
+
+				@include retina() {
+					background-position: -108px -27px;
+				}
 			}
 
 			&::after {
 				background-position: -53px -29px;
+
+				@include retina() {
+					background-position: -108px 0;
+				}
 			}
 		}
 
@@ -137,10 +190,18 @@
 
 			&::before {
 				background-position: -26px -81px;
+
+				@include retina() {
+					background-position: -26px -82px;
+				}
 			}
 
 			&::after {
 				background-position: 0 -81px;
+
+				@include retina() {
+					background-position: 0 -82px;
+				}
 			}
 		}
 
@@ -148,12 +209,24 @@
 			width: 25px;
 			height: 26px;
 
+			@include retina() {
+				width: 26px;
+			}
+
 			&::before {
 				background-position: -107px -26px;
+
+				@include retina() {
+					background-position: -58px 0;
+				}
 			}
 
 			&::after {
 				background-position: -107px 0;
+
+				@include retina() {
+					background-position: -58px -27px;
+				}
 			}
 		}
 
@@ -167,6 +240,10 @@
 
 			&::after {
 				background-position: -119px -106px;
+
+				@include retina() {
+					background-position: -86px -107px;
+				}
 			}
 		}
 
@@ -176,6 +253,10 @@
 
 			&::before {
 				background-position: -84px -29px;
+
+				@include retina() {
+					background-position: -84px -30px;
+				}
 			}
 
 			&::after {
@@ -187,12 +268,24 @@
 			width: 29px;
 			height: 18px;
 
+			@include retina() {
+				height: 18px;
+			}
+
 			&::before {
 				background-position: 0 -106px;
+
+				@include retina() {
+					background-position: 0 -107px;
+				}
 			}
 
 			&::after {
 				background-position: -52px -81px;
+
+				@include retina() {
+					background-position: -53px -82px;
+				}
 			}
 		}
 
@@ -202,10 +295,18 @@
 
 			&::before {
 				background-position: 0 -58px;
+
+				@include retina() {
+					background-position: -29px -58px;
+				}
 			}
 
 			&::after {
 				background-position: -29px -58px;
+
+				@include retina() {
+					background-position: 0 -58px;
+				}
 			}
 		}
 
@@ -213,12 +314,25 @@
 			width: 23px;
 			height: 24px;
 
+			@include retina() {
+				width: 24px;
+				height: 25px;
+			}
+
 			&::before {
 				background-position: -107px -76px;
+
+				@include retina() {
+					background-position: -107px -79px;
+				}
 			}
 
 			&::after {
 				background-position: -107px -52px;
+
+				@include retina() {
+					background-position: -107px -54px;
+				}
 			}
 		}
 
@@ -228,10 +342,19 @@
 
 			&::before {
 				background-position: -48px -106px;
+
+				@include retina() {
+					background-position: -83px -82px;
+				}
+
 			}
 
 			&::after {
 				background-position: -29px -106px;
+
+				@include retina() {
+					background-position: -30px -107px;
+				}
 			}
 		}
 
@@ -241,10 +364,18 @@
 
 			&::before {
 				background-position: -84px -106px;
+
+				@include retina() {
+					background-position: -18px -125px;
+				}
 			}
 
 			&::after {
 				background-position: -67px -106px;
+
+				@include retina() {
+					background-position: -35px -125px;
+				}
 			}
 		}
 
@@ -254,10 +385,18 @@
 
 			&::before {
 				background-position: 0 -124px;
+
+				@include retina() {
+					background-position: -68px -107px;
+				}
 			}
 
 			&::after {
 				background-position: -101px -106px;
+
+				@include retina() {
+					background-position: -49px -107px;
+				}
 			}
 		}
 
@@ -265,12 +404,24 @@
 			width: 18px;
 			height: 18px;
 
+			@include retina() {
+				height: 17px;
+			}
+
 			&::before {
 				background-position: -132px -96px;
+
+				@include retina() {
+					background-position: 0 -125px;
+				}
 			}
 
 			&::after {
 				background-position: -81px -81px;
+
+				@include retina() {
+					background-position: -132px -96px;
+				}
 			}
 		}
 
@@ -278,9 +429,13 @@
 			width: 20px;
 			height: 14px;
 
+			@include retina() {
+				width: 21px;
+			}
+
 			&::before,
 			&::after {
-				background-image: url('../img/option-2.png');
+				@include bgi-retina('../img/option-2', 'png', 57px, 47px);
 			}
 
 			&::before {
@@ -298,7 +453,7 @@
 
 			&::before,
 			&::after {
-				background-image: url('../img/option-2.png');
+				@include bgi-retina('../img/option-2', 'png', 57px, 47px);
 			}
 
 			&::before {
@@ -314,13 +469,21 @@
 			width: 17px;
 			height: 16px;
 
+			@include retina() {
+				width: 16px;
+			}
+
 			&::before,
 			&::after {
-				background-image: url('../img/option-2.png');
+				@include bgi-retina('../img/option-2', 'png', 57px, 47px);
 			}
 
 			&::before {
 				background-position: -40px 0;
+
+				@include retina() {
+					background-position: -41px 0;
+				}
 			}
 
 			&::after {
@@ -334,15 +497,55 @@
 
 			&::before,
 			&::after {
-				background-image: url('../img/option-2.png');
+				@include bgi-retina('../img/option-2', 'png', 57px, 47px);
 			}
 
 			&::before {
 				background-position: -40px -16px;
+
+				@include retina() {
+					background-position: -41px -16px;
+				}
 			}
 
 			&::after {
 				background-position: -17px -31px;
+
+				@include retina() {
+					background-position: -16px -31px;
+				}
+			}
+		}
+
+		&_22 {
+			width: 23px;
+			height: 20px;
+
+			&::before,
+			&::after {
+				@include bgi-retina('../img/option-3', 'png', 62px, 44px);
+			}
+
+			&::before {
+				background-position: 0 -24px;
+			}
+
+			&::after {
+				background-position: -23px -24px;
+			}
+		}
+
+		&_23 {
+			width: 32px;
+			height: 24px;
+
+			&::before,
+			&::after {
+				@include bgi-retina('../img/option-3', 'png', 64px, 44px);
+			}
+
+			&::after {
+				background-position: -32px 0px;
 			}
 		}
 	}
@@ -363,11 +566,10 @@
 	&__title {
 		font-family: $font-second;
 		color: $color-darkgray;
-		font-size: 2.2rem;
+		font-size: 1.3rem;
 		margin-bottom: 4px;
-		line-height: 1;
+		line-height: 1.2;
 		transition: $duration ease;
-		word-break: break-all;
 		word-break: break-word;
 	}
 }

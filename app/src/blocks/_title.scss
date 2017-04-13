@@ -67,11 +67,13 @@
 					width: 10px;
 					height: 29px;
 					background-size: contain;
+					right: -25px;
 				}
 
 				@media (min-width: $screen-lg) {
 					width: 16px;
 					height: 47px;
+					right: -30px;
 				}
 			}
 		}
@@ -132,6 +134,7 @@
 				}
 
 				&_min {
+					font-size: 3rem;
 
 					&::after {
 
@@ -139,11 +142,13 @@
 							width: 10px;
 							height: 29px;
 							background-size: contain;
+							right: -25px;
 						}
 
 						@media (min-width: $screen-lg) {
 							width: 16px;
 							height: 47px;
+							right: -30px;
 						}
 					}
 				}

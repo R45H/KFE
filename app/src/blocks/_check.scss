@@ -37,8 +37,8 @@
 		font-weight: 500;
 		float: left;
 		margin: 0 3px 0 0;
-		min-width: 1.8em;
 		height: 38px;
+		min-width: 1.6em;
 		line-height: 38px;
 		text-align: center;
 		cursor: pointer;
@@ -46,6 +46,10 @@
 		color: $color-darkgray;
 		transition: $duration / 2 ease;
 		user-select: none;
+
+		@media (min-width: $screen-xs) {
+			min-width: 1.8em;
+		}
 
 		@media (min-width: $screen-lg) {
 			height: 50px;

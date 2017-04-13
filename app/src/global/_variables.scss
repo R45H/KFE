@@ -35,6 +35,28 @@ $height-header-sm: 70px;
 $height-header:    85px;
 $height-header-lg: 120px;
 
+@mixin retina() {
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min-resolution: 144dpi) {
+		@content;
+	}
+}
+
+@mixin bgi-retina($file, $type: 'png', $width: 100%, $height: $width) {
+	background-image: url($file + '.' + $type);
+
+	@include retina() {
+		background-image: url($file + '@2x.' + $type);
+
+		@if $width == cover or $width == contain {
+			$height: null;
+		}
+
+		background-size: $width $height;
+	}
+}
+
 %line {
 	display: block;
 	height: 3px;
