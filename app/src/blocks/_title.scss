@@ -105,6 +105,10 @@
 		color: $color-gray;
 		text-transform: uppercase;
 		margin: 0;
+
+		@media (min-width: $screen-sm) {
+			margin-right: 1.5em;
+		}
 	}
 
 	&_dark {

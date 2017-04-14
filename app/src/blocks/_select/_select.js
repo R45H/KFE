@@ -1,6 +1,8 @@
 /* Кастомные селекты */
 $(function() {
-	$('.select').selectmenu({
+	var $select = $('.select');
+
+	$select.selectmenu({
 		classes: {
 			'ui-selectmenu-button': 'select__current', // Кнопка селекта
 			'ui-selectmenu-button-open': 'select__current_active', // Состояние кнопки при открытом селекте
@@ -11,7 +13,11 @@ $(function() {
 	});
 
 	$(window).on('resize', function() {
-		$('.select').selectmenu('close');
+		$select.selectmenu('close');
+	});
+
+	$select.on('selectmenuopen', function() {
+		$('.ui-menu').perfectScrollbar();
 	});
 });
 /* ========== */

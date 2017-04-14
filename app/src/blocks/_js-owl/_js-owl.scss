@@ -84,6 +84,7 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+				transition: $duration / 2 ease;
 
 				@media (min-width: $screen-lg) {
 					width: 13px;
@@ -94,6 +95,13 @@
 			&:hover,
 			&:focus {
 				background-color: $color-fog;
+			}
+
+			&:active {
+
+				&::after {
+					transform: translate(-50%, -50%) scale(.8);
+				}
 			}
 		}
 
@@ -232,6 +240,7 @@
 					top: 50%;
 					left: 50%;
 					transform: translate(-50%, -50%);
+					transition: $duration / 2 ease;
 
 					@media (min-width: $screen-lg) {
 						width: 13px;
@@ -246,6 +255,13 @@
 
 					&::before {
 						background-color: $color-fog;
+					}
+				}
+
+				&:active {
+
+					&::after {
+						transform: translate(-50%, -50%) scale(.8);
 					}
 				}
 			}

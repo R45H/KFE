@@ -83,9 +83,49 @@
 		.ui-menu {
 			list-style-type: none;
 			padding: 0;
-			margin: 0;
 			border: 1px solid $color-darkgray;
-			border-top: none;
+			margin: -1px 0 0;
+			max-height: 28em;
+			outline: none;
+			position: relative;
+
+			// Стилизация ползунка
+			.ps-scrollbar-y-rail {
+				background-color: transparent !important;
+				opacity: 1;
+
+				&:hover {
+
+					.ps-scrollbar-y {
+						width: 8px !important;
+						background-color: $color-red !important;
+					}
+				}
+			}
+
+			.ps-scrollbar-y {
+				width: 5px !important;
+				background-color: $color-gray !important;
+				border-radius: 2px;
+				transition:
+					background-color .2s linear,
+					height .2s linear,
+					width .2s ease-in-out,
+					border-radius .2s ease-in-out,
+					top .1s ease;
+
+				&:hover,
+				&:active {
+					width: 8px !important;
+					background-color: $color-red !important;
+					transition:
+						background-color .2s linear,
+						height .2s linear,
+						width .2s ease-in-out,
+						border-radius .2s ease-in-out;
+				}
+			}
+			// ===================
 		}
 
 		.ui-menu-item-wrapper {
