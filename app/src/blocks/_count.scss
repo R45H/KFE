@@ -1,15 +1,20 @@
 .count {
 	display: inline-block;
 	position: relative;
+	padding-bottom: 10px;
 
 	&::after {
 		@extend %line;
 		content: '';
-		margin: 10px auto 0;
 		transition: $duration ease;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
 
 		@media (min-width: $screen-sm) {
-			margin: 10px 0 0 0;
+			left: 0;
+			transform: none;
 		}
 	}
 
@@ -29,17 +34,6 @@
 		font-weight: 100;
 		margin: 0;
 		transition: $duration ease;
-
-		@media (min-width: $screen-xs) {
-			height: 2em;
-		}
-
-		&_row_one {
-
-			@media (min-width: $screen-xs) {
-				height: 1em;
-			}
-		}
 	}
 
 	&__desc {
@@ -52,39 +46,6 @@
 
 		@media (min-width: $screen-xs) {
 			padding-right: 30px;
-		}
-	}
-
-	&_line_left {
-
-		@media (min-width: $screen-sm) {
-			padding-right: 32px;
-		}
-
-		@media (min-width: $screen-lg) {
-			padding-right: 51px;
-		}
-
-		&::before {
-
-			@media (min-width: $screen-sm) {
-				content: '';
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				background-size: cover;
-				left: -62px;
-				width: 32px;
-				height: 93px;
-				background-image: url('../img/line-slide-title-left.png');
-			}
-
-			@media (min-width: $screen-lg) {
-				left: -81px;
-				width: 51px;
-				height: 148px;
-				background-image: url('../img/line-slide-title-left-lg.png');
-			}
 		}
 	}
 }
