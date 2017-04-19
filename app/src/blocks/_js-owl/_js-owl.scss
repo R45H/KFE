@@ -1,6 +1,36 @@
 .js-owl {
 	position: relative;
 
+	@media (min-width: $screen-xs) {
+		height: calc(100vh - 70px);
+	}
+
+	@media (min-width: $screen-custom-sm) {
+		height: calc(100vh - 85px);
+	}
+
+	@media (min-width: $screen-lg) {
+		height: calc(100vh - 120px);
+	}
+
+	.owl-stage-outer,
+	.owl-stage,
+	.owl-item,
+	.section__slide,
+	.section__phone {
+
+		@media (min-width: $screen-xs) {
+			height: 100%;
+		}
+	}
+
+	.section__phone {
+
+		@media (min-width: $screen-xs) {
+			padding: calc(0px);
+		}
+	}
+
 	// Пагинация
 	&__dots {
 		position: absolute;
