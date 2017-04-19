@@ -28,11 +28,12 @@
 	&__link {
 		color: $color-lightgray;
 		text-decoration: none;
+		border-bottom: 1px solid transparent;
 
 		&:hover,
 		&:focus {
 			color: inherit;
-			text-decoration: underline;
+			border-bottom-color: $color-lightgray;
 		}
 	}
 
