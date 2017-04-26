@@ -1,5 +1,6 @@
 .js-owl {
 	position: relative;
+	height: calc(100vh - 70px - 102px);
 
 	@media (min-width: $screen-xs) {
 		height: calc(100vh - 70px);
@@ -18,17 +19,11 @@
 	.owl-item,
 	.section__slide,
 	.section__phone {
-
-		@media (min-width: $screen-xs) {
-			height: 100%;
-		}
+		height: 100%;
 	}
 
 	.section__phone {
-
-		@media (min-width: $screen-xs) {
-			padding: calc(0px);
-		}
+		padding: calc(0px);
 	}
 
 	// Пагинация

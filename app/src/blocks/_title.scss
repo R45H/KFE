@@ -52,6 +52,7 @@
 
 		&_min {
 			font-size: 3rem;
+			vertical-align: middle;
 
 			@media (min-width: $screen-xs) {
 				font-size: 3rem;
@@ -89,6 +90,10 @@
 
 		@media (min-width: $screen-sm) {
 			display: inline-block;
+		}
+
+		&_mid {
+			vertical-align: middle;
 		}
 	}
 

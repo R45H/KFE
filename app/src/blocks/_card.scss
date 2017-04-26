@@ -19,6 +19,10 @@
 			margin: 0;
 		}
 
+		@media (min-width: $screen-lg) {
+			padding-bottom: 70%;
+		}
+
 		&_fog {
 
 			&::before {
@@ -121,7 +125,7 @@
 
 		@media (min-width: $screen-xs) {
 			max-width: 80%;
-			min-height: 2.6em;
+			min-height: 2.5em;
 		}
 
 		&::before {

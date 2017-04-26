@@ -24,6 +24,10 @@
 		font-size: 8.9rem;
 		line-height: 1em;
 		margin: 0;
+
+		@media (min-width: $screen-lg) {
+			font-size: 6.5rem;
+		}
 	}
 
 	&__title {

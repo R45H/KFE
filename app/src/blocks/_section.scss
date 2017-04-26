@@ -1085,7 +1085,7 @@
 	&__option-wrap {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: flex-start;
 		margin-top: 3em;
 		text-align: center;
@@ -1102,7 +1102,7 @@
 
 	&__option-col {
 		display: inline-block;
-		width: 100%;
+		width: 50%;
 		margin-bottom: 30px;
 
 		@media (min-width: $screen-xs) {
@@ -1114,7 +1114,6 @@
 		}
 
 		&_half {
-			width: 50%;
 
 			@media (min-width: $screen-xs) {
 				width: 25%;
@@ -1190,7 +1189,7 @@
 		margin-top: 30px;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: baseline;
 
 		@media (min-width: $screen-xs) {
@@ -1314,6 +1313,66 @@
 			width: 100%;
 			height: 100%;
 			background: rgba(0, 0, 0, .9);
+		}
+	}
+
+	&__full {
+		height: calc(100vh - 70px - 102px);
+
+		@media (min-width: $screen-xs) {
+			height: calc(100vh - 70px);
+		}
+
+		@media (min-width: $screen-custom-sm) {
+			height: calc(100vh - 85px);
+		}
+
+		@media (min-width: $screen-lg) {
+			height: calc(100vh - 120px);
+		}
+	}
+
+	&__full-xs {
+
+		@media (min-width: $screen-xs) {
+			height: calc(100vh - 70px);
+		}
+
+		@media (min-width: $screen-custom-sm) {
+			height: calc(100vh - 85px);
+		}
+
+		@media (min-width: $screen-lg) {
+			height: calc(100vh - 120px);
+		}
+	}
+
+	&__full-c-sm {
+
+		@media (min-width: $screen-custom-sm) {
+			height: calc(100vh - 85px);
+		}
+
+		@media (min-width: $screen-lg) {
+			height: calc(100vh - 120px);
+		}
+	}
+
+	&__full-sm {
+
+		@media (min-width: $screen-sm) {
+			height: calc(100vh - 85px);
+		}
+
+		@media (min-width: $screen-lg) {
+			height: calc(100vh - 120px);
+		}
+	}
+
+	&__full-lg {
+
+		@media (min-width: $screen-lg) {
+			height: calc(100vh - 120px);
 		}
 	}
 }
