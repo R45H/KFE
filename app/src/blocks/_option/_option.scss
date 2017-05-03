@@ -548,6 +548,106 @@
 				background-position: -32px 0px;
 			}
 		}
+
+		&_24 {
+			width: 27px;
+			height: 24px;
+
+			&::before,
+			&::after {
+				@include bgi-retina('../img/option-5', 'png', 70px, 52px);
+			}
+
+			&::before {
+				background-position: 0px -28px;
+			}
+
+			&::after {
+				background-position: -27px -28px;
+			}
+		}
+
+		&_25 {
+			width: 39px;
+			height: 19px;
+
+			&::before,
+			&::after {
+				@include bgi-retina('../img/option-4', 'png', 107px, 91px);
+			}
+
+			&::before {
+				background-position: -68px 0;
+			}
+
+			&::after {
+				background-position: -68px -19px;
+			}
+		}
+
+		&_26 {
+			width: 18px;
+			height: 31px;
+
+			&::before,
+			&::after {
+				@include bgi-retina('../img/option-4', 'png', 107px, 91px);
+			}
+
+			&::before {
+				background-position: -36px -60px;
+			}
+
+			&::after {
+				background-position: -54px -60px;
+			}
+		}
+
+		&_27 {
+			width: 32px;
+			height: 30px;
+
+			&::before,
+			&::after {
+				@include bgi-retina('../img/option-4', 'png', 107px, 91px);
+			}
+
+			&::before {
+				background-position: 0 -30px;
+			}
+
+			&::after {
+				background-position: -32px -30px;
+			}
+		}
+
+		&_28 {
+			width: 18px;
+			height: 31px;
+
+			&::before,
+			&::after {
+				@include bgi-retina('../img/option-4', 'png', 107px, 91px);
+			}
+
+			&::after {
+				background-position: -18px -60px;
+			}
+		}
+
+		&_29 {
+			width: 35px;
+			height: 28px;
+
+			&::before,
+			&::after {
+				@include bgi-retina('../img/option-5', 'png', 70px, 52px);
+			}
+
+			&::after {
+				background-position: -35px 0px;
+			}
+		}
 	}
 
 	&__desc {
