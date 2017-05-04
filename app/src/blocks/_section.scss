@@ -1123,6 +1123,18 @@
 				width: 12.5%;
 			}
 		}
+
+		&_full {
+			width: 100%;
+
+			@media (min-width: $screen-xs) {
+				width: 100%;
+			}
+
+			@media (min-width: $screen-custom-sm) {
+				width: 100%;
+			}
+		}
 	}
 
 	&__option {
