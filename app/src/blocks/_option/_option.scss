@@ -648,6 +648,57 @@
 				background-position: -35px 0px;
 			}
 		}
+
+		&_30 {
+			width: 26px;
+			height: 26px;
+
+			&::before,
+			&::after {
+				@include bgi-retina('../img/option-6', 'png', 62px, 55px);
+			}
+
+			&::before {
+				background-position: 0 -29px;
+
+				@include retina() {
+					background-position: -26px -29px;
+				}
+			}
+
+			&::after {
+				background-position: -26px -29px;
+
+				@include retina() {
+					background-position: 0 -29px;
+				}
+			}
+		}
+
+		&_31 {
+			width: 31px;
+			height: 29px;
+
+			&::before,
+			&::after {
+				@include bgi-retina('../img/option-6', 'png', 62px, 55px);
+			}
+
+			&::before {
+
+				@include retina() {
+					background-position: -31px 0;
+				}
+			}
+
+			&::after {
+				background-position: -31px 0;
+
+				@include retina() {
+					background-position: 0 0;
+				}
+			}
+		}
 	}
 
 	&__desc {
