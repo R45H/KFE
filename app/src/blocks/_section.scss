@@ -615,6 +615,20 @@
 				}
 			}
 		}
+
+		&_line_none {
+
+			&::after {
+
+				@media (min-width: $screen-sm) {
+					display: none;
+				}
+
+				@media (min-width: $screen-lg) {
+					display: none;
+				}
+			}
+		}
 	}
 
 	&__descr {
