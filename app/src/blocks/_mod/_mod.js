@@ -3,7 +3,7 @@ $(function() {
 	var
 		$modal = $('.mod'), // Модальное окно
 		$header = $('.header'), // Шапка
-		$menuI = $('.l-menu-i'), // Шапка
+		$menuI = $('.l-menu-i'), // Нижнее меню в шапке
 		$up = $('.up'), // Кнопка "наверх"
 		$input = 'input', // Класс инпута
 		$inputFillClass = 'input_fill'; // Класс заполненного инпута

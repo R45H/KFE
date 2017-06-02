@@ -1,14 +1,22 @@
 /* Слайдеры */
 $(document).ready(function(){
-	$('.js-owl').owlCarousel({
-		items: 1,
-		loop: true,
-		dots: true,
-		nav: true,
-		navText: ''
-	});
+	var $owl = $('.js-owl');
 
-	$('.js-owl .owl-dots').wrap('<div class="container js-owl__dots"></div>');
+	$owl.each(function() {
+		var $this = $(this);
+
+		if ($this.find('.section__slide').length > 1) {
+			$this.owlCarousel({
+				items: 1,
+				loop: true,
+				dots: true,
+				nav: true,
+				navText: ''
+			});
+
+			$this.find('.owl-dots').wrap('<div class="container js-owl__dots"></div>');
+		}
+	});
 
 	$('.js-owl_half').each(function() {
 		var $this = $(this);
