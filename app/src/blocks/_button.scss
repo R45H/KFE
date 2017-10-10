@@ -33,6 +33,7 @@
 		transform: translateX(-25px) translateY(-50%);
 		font-size: 3rem;
 		color: $color-red;
+		line-height: 1;
 
 		@media (min-width: $screen-lg) {
 			transform: translateX(-40px) translateY(-50%);
@@ -49,11 +50,35 @@
 	}
 
 	&_half_dark {
-		color: $color-darkgray;
-		background-image: url('../img/btn-half-dark.png');
+		color: $color-white;
+		background-image: none;
 
 		@media (min-width: $screen-lg) {
-			background-image: url('../img/btn-half-dark-lg.png');
+			background-image: none;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			transition: $duration / 2 ease;
+			background-image: url('../img/btn-half-red.png');
+			z-index: -1;
+
+			@media (min-width: $screen-lg) {
+				background-image: url('../img/btn-half-red-lg.png');
+			}
+		}
+
+		&:hover {
+			color: $color-white;
+
+			+ .section__arrow {
+				top: 5px;
+			}
 		}
 	}
 

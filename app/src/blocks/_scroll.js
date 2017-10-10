@@ -1,13 +1,15 @@
 /* Плавный скролл */
 $(function(){
 	$('.scroll').on('click', function (event) {
-		event.preventDefault();
+		var $id = $(this).attr('href');
+
+		if ($id.slice(0, 8) != '#section') return;
 
 		var
-			$id = $(this).attr('href'),
 			$top = $($id).offset().top,
-			$head = $('.header').innerHeight()
-		;
+			$head = $('.header').innerHeight();
+
+		event.preventDefault();
 
 		if (window.innerWidth >= 426) {
 			$top -= $head;

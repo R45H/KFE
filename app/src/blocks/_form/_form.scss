@@ -99,4 +99,18 @@
 		display: none;
 		margin-bottom: 2em;
 	}
+
+	&__outer {
+		padding: 30px 15px 0;
+		margin-bottom: 30px;
+		border: 1px solid lighten($color-lightergray, 3%);
+		background: lighten($color-lightergray, 5%);
+
+		&::after {
+			content: "";
+			display: table;
+			width: 100%;
+			clear: both;
+		}
+	}
 }

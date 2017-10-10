@@ -17,6 +17,10 @@
 			overflow-y: visible;
 		}
 
+		&_visible-full {
+			overflow: visible;
+		}
+
 		&_img-12 {
 			background: $color-lightgray;
 
@@ -382,6 +386,23 @@
 		&_img-404 {
 			background-image: url('../img/404.jpg');
 			background-position: 50% 50%;
+			padding-bottom: 0;
+
+			@media (min-width: $screen-xs) {
+				padding-bottom: 0;
+			}
+
+			@media (min-width: $screen-custom-sm) {
+				padding-bottom: 0;
+			}
+
+			@media (min-width: $screen-sm) {
+				padding-bottom: 0;
+			}
+
+			@media (min-width: $screen-md) {
+				padding-bottom: 0;
+			}
 		}
 	}
 
@@ -398,6 +419,8 @@
 		display: inline-block;
 		color: $color-white;
 		text-transform: uppercase;
+		line-height: 1.1;
+		margin-bottom: 10px;
 
 		@media (min-width: $screen-sm) {
 			font-size: 7.2rem;
@@ -666,6 +689,9 @@
 		width: 31px;
 		height: 9px;
 		background-image: url('../img/arrow-bottom.png');
+		position: relative;
+		top: 0;
+		transition: $duration / 2 ease;
 	}
 
 	&__count-wrap {
@@ -1343,7 +1369,7 @@
 	}
 
 	&__full {
-		min-height: calc(100vh - 70px - 102px);
+		min-height: calc(100vh - 70px - 102px - 53px);
 
 		@media (min-width: $screen-xs) {
 			min-height: calc(100vh - 70px);
