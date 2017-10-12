@@ -122,6 +122,13 @@
 		font-size: 1.6rem;
 	}
 
+	&__subtitle {
+		font-size: 1.7rem;
+		font-family: $font-second;
+		font-weight: 300;
+		margin: 0 0 15px;
+	}
+
 	&.in {
 
 		.mod__close {

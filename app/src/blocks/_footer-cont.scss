@@ -60,4 +60,11 @@
 		color: $color-gray;
 		font-size: 1.4rem;
 	}
+
+	&__btn {
+
+		@media (min-width: $screen-sm) {
+			width: 100%;
+		}
+	}
 }

@@ -50,7 +50,7 @@
 @import url('blocks/_option/_option.scss');         // Ссылка с картинкой
 @import url('blocks/_bread-alt.scss');              // Альтернативные хлебные крошки
 @import url('blocks/_map/_map.scss');               // Карта
-@import url('blocks/_simple-btn.scss');             // Простая кнопка для карты
+@import url('blocks/_simple-btn/_simple-btn.scss');             // Простая кнопка для карты
 @import url('blocks/_half.scss');                   // Секция, разбитая на два блока
 @import url('blocks/_simple-form.scss');            // Стандартная форма
 @import url('blocks/_commend/_commend.scss');       // Панель с табами (рекомендации)
@@ -61,6 +61,7 @@
 @import url('blocks/_gallery/_gallery.scss');       // Галерея
 @import url('blocks/_share/_share.scss');           // Социальные иконки
 @import url('blocks/_not-found.scss');              // Блок "не найдено"
+@import url('blocks/_simple-check.scss');           // Простые чекбоксы
 
 @import url('blocks/_header.scss');                 // Шапка
 @import url('blocks/_aside/_aside.scss');           // Боковое меню

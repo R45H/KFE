@@ -90,4 +90,10 @@
 		top: 50%;
 		transform: translateY(-50%);
 	}
+
+	&__btn {
+		padding-left: .5em;
+		padding-right: .5em;
+		margin-right: 10px;
+	}
 }

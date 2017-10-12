@@ -1,0 +1,46 @@
+.simple-check {
+	display: block;
+
+	&__input {
+		display: none;
+
+		&:checked {
+
+			+ .simple-check__label {
+
+				&::after {
+					content: '\f046';
+				}
+			}
+		}
+	}
+
+	&__label {
+		position: relative;
+		padding: .3em 0 .3em 2em;
+		font-family: $font-second;
+		font-weight: 300;
+		cursor: pointer;
+		transition: $duration / 2 ease;
+		margin: 0;
+		font-size: 16px;
+
+		&::after {
+			content: '\f096';
+			font-family: $font-awesome;
+			line-height: 1;
+			position: absolute;
+			top: .45em;
+			left: 0;
+			font-size: 18px;
+		}
+
+		&:hover {
+			color: $color-red;
+
+			&::after {
+
+			}
+		}
+	}
+}
