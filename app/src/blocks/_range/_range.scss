@@ -5,9 +5,27 @@
 	justify-content: space-between;
 	height: 38px;
 	background: $color-white;
+	position: relative;
 
 	@media (min-width: $screen-lg) {
 		height: 50px;
+	}
+
+	&::after {
+		content: attr(data-info);
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		margin-top: 5px;
+		font-size: 1.2rem;
+		color: $color-darkgray;
+		background: $color-lightergray;
+		border: 1px solid darken($color-lightergray, 3%);
+		padding: 3px 6px;
+		text-align: center;
+		transition: $duration / 2 ease;
+		opacity: 0;
 	}
 
 	&__prev,
@@ -50,6 +68,13 @@
 
 		.ui-slider-range {
 			background-color: $color-red;
+		}
+	}
+
+	&_info {
+
+		&::after {
+			opacity: 1;
 		}
 	}
 }

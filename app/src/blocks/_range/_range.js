@@ -1,33 +1,43 @@
 /* Ползунки range */
 $(function () {
-	var $slider = $(".range__input"); // Ползунок
+	var $block = $(".range"); // Ползунок
 
-	$slider.each(function() {
+	$block.each(function() {
 		var
-			$this = $(this), // Текущий элемент
-			slMin = $this.prev(), // Поле с минимальным значением
-			slMax = $this.next(), // Поле с максимальным значением
-			slMinVal = parseInt(slMin.val()), // Значение поля min
-			slMaxVal = parseInt(slMax.val()) // Значение поля max
+			$this = $(this), // Текущий блок
+			$input = $this.find('.range__input'), // Текущий элемент
+			slMin = $input.prev(), // Поле с минимальным значением
+			slMax = $input.next(), // Поле с максимальным значением
+			slMinVal = parseInt(slMin.attr("data-min")), // Значение поля min
+			slMaxVal = parseInt(slMax.attr("data-max")), // Значение поля max
+			classInfo = 'range_info' // Класс для появления подсказки
 		;
 
-		$this.slider({ // Инициализация ползунка
+		$input.slider({ // Инициализация ползунка
 			min: slMinVal,
 			max: slMaxVal,
-			values: [slMinVal, slMaxVal],
+			values: [parseInt(slMin.val()), parseInt(slMax.val())],
 			range: true,
 			create: function () {
 				changeInput();
 			},
 			slide: function () {
-				slMin.val($this.slider("values", 0));
-				slMax.val($this.slider("values", 1));
+				slMin.val($input.slider("values", 0));
+				slMax.val($input.slider("values", 1));
 				changeInput();
+
+				if ($this.attr('data-info')) {
+					$this.addClass(classInfo);
+				}
 			},
 			stop: function () {
-				slMin.val($this.slider("values", 0));
-				slMax.val($this.slider("values", 1));
+				slMin.val($input.slider("values", 0));
+				slMax.val($input.slider("values", 1));
 				changeInput();
+
+				if ($this.attr('data-info')) {
+					$this.removeClass(classInfo);
+				}
 			}
 		});
 
@@ -55,8 +65,8 @@ $(function () {
 
 			slMin.val(value1);
 			slMax.val(value2);
-			$this.slider("values", 0, value1);
-			$this.slider("values", 1, value2);
+			$input.slider("values", 0, value1);
+			$input.slider("values", 1, value2);
 			changeInput();
 		});
 
@@ -86,7 +96,7 @@ $(function () {
 			}
 
 			slMin.val(value1);
-			$this.slider("values", 0, value1);
+			$input.slider("values", 0, value1);
 			changeInput();
 		});
 
@@ -112,7 +122,7 @@ $(function () {
 			}
 
 			slMax.val(value2);
-			$this.slider("values", 1, value2);
+			$input.slider("values", 1, value2);
 			changeInput();
 		});
 
